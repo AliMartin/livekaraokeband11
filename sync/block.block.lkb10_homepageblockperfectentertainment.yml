@@ -1,0 +1,25 @@
+uuid: 7d777fe1-6cfd-4cd9-8d88-83fc37dc31f6
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:1177b52f-7447-474b-9e7d-8696ed5496c7'
+  module:
+    - block_content
+  theme:
+    - lkb10
+id: lkb10_homepageblockperfectentertainment
+theme: lkb10
+region: front_page_matrix
+weight: -7
+provider: null
+plugin: 'block_content:1177b52f-7447-474b-9e7d-8696ed5496c7'
+settings:
+  id: 'block_content:1177b52f-7447-474b-9e7d-8696ed5496c7'
+  label: 'Home page block - perfect entertainment'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

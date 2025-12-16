@@ -1,0 +1,330 @@
+nav.tabs ul {
+  justify-content: center;
+}
+
+.alert {
+  margin-top: 30px;
+}
+
+.mm-page,
+.mm-wrapper_background body {
+  background-color: inherit;
+}
+
+body {
+  background-color: inherit;
+  color: $white;
+}
+
+
+.page-node-type-article,
+.page-node-type-client,
+.page-node-type-gallery,
+.page-node-type-landing,
+.page-node-type-musician,
+.page-node-type-news,
+.page-node-type-page,
+.page-node-type-review,
+.page-node-type-show,
+.page-node-type-video,
+.page-node-type-webform {
+  main .region-content {
+    background-color: rgba(0,0,0,0.8);
+    border-radius: $border-radius;
+    max-width: 850px;
+    margin-top: 30vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 90px;
+    padding: 30px;
+
+    .field--name-field-media-image {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+
+// Node layout overrides
+.page-node-type-gallery,
+.page-node-type-musician,
+.page-node-type-video {
+  main .region-content {
+    max-width: inherit;
+    margin-top: 60px;
+  }
+}
+
+
+// Musician layout overrides
+.page-node-type-musician {
+  main .region-content {
+    text-align: center;
+  }
+}
+
+
+// Show layout overrides
+.page-node-type-show {
+  main .region-content {
+    max-width: 600px;
+    padding: 15px;
+    margin: 0 auto;
+  }
+  .field--name-field-show-location {
+    text-align: center;
+    font-size: x-large;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .field--name-field-show-date {
+    text-align: center;
+    font-weight: $font-weight-bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+  }
+
+  form {
+    font-size: large;
+    line-height: 1.2;
+    text-align: center;
+    label {
+      font-weight: $font-weight-bold;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+
+// Login screen
+.path-user {
+  main .region-content{
+    background-color: rgba(0,0,0,0.8);
+    border-radius: $border-radius;
+    max-width: 850px;
+    margin: 90px auto;
+    padding: 30px;
+    text-align: center;
+  }
+}
+
+
+// Blockquotes
+blockquote {
+  padding: 30px;
+  margin: 0 0 20px;
+  border-left: 5px solid $yellow;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 0 $border-radius-img $border-radius-img 0;
+}
+
+blockquote ol:last-child,
+blockquote p:last-child,
+blockquote ul:last-child {
+  margin-bottom: 0;
+}
+
+
+// Slick gallery on Gallery nodes
+.page-node-type-gallery {
+  .slick-slider {
+    margin-bottom: 30px;
+  }
+
+  .slick img.media__element {
+    width: 100%;
+  }
+}
+
+
+// Slick gallery
+.slick-arrow::before {
+  color: $yellow;
+  opacity: 1;
+}
+
+.slick-arrow:hover::before {
+  color: $orange;
+}
+
+
+// Hero images
+.field--name-field-hero,
+.field--name-field-media-image {
+  margin-bottom: 40px;
+  img {
+    border-radius: $border-radius-img;
+    width: 100%;
+    height: auto;
+  }
+}
+
+// This is the default h1 for the node which we are replacing
+#block-lkb10-page-title {
+  display: none;
+}
+
+
+// This is the new title
+.field--name-title {
+  text-align: center;
+  h1 {
+    font-size: $h1-font-size;
+    margin: 0 0 20px 0;
+  }
+
+}
+
+.field--name-field-teaser {
+  text-align: center;
+  font-size: 1.5em;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+
+// Event types
+.field--name-field-event-type {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+
+  > div {
+    background-color: $gray-400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: x-small;
+    font-weight: $font-weight-bold;
+    padding: 4px 8px;
+    border-radius: 20px;
+  }
+}
+
+
+.page-node-type-video .field--name-body {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
+// Inline images
+p img {
+  height: auto;
+  border-radius: $border-radius-img;
+}
+
+.field--name-field-call-to-action {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+
+// Daisuke
+.view-daisuke {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  font-size: 11px;
+  line-height: 1;
+
+  .table-striped > tbody > tr:hover > * {
+    --bs-table-bg-type: inherit;
+    background-color: $gray-400;
+    color: $white;
+  }
+}
+
+
+// Tables
+table.table {
+  font-size: 0.8rem;
+
+  tbody > tr > * {
+    --bs-table-bg-type: inherit;
+    background-color: rgba(0,0,0,0.6);
+    color: $white;
+    border-bottom: 1px solid $gray-400;
+  }
+
+  tbody > tr:last-of-type > * {
+    border-bottom: none;
+  }
+
+}
+
+body.path-daisuke {
+  .table-striped > tbody > tr:nth-of-type(odd) > * {
+    --bs-table-bg-type: inherit;
+  }  
+}
+
+
+@media screen and (max-width: 991px) {
+  h1,
+  .field--name-title h1 {
+    font-size: 2.5rem;
+  }
+  .field--name-field-teaser {
+    font-size: 1.2em;
+  }
+  .page-node-type-article,
+  .page-node-type-client,
+  .page-node-type-gallery,
+  .page-node-type-landing,
+  .page-node-type-news,
+  .page-node-type-page,
+  .page-node-type-review,
+  // .page-node-type-show,
+  .page-node-type-video,
+  .page-node-type-webform {
+    main .region-content {
+      margin-top: 90px;
+
+      .field--name-field-media-image {
+        margin-bottom: 20px;
+      }  
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  h1,
+  .field--name-title h1 {
+    font-size: 2.0rem;
+  }
+  .field--name-field-teaser {
+    font-size: 1.1em;
+  }
+
+  .page-node-type-article,
+  .page-node-type-client,
+  .page-node-type-gallery,
+  .page-node-type-landing,
+  .page-node-type-news,
+  .page-node-type-page,
+  .page-node-type-review,
+  // .page-node-type-show,
+  .page-node-type-video,
+  .page-node-type-webform {
+    main .region-content {
+      padding: 20px;
+    }
+  } 
+}
+
+@media screen and (max-width: 449px) {
+  h1,
+  .field--name-title h1 {
+    font-size: 2.0rem;
+  }
+  .field--name-field-teaser {
+    font-size: 1.1em;
+  }
+}
+
+

@@ -1,0 +1,24 @@
+uuid: ad27107e-09cc-45cc-8bc2-ee390424e465
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.filtered_html
+    - filter.format.webform_default
+  module:
+    - file
+    - filter
+    - media
+    - system
+_core:
+  default_config_hash: btW6TFHajhy7Eo6YUvdFiPh4TcPggo8GBXYctjV6zag
+id: authenticated
+label: 'authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access content'
+  - 'delete own files'
+  - 'use text format filtered_html'
+  - 'use text format webform_default'
+  - 'view media'

@@ -1,0 +1,22 @@
+uuid: 45ccefd2-b652-4280-9490-47941003218c
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - lkb11
+_core:
+  default_config_hash: 76Gdw6cvI4L_GVm5zCIwSuDTiI3lC4A1IWKT972v0Og
+id: lkb11_help
+theme: lkb11
+region: content
+weight: -3
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

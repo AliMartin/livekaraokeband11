@@ -1,0 +1,30 @@
+uuid: 405b5410-b2ff-441b-875b-9631cae5ff69
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:41304e46-a314-484a-bd01-66e6fc9da3be'
+  module:
+    - block_content
+    - system
+  theme:
+    - lkb10
+id: lkb10_promotionalvideo
+theme: lkb10
+region: content
+weight: -19
+provider: null
+plugin: 'block_content:41304e46-a314-484a-bd01-66e6fc9da3be'
+settings:
+  id: 'block_content:41304e46-a314-484a-bd01-66e6fc9da3be'
+  label: 'Promotional video'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "<front>\r\n/node/726"

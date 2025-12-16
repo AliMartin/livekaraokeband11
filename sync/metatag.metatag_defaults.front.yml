@@ -1,0 +1,15 @@
+uuid: b69b6425-8c7b-4636-b636-6498b35bb218
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 1noCXlegCr5HFehQRF1ViXy1jhU1jZ_sNN99a8Sj5jo
+id: front
+label: 'Front page'
+tags:
+  keywords: 'live band karaoke, rockaoke, bandeoke, party band, wedding, corporate entertainment'
+  shortlink: '[site:url]'
+  canonical_url: '[site:url]'
+  rights: 'Hyperluminal Ltd'
+  description: 'Celebrating a decade of entertainment, The Live Band Karaoke is the most popular rockaoke and bandeoke act in the UK where you are the star!'
+  generator: 'Drupal 9 (http://drupal.org)'

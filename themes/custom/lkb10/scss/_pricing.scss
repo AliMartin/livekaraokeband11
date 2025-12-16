@@ -1,0 +1,79 @@
+.node-864.page-node-type-landing {
+  main .region-content {
+    max-width: inherit;
+    margin-top: 60px;
+  }
+}
+
+#package-matrix {
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid $yellow;
+  }
+
+  th, td {
+      border: inherit;
+  }
+
+  th, td {
+      padding: 8px;
+      text-align: center;
+  }
+
+  tr.package,
+  tr.price {
+    color: $yellow;
+    font-weight: $font-weight-bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  td.title {
+    color: $white;
+    font-weight: $font-weight-bold;
+    text-transform: initial;
+    letter-spacing: initial;
+  }
+
+  tbody tr:nth-child(odd) {
+      background-color: $gray-500; /* Light grey for odd rows */
+  }
+
+  tbody tr:nth-child(even) {
+      background-color: $gray-600; /* White for even rows */
+  }
+
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    font-size: 14px;
+  }
+
+  @media (min-width: 540px) and (max-width: 767px) {
+    font-size: 12px;
+    th, td {
+      padding: 6px;
+    }
+    tr.package,
+    tr.price {
+      letter-spacing: 1px;
+    }
+  }
+
+  @media (max-width: 539px) {
+    font-size: 10px;
+    th, td {
+      padding: 2px;
+    }
+    tr.package,
+    tr.price {
+      letter-spacing: inherit;
+    }
+  }
+}
+
+#package-notes {
+  h4 {
+    margin-top: 30px;
+  }
+}

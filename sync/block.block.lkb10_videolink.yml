@@ -1,0 +1,25 @@
+uuid: 9997e2dd-e89a-43f8-b7e2-3e75020e9743
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:mega_menu:e577ed88-93d7-41ca-80da-0c10c0500d51'
+  module:
+    - block_content
+  theme:
+    - lkb10
+id: lkb10_videolink
+theme: lkb10
+region: hidden_blocks
+weight: 0
+provider: null
+plugin: 'block_content:e577ed88-93d7-41ca-80da-0c10c0500d51'
+settings:
+  id: 'block_content:e577ed88-93d7-41ca-80da-0c10c0500d51'
+  label: 'Video link'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

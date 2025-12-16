@@ -1,0 +1,17 @@
+uuid: eaf88953-73d3-405b-b8e6-1ac41ff75e26
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: app
+label: App
+weight: 0
+theme: lkb10app
+admin_theme: ''
+conjunction: and
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/events\r\n/host\r\n/entries/*\r\n/show/*"

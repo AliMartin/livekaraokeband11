@@ -1,0 +1,25 @@
+uuid: 5e4a9d1d-6015-4d25-84de-c8c8879b543d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:589f2c8a-7a74-4c52-a7fd-bdfe936ac09d'
+  module:
+    - block_content
+  theme:
+    - lkb10
+id: lkb10_homepageblockmostexperienced
+theme: lkb10
+region: front_page_matrix
+weight: -15
+provider: null
+plugin: 'block_content:589f2c8a-7a74-4c52-a7fd-bdfe936ac09d'
+settings:
+  id: 'block_content:589f2c8a-7a74-4c52-a7fd-bdfe936ac09d'
+  label: 'Home page block - most experienced'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

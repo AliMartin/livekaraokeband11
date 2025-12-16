@@ -1,0 +1,25 @@
+uuid: 7e6fbd2e-201a-4260-a29b-973c66cf12a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sound
+    - node.type.show
+id: node.show.field_sound
+field_name: field_sound
+entity_type: node
+bundle: show
+label: Sound
+description: 'Who will be running the sound desk?'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: skills
+      display_name: entity_reference_7
+      arguments: {  }
+field_type: entity_reference

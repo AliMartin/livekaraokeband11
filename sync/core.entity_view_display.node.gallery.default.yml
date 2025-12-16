@@ -1,0 +1,138 @@
+uuid: 68be61c9-1e0c-4abc-b1cd-d7d75f14b490
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.gallery.body
+    - field.field.node.gallery.field_media_image
+    - field.field.node.gallery.field_meta_tags
+    - field.field.node.gallery.field_metatag
+    - field.field.node.gallery.field_teaser
+    - image.style.gallery_thumbnail
+    - node.type.gallery
+    - responsive_image.styles.gallery
+  module:
+    - field_layout
+    - layout_discovery
+    - manage_display
+    - metatag
+    - slick
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: node.gallery.default
+targetEntityType: node
+bundle: gallery
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_media_image:
+    type: slick_media
+    label: hidden
+    settings:
+      caption:
+        alt: '0'
+        title: '0'
+      optionset: gallery
+      class: ''
+      image: ''
+      link: ''
+      overlay: ''
+      title: ''
+      vanilla: false
+      by_delta: -1
+      layout: ''
+      view_mode: news
+      cache: 0
+      admin_uri: '/admin/structure/types/manage/gallery/display?ajax_form=1&_wrapper_format=drupal_ajax'
+      use_lb: false
+      background: false
+      box_caption: ''
+      box_caption_custom: ''
+      box_media_style: ''
+      loading: ''
+      preload: false
+      responsive_image_style: gallery
+      use_theme_field: false
+      box_style: ''
+      image_style: ''
+      media_switch: ''
+      ratio: ''
+      thumbnail_style: gallery_thumbnail
+      grid: ''
+      grid_medium: ''
+      grid_small: ''
+      style: ''
+      svg_inline: false
+      svg_fill: false
+      svg_sanitize: true
+      svg_sanitize_remote: false
+      svg_hide_caption: false
+      svg_attributes: ''
+      skin: classic
+      overridables:
+        arrows: '0'
+        autoplay: '0'
+        dots: '0'
+        draggable: '0'
+        infinite: '0'
+        mouseWheel: '0'
+        randomize: '0'
+        variableWidth: '0'
+      thumbnail: ''
+      optionset_thumbnail: thumbnail
+      skin_thumbnail: ''
+      thumbnail_caption: ''
+      thumbnail_effect: ''
+      thumbnail_position: ''
+      override: false
+      skin_arrows: ''
+      skin_dots: ''
+      preserve_keys: false
+      visible_items: null
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_metatag:
+    type: metatag_empty_formatter
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_teaser:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  title:
+    type: title
+    label: hidden
+    settings:
+      link_to_entity: false
+      tag: h1
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  links: true
+  uid: true

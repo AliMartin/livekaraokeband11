@@ -1,0 +1,27 @@
+uuid: 9d7081ad-cea3-42ba-a64c-4d2d2dd501f1
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_line_up
+field_name: field_line_up
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '4'
+      label: '4'
+    -
+      value: '5'
+      label: '5'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,20 @@
+uuid: 530def01-bd5d-4931-89e9-b62b028811d6
+langcode: en
+status: true
+dependencies:
+  module:
+    - tb_megamenu
+  theme:
+    - lkb10
+id: lkb10_mainmenu
+theme: lkb10
+region: nav_main
+weight: 0
+provider: null
+plugin: 'tb_megamenu_menu_block:main'
+settings:
+  id: 'tb_megamenu_menu_block:main'
+  label: 'Main menu'
+  label_display: '0'
+  provider: tb_megamenu
+visibility: {  }

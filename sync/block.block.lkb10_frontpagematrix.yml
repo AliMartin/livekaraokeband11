@@ -1,0 +1,27 @@
+uuid: 3edddb93-2978-4c1e-8c30-c1bc00f7c5c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - blockgroup.block_group_content.front_page_matrix
+  module:
+    - blockgroup
+    - system
+  theme:
+    - lkb10
+id: lkb10_frontpagematrix
+theme: lkb10
+region: content
+weight: -18
+provider: null
+plugin: 'block_group:front_page_matrix'
+settings:
+  id: 'block_group:front_page_matrix'
+  label: 'Front page matrix'
+  label_display: '0'
+  provider: blockgroup
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

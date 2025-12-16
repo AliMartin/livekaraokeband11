@@ -1,0 +1,25 @@
+uuid: d7059131-dd6c-4a9b-be5a-0ab256335399
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - lkb11
+_core:
+  default_config_hash: rsT3dv_Y9DUMCvEyNGX8Zez_dIqkJFriZanQnmD9YbE
+id: lkb11_branding
+theme: lkb11
+region: nav_branding
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

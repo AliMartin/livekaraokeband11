@@ -1,0 +1,25 @@
+uuid: b104b36e-ef01-4d36-9cbe-408364b90328
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:mega_menu:66e20006-a4dc-49dc-a12f-87e722a27423'
+  module:
+    - block_content
+  theme:
+    - lkb10
+id: lkb10_clientslink
+theme: lkb10
+region: hidden_blocks
+weight: 0
+provider: null
+plugin: 'block_content:66e20006-a4dc-49dc-a12f-87e722a27423'
+settings:
+  id: 'block_content:66e20006-a4dc-49dc-a12f-87e722a27423'
+  label: 'Clients link'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

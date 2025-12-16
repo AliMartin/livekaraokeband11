@@ -1,0 +1,21 @@
+uuid: f93d898c-ceed-4b0f-95bb-d27aa6938e36
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dj
+    - node.type.show
+id: node.show.field_dj
+field_name: field_dj
+entity_type: node
+bundle: show
+label: 'DJ required'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

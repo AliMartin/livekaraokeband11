@@ -1,0 +1,129 @@
+footer {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+
+  h2 {
+    margin-bottom: 15px;
+    line-height: 1;
+  }
+
+  .region-lower-cta {
+    margin-bottom: 90px;
+  }
+
+  .upper-footer {
+    background-color: rgba(0,0,0,0.6);
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    .view-logo-strip .view-content {
+      max-width: 1000px;
+      margin: auto;
+      display: flex;
+      flex: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      height: 100px;
+      overflow-y: hidden;
+
+      .field--name-field-media-image {
+        margin: 0;
+      }
+
+      img {
+        border-radius: 5px;
+      }
+    }
+  }
+
+  .lower-footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgba(0,0,0,0.8);
+
+    .container {
+      max-width: 820px;
+      padding-left: 15px;
+      padding-right: 15px;
+      margin: auto;
+    }
+
+    #footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 30px;
+    
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        text-decoration: none;
+        color: $white;
+        border: 1px solid $white;
+        border-radius: 50%;
+    
+        span {
+          display: none;
+        }
+    
+        &:hover,
+        &:focus,
+        &:active {
+          color: $yellow;
+          border: 1px solid $yellow;
+        }
+      }
+    }
+
+    #block-lkb10-footertext .field--name-body {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      font-size: 14px;
+    }
+
+    #block-lkb10-footermenu ul.nav {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      font-size: 14px;
+
+      a {
+        color: $yellow;
+        padding: 0;
+        margin: 0 15px;
+
+        &:hover,
+        &:focus {
+          color: $orange;
+        }
+      }
+    }
+
+    #block-lkb10-companylogos .logo-wrapper {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+
+      img {
+        width: auto;
+        height: auto;
+      }
+
+      .hyperluminal img           {height: 60px;}
+      .tailored-entertainment img {height: 30px;}
+    }
+  }
+}

@@ -1,0 +1,24 @@
+uuid: 592c5a90-e9b5-4f8e-bcce-465247931dd1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.file.image.field_file_image_alt_text
+    - field.field.file.image.field_file_image_title_text
+  module:
+    - field_layout
+    - file
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: file.image.default
+targetEntityType: file
+bundle: image
+mode: default
+content: {  }
+hidden:
+  field_file_image_alt_text: true
+  field_file_image_title_text: true

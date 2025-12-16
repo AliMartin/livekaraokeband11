@@ -1,0 +1,25 @@
+uuid: 82901cb0-91b5-4643-bc90-a29569c4f039
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:mega_menu:994de276-f32f-4f73-9d7e-c75713da08c1'
+  module:
+    - block_content
+  theme:
+    - lkb10
+id: lkb10_samurai
+theme: lkb10
+region: hidden_blocks
+weight: 0
+provider: null
+plugin: 'block_content:994de276-f32f-4f73-9d7e-c75713da08c1'
+settings:
+  id: 'block_content:994de276-f32f-4f73-9d7e-c75713da08c1'
+  label: Samurai
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

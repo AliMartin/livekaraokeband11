@@ -1,0 +1,2224 @@
+/* remap grays */
+/* Bootstrap 4 mixins - no change */
+/* from Bootstrap 4 utilities - replaced $theme-colors with $colors */
+.text-yellow {
+  color: #f2b510 !important;
+}
+
+a.text-yellow:focus {
+  color: #c4920b !important;
+}
+a.text-yellow:hover {
+  color: #c4920b !important;
+}
+
+.text-orange {
+  color: #f98105 !important;
+}
+
+a.text-orange:focus {
+  color: #c76704 !important;
+}
+a.text-orange:hover {
+  color: #c76704 !important;
+}
+
+.text-red {
+  color: #d94e4c !important;
+}
+
+a.text-red:focus {
+  color: #c82d2a !important;
+}
+a.text-red:hover {
+  color: #c82d2a !important;
+}
+
+.text-green {
+  color: #5dbb63 !important;
+}
+
+a.text-green:focus {
+  color: #44a14a !important;
+}
+a.text-green:hover {
+  color: #44a14a !important;
+}
+
+.text-blue {
+  color: #4682b4 !important;
+}
+
+a.text-blue:focus {
+  color: #38678f !important;
+}
+a.text-blue:hover {
+  color: #38678f !important;
+}
+
+.text-white {
+  color: #f5f5f7 !important;
+}
+
+a.text-white:focus {
+  color: #d9d9e0 !important;
+}
+a.text-white:hover {
+  color: #d9d9e0 !important;
+}
+
+.text-gray {
+  color: #1c1c1c !important;
+}
+
+a.text-gray:focus {
+  color: #030303 !important;
+}
+a.text-gray:hover {
+  color: #030303 !important;
+}
+
+.text-yellow-100 {
+  color: #fef8e7 !important;
+}
+
+a.text-yellow-100:focus {
+  color: #fceab6 !important;
+}
+a.text-yellow-100:hover {
+  color: #fceab6 !important;
+}
+
+.text-yellow-200 {
+  color: #fcedc3 !important;
+}
+
+a.text-yellow-200:focus {
+  color: #fade92 !important;
+}
+a.text-yellow-200:hover {
+  color: #fade92 !important;
+}
+
+.text-yellow-300 {
+  color: #f9da88 !important;
+}
+
+a.text-yellow-300:focus {
+  color: #f7cb57 !important;
+}
+a.text-yellow-300:hover {
+  color: #f7cb57 !important;
+}
+
+.text-yellow-400 {
+  color: #f5c84c !important;
+}
+
+a.text-yellow-400:focus {
+  color: #f2b91c !important;
+}
+a.text-yellow-400:hover {
+  color: #f2b91c !important;
+}
+
+.text-yellow-500 {
+  color: #f2b510 !important;
+}
+
+a.text-yellow-500:focus {
+  color: #c4920b !important;
+}
+a.text-yellow-500:hover {
+  color: #c4920b !important;
+}
+
+.text-yellow-600 {
+  color: #b6880c !important;
+}
+
+a.text-yellow-600:focus {
+  color: #866409 !important;
+}
+a.text-yellow-600:hover {
+  color: #866409 !important;
+}
+
+.text-yellow-700 {
+  color: #795b08 !important;
+}
+
+a.text-yellow-700:focus {
+  color: #493705 !important;
+}
+a.text-yellow-700:hover {
+  color: #493705 !important;
+}
+
+.text-yellow-800 {
+  color: #3d2d04 !important;
+}
+
+a.text-yellow-800:focus {
+  color: #0d0a01 !important;
+}
+a.text-yellow-800:hover {
+  color: #0d0a01 !important;
+}
+
+.text-yellow-900 {
+  color: #241b02 !important;
+}
+
+a.text-yellow-900:focus {
+  color: black !important;
+}
+a.text-yellow-900:hover {
+  color: black !important;
+}
+
+.text-orange-100 {
+  color: #fef2e6 !important;
+}
+
+a.text-orange-100:focus {
+  color: #fcd9b5 !important;
+}
+a.text-orange-100:hover {
+  color: #fcd9b5 !important;
+}
+
+.text-orange-200 {
+  color: #fee0c1 !important;
+}
+
+a.text-orange-200:focus {
+  color: #fdc78f !important;
+}
+a.text-orange-200:hover {
+  color: #fdc78f !important;
+}
+
+.text-orange-300 {
+  color: #fcc082 !important;
+}
+
+a.text-orange-300:focus {
+  color: #fba750 !important;
+}
+a.text-orange-300:hover {
+  color: #fba750 !important;
+}
+
+.text-orange-400 {
+  color: #fba144 !important;
+}
+
+a.text-orange-400:focus {
+  color: #fa8812 !important;
+}
+a.text-orange-400:hover {
+  color: #fa8812 !important;
+}
+
+.text-orange-500 {
+  color: #f98105 !important;
+}
+
+a.text-orange-500:focus {
+  color: #c76704 !important;
+}
+a.text-orange-500:hover {
+  color: #c76704 !important;
+}
+
+.text-orange-600 {
+  color: #bb6104 !important;
+}
+
+a.text-orange-600:focus {
+  color: #894703 !important;
+}
+a.text-orange-600:hover {
+  color: #894703 !important;
+}
+
+.text-orange-700 {
+  color: #7d4103 !important;
+}
+
+a.text-orange-700:focus {
+  color: #4b2702 !important;
+}
+a.text-orange-700:hover {
+  color: #4b2702 !important;
+}
+
+.text-orange-800 {
+  color: #3e2001 !important;
+}
+
+a.text-orange-800:focus {
+  color: #0c0600 !important;
+}
+a.text-orange-800:hover {
+  color: #0c0600 !important;
+}
+
+.text-orange-900 {
+  color: #251301 !important;
+}
+
+a.text-orange-900:focus {
+  color: black !important;
+}
+a.text-orange-900:hover {
+  color: black !important;
+}
+
+.text-red-100 {
+  color: #fbeded !important;
+}
+
+a.text-red-100:focus {
+  color: #f2c3c3 !important;
+}
+a.text-red-100:hover {
+  color: #f2c3c3 !important;
+}
+
+.text-red-200 {
+  color: #f6d3d2 !important;
+}
+
+a.text-red-200:focus {
+  color: #eea9a8 !important;
+}
+a.text-red-200:hover {
+  color: #eea9a8 !important;
+}
+
+.text-red-300 {
+  color: #eca7a6 !important;
+}
+
+a.text-red-300:focus {
+  color: #e37d7c !important;
+}
+a.text-red-300:hover {
+  color: #e37d7c !important;
+}
+
+.text-red-400 {
+  color: #e37a79 !important;
+}
+
+a.text-red-400:focus {
+  color: #da504f !important;
+}
+a.text-red-400:hover {
+  color: #da504f !important;
+}
+
+.text-red-500 {
+  color: #d94e4c !important;
+}
+
+a.text-red-500:focus {
+  color: #c82d2a !important;
+}
+a.text-red-500:hover {
+  color: #c82d2a !important;
+}
+
+.text-red-600 {
+  color: #a33b39 !important;
+}
+
+a.text-red-600:focus {
+  color: #7d2d2c !important;
+}
+a.text-red-600:hover {
+  color: #7d2d2c !important;
+}
+
+.text-red-700 {
+  color: #6d2726 !important;
+}
+
+a.text-red-700:focus {
+  color: #471919 !important;
+}
+a.text-red-700:hover {
+  color: #471919 !important;
+}
+
+.text-red-800 {
+  color: #361413 !important;
+}
+
+a.text-red-800:focus {
+  color: #100606 !important;
+}
+a.text-red-800:hover {
+  color: #100606 !important;
+}
+
+.text-red-900 {
+  color: #210c0b !important;
+}
+
+a.text-red-900:focus {
+  color: black !important;
+}
+a.text-red-900:hover {
+  color: black !important;
+}
+
+.text-green-100 {
+  color: #eff8ef !important;
+}
+
+a.text-green-100:focus {
+  color: #cce8cc !important;
+}
+a.text-green-100:hover {
+  color: #cce8cc !important;
+}
+
+.text-green-200 {
+  color: #d7eed8 !important;
+}
+
+a.text-green-200:focus {
+  color: #b3dfb5 !important;
+}
+a.text-green-200:hover {
+  color: #b3dfb5 !important;
+}
+
+.text-green-300 {
+  color: #aeddb1 !important;
+}
+
+a.text-green-300:focus {
+  color: #8ace8e !important;
+}
+a.text-green-300:hover {
+  color: #8ace8e !important;
+}
+
+.text-green-400 {
+  color: #86cc8a !important;
+}
+
+a.text-green-400:focus {
+  color: #62bd67 !important;
+}
+a.text-green-400:hover {
+  color: #62bd67 !important;
+}
+
+.text-green-500 {
+  color: #5dbb63 !important;
+}
+
+a.text-green-500:focus {
+  color: #44a14a !important;
+}
+a.text-green-500:hover {
+  color: #44a14a !important;
+}
+
+.text-green-600 {
+  color: #468c4a !important;
+}
+
+a.text-green-600:focus {
+  color: #356a38 !important;
+}
+a.text-green-600:hover {
+  color: #356a38 !important;
+}
+
+.text-green-700 {
+  color: #2f5e32 !important;
+}
+
+a.text-green-700:focus {
+  color: #1e3c20 !important;
+}
+a.text-green-700:hover {
+  color: #1e3c20 !important;
+}
+
+.text-green-800 {
+  color: #172f19 !important;
+}
+
+a.text-green-800:focus {
+  color: #060d07 !important;
+}
+a.text-green-800:hover {
+  color: #060d07 !important;
+}
+
+.text-green-900 {
+  color: #0e1c0f !important;
+}
+
+a.text-green-900:focus {
+  color: black !important;
+}
+a.text-green-900:hover {
+  color: black !important;
+}
+
+.text-blue-100 {
+  color: #edf3f8 !important;
+}
+
+a.text-blue-100:focus {
+  color: #c8dbea !important;
+}
+a.text-blue-100:hover {
+  color: #c8dbea !important;
+}
+
+.text-blue-200 {
+  color: #d1e0ec !important;
+}
+
+a.text-blue-200:focus {
+  color: #adc8dd !important;
+}
+a.text-blue-200:hover {
+  color: #adc8dd !important;
+}
+
+.text-blue-300 {
+  color: #a3c1da !important;
+}
+
+a.text-blue-300:focus {
+  color: #7fa8cb !important;
+}
+a.text-blue-300:hover {
+  color: #7fa8cb !important;
+}
+
+.text-blue-400 {
+  color: #74a1c7 !important;
+}
+
+a.text-blue-400:focus {
+  color: #5088b8 !important;
+}
+a.text-blue-400:hover {
+  color: #5088b8 !important;
+}
+
+.text-blue-500 {
+  color: steelblue !important;
+}
+
+a.text-blue-500:focus {
+  color: #38678f !important;
+}
+a.text-blue-500:hover {
+  color: #38678f !important;
+}
+
+.text-blue-600 {
+  color: #356287 !important;
+}
+
+a.text-blue-600:focus {
+  color: #274762 !important;
+}
+a.text-blue-600:hover {
+  color: #274762 !important;
+}
+
+.text-blue-700 {
+  color: #23415a !important;
+}
+
+a.text-blue-700:focus {
+  color: #152635 !important;
+}
+a.text-blue-700:hover {
+  color: #152635 !important;
+}
+
+.text-blue-800 {
+  color: #12212d !important;
+}
+
+a.text-blue-800:focus {
+  color: #030609 !important;
+}
+a.text-blue-800:hover {
+  color: #030609 !important;
+}
+
+.text-blue-900 {
+  color: #0b141b !important;
+}
+
+a.text-blue-900:focus {
+  color: black !important;
+}
+a.text-blue-900:hover {
+  color: black !important;
+}
+
+.text-white-100 {
+  color: #fefefe !important;
+}
+
+a.text-white-100:focus {
+  color: #e5e5e5 !important;
+}
+a.text-white-100:hover {
+  color: #e5e5e5 !important;
+}
+
+.text-white-200 {
+  color: #fdfdfd !important;
+}
+
+a.text-white-200:focus {
+  color: #e4e4e4 !important;
+}
+a.text-white-200:hover {
+  color: #e4e4e4 !important;
+}
+
+.text-white-300 {
+  color: #fafafb !important;
+}
+
+a.text-white-300:focus {
+  color: #dedee4 !important;
+}
+a.text-white-300:hover {
+  color: #dedee4 !important;
+}
+
+.text-white-400 {
+  color: #f8f8f9 !important;
+}
+
+a.text-white-400:focus {
+  color: #dddde1 !important;
+}
+a.text-white-400:hover {
+  color: #dddde1 !important;
+}
+
+.text-white-500 {
+  color: #f5f5f7 !important;
+}
+
+a.text-white-500:focus {
+  color: #d9d9e0 !important;
+}
+a.text-white-500:hover {
+  color: #d9d9e0 !important;
+}
+
+.text-white-600 {
+  color: #b8b8b9 !important;
+}
+
+a.text-white-600:focus {
+  color: #9e9ea0 !important;
+}
+a.text-white-600:hover {
+  color: #9e9ea0 !important;
+}
+
+.text-white-700 {
+  color: #7b7b7c !important;
+}
+
+a.text-white-700:focus {
+  color: #626262 !important;
+}
+a.text-white-700:hover {
+  color: #626262 !important;
+}
+
+.text-white-800 {
+  color: #3d3d3e !important;
+}
+
+a.text-white-800:focus {
+  color: #242424 !important;
+}
+a.text-white-800:hover {
+  color: #242424 !important;
+}
+
+.text-white-900 {
+  color: #252525 !important;
+}
+
+a.text-white-900:focus {
+  color: #0c0c0c !important;
+}
+a.text-white-900:hover {
+  color: #0c0c0c !important;
+}
+
+.text-gray-100 {
+  color: #e8e8e8 !important;
+}
+
+a.text-gray-100:focus {
+  color: #cfcfcf !important;
+}
+a.text-gray-100:hover {
+  color: #cfcfcf !important;
+}
+
+.text-gray-200 {
+  color: #c6c6c6 !important;
+}
+
+a.text-gray-200:focus {
+  color: #adadad !important;
+}
+a.text-gray-200:hover {
+  color: #adadad !important;
+}
+
+.text-gray-300 {
+  color: #8e8e8e !important;
+}
+
+a.text-gray-300:focus {
+  color: #757575 !important;
+}
+a.text-gray-300:hover {
+  color: #757575 !important;
+}
+
+.text-gray-400 {
+  color: #555555 !important;
+}
+
+a.text-gray-400:focus {
+  color: #3c3c3c !important;
+}
+a.text-gray-400:hover {
+  color: #3c3c3c !important;
+}
+
+.text-gray-500 {
+  color: #1c1c1c !important;
+}
+
+a.text-gray-500:focus {
+  color: #030303 !important;
+}
+a.text-gray-500:hover {
+  color: #030303 !important;
+}
+
+.text-gray-600 {
+  color: #151515 !important;
+}
+
+a.text-gray-600:focus {
+  color: black !important;
+}
+a.text-gray-600:hover {
+  color: black !important;
+}
+
+.text-gray-700 {
+  color: #0e0e0e !important;
+}
+
+a.text-gray-700:focus {
+  color: black !important;
+}
+a.text-gray-700:hover {
+  color: black !important;
+}
+
+.text-gray-800 {
+  color: #070707 !important;
+}
+
+a.text-gray-800:focus {
+  color: black !important;
+}
+a.text-gray-800:hover {
+  color: black !important;
+}
+
+.text-gray-900 {
+  color: #040404 !important;
+}
+
+a.text-gray-900:focus {
+  color: black !important;
+}
+a.text-gray-900:hover {
+  color: black !important;
+}
+
+.bg-yellow {
+  background-color: #f2b510 !important;
+}
+
+a.bg-yellow:focus {
+  background-color: #c4920b !important;
+}
+a.bg-yellow:hover {
+  background-color: #c4920b !important;
+}
+
+.bg-orange {
+  background-color: #f98105 !important;
+}
+
+a.bg-orange:focus {
+  background-color: #c76704 !important;
+}
+a.bg-orange:hover {
+  background-color: #c76704 !important;
+}
+
+.bg-red {
+  background-color: #d94e4c !important;
+}
+
+a.bg-red:focus {
+  background-color: #c82d2a !important;
+}
+a.bg-red:hover {
+  background-color: #c82d2a !important;
+}
+
+.bg-green {
+  background-color: #5dbb63 !important;
+}
+
+a.bg-green:focus {
+  background-color: #44a14a !important;
+}
+a.bg-green:hover {
+  background-color: #44a14a !important;
+}
+
+.bg-blue {
+  background-color: #4682b4 !important;
+}
+
+a.bg-blue:focus {
+  background-color: #38678f !important;
+}
+a.bg-blue:hover {
+  background-color: #38678f !important;
+}
+
+.bg-white {
+  background-color: #f5f5f7 !important;
+}
+
+a.bg-white:focus {
+  background-color: #d9d9e0 !important;
+}
+a.bg-white:hover {
+  background-color: #d9d9e0 !important;
+}
+
+.bg-gray {
+  background-color: #1c1c1c !important;
+}
+
+a.bg-gray:focus {
+  background-color: #030303 !important;
+}
+a.bg-gray:hover {
+  background-color: #030303 !important;
+}
+
+.bg-yellow-100 {
+  background-color: #fef8e7 !important;
+}
+
+a.bg-yellow-100:focus {
+  background-color: #fceab6 !important;
+}
+a.bg-yellow-100:hover {
+  background-color: #fceab6 !important;
+}
+
+.bg-yellow-200 {
+  background-color: #fcedc3 !important;
+}
+
+a.bg-yellow-200:focus {
+  background-color: #fade92 !important;
+}
+a.bg-yellow-200:hover {
+  background-color: #fade92 !important;
+}
+
+.bg-yellow-300 {
+  background-color: #f9da88 !important;
+}
+
+a.bg-yellow-300:focus {
+  background-color: #f7cb57 !important;
+}
+a.bg-yellow-300:hover {
+  background-color: #f7cb57 !important;
+}
+
+.bg-yellow-400 {
+  background-color: #f5c84c !important;
+}
+
+a.bg-yellow-400:focus {
+  background-color: #f2b91c !important;
+}
+a.bg-yellow-400:hover {
+  background-color: #f2b91c !important;
+}
+
+.bg-yellow-500 {
+  background-color: #f2b510 !important;
+}
+
+a.bg-yellow-500:focus {
+  background-color: #c4920b !important;
+}
+a.bg-yellow-500:hover {
+  background-color: #c4920b !important;
+}
+
+.bg-yellow-600 {
+  background-color: #b6880c !important;
+}
+
+a.bg-yellow-600:focus {
+  background-color: #866409 !important;
+}
+a.bg-yellow-600:hover {
+  background-color: #866409 !important;
+}
+
+.bg-yellow-700 {
+  background-color: #795b08 !important;
+}
+
+a.bg-yellow-700:focus {
+  background-color: #493705 !important;
+}
+a.bg-yellow-700:hover {
+  background-color: #493705 !important;
+}
+
+.bg-yellow-800 {
+  background-color: #3d2d04 !important;
+}
+
+a.bg-yellow-800:focus {
+  background-color: #0d0a01 !important;
+}
+a.bg-yellow-800:hover {
+  background-color: #0d0a01 !important;
+}
+
+.bg-yellow-900 {
+  background-color: #241b02 !important;
+}
+
+a.bg-yellow-900:focus {
+  background-color: black !important;
+}
+a.bg-yellow-900:hover {
+  background-color: black !important;
+}
+
+.bg-orange-100 {
+  background-color: #fef2e6 !important;
+}
+
+a.bg-orange-100:focus {
+  background-color: #fcd9b5 !important;
+}
+a.bg-orange-100:hover {
+  background-color: #fcd9b5 !important;
+}
+
+.bg-orange-200 {
+  background-color: #fee0c1 !important;
+}
+
+a.bg-orange-200:focus {
+  background-color: #fdc78f !important;
+}
+a.bg-orange-200:hover {
+  background-color: #fdc78f !important;
+}
+
+.bg-orange-300 {
+  background-color: #fcc082 !important;
+}
+
+a.bg-orange-300:focus {
+  background-color: #fba750 !important;
+}
+a.bg-orange-300:hover {
+  background-color: #fba750 !important;
+}
+
+.bg-orange-400 {
+  background-color: #fba144 !important;
+}
+
+a.bg-orange-400:focus {
+  background-color: #fa8812 !important;
+}
+a.bg-orange-400:hover {
+  background-color: #fa8812 !important;
+}
+
+.bg-orange-500 {
+  background-color: #f98105 !important;
+}
+
+a.bg-orange-500:focus {
+  background-color: #c76704 !important;
+}
+a.bg-orange-500:hover {
+  background-color: #c76704 !important;
+}
+
+.bg-orange-600 {
+  background-color: #bb6104 !important;
+}
+
+a.bg-orange-600:focus {
+  background-color: #894703 !important;
+}
+a.bg-orange-600:hover {
+  background-color: #894703 !important;
+}
+
+.bg-orange-700 {
+  background-color: #7d4103 !important;
+}
+
+a.bg-orange-700:focus {
+  background-color: #4b2702 !important;
+}
+a.bg-orange-700:hover {
+  background-color: #4b2702 !important;
+}
+
+.bg-orange-800 {
+  background-color: #3e2001 !important;
+}
+
+a.bg-orange-800:focus {
+  background-color: #0c0600 !important;
+}
+a.bg-orange-800:hover {
+  background-color: #0c0600 !important;
+}
+
+.bg-orange-900 {
+  background-color: #251301 !important;
+}
+
+a.bg-orange-900:focus {
+  background-color: black !important;
+}
+a.bg-orange-900:hover {
+  background-color: black !important;
+}
+
+.bg-red-100 {
+  background-color: #fbeded !important;
+}
+
+a.bg-red-100:focus {
+  background-color: #f2c3c3 !important;
+}
+a.bg-red-100:hover {
+  background-color: #f2c3c3 !important;
+}
+
+.bg-red-200 {
+  background-color: #f6d3d2 !important;
+}
+
+a.bg-red-200:focus {
+  background-color: #eea9a8 !important;
+}
+a.bg-red-200:hover {
+  background-color: #eea9a8 !important;
+}
+
+.bg-red-300 {
+  background-color: #eca7a6 !important;
+}
+
+a.bg-red-300:focus {
+  background-color: #e37d7c !important;
+}
+a.bg-red-300:hover {
+  background-color: #e37d7c !important;
+}
+
+.bg-red-400 {
+  background-color: #e37a79 !important;
+}
+
+a.bg-red-400:focus {
+  background-color: #da504f !important;
+}
+a.bg-red-400:hover {
+  background-color: #da504f !important;
+}
+
+.bg-red-500 {
+  background-color: #d94e4c !important;
+}
+
+a.bg-red-500:focus {
+  background-color: #c82d2a !important;
+}
+a.bg-red-500:hover {
+  background-color: #c82d2a !important;
+}
+
+.bg-red-600 {
+  background-color: #a33b39 !important;
+}
+
+a.bg-red-600:focus {
+  background-color: #7d2d2c !important;
+}
+a.bg-red-600:hover {
+  background-color: #7d2d2c !important;
+}
+
+.bg-red-700 {
+  background-color: #6d2726 !important;
+}
+
+a.bg-red-700:focus {
+  background-color: #471919 !important;
+}
+a.bg-red-700:hover {
+  background-color: #471919 !important;
+}
+
+.bg-red-800 {
+  background-color: #361413 !important;
+}
+
+a.bg-red-800:focus {
+  background-color: #100606 !important;
+}
+a.bg-red-800:hover {
+  background-color: #100606 !important;
+}
+
+.bg-red-900 {
+  background-color: #210c0b !important;
+}
+
+a.bg-red-900:focus {
+  background-color: black !important;
+}
+a.bg-red-900:hover {
+  background-color: black !important;
+}
+
+.bg-green-100 {
+  background-color: #eff8ef !important;
+}
+
+a.bg-green-100:focus {
+  background-color: #cce8cc !important;
+}
+a.bg-green-100:hover {
+  background-color: #cce8cc !important;
+}
+
+.bg-green-200 {
+  background-color: #d7eed8 !important;
+}
+
+a.bg-green-200:focus {
+  background-color: #b3dfb5 !important;
+}
+a.bg-green-200:hover {
+  background-color: #b3dfb5 !important;
+}
+
+.bg-green-300 {
+  background-color: #aeddb1 !important;
+}
+
+a.bg-green-300:focus {
+  background-color: #8ace8e !important;
+}
+a.bg-green-300:hover {
+  background-color: #8ace8e !important;
+}
+
+.bg-green-400 {
+  background-color: #86cc8a !important;
+}
+
+a.bg-green-400:focus {
+  background-color: #62bd67 !important;
+}
+a.bg-green-400:hover {
+  background-color: #62bd67 !important;
+}
+
+.bg-green-500 {
+  background-color: #5dbb63 !important;
+}
+
+a.bg-green-500:focus {
+  background-color: #44a14a !important;
+}
+a.bg-green-500:hover {
+  background-color: #44a14a !important;
+}
+
+.bg-green-600 {
+  background-color: #468c4a !important;
+}
+
+a.bg-green-600:focus {
+  background-color: #356a38 !important;
+}
+a.bg-green-600:hover {
+  background-color: #356a38 !important;
+}
+
+.bg-green-700 {
+  background-color: #2f5e32 !important;
+}
+
+a.bg-green-700:focus {
+  background-color: #1e3c20 !important;
+}
+a.bg-green-700:hover {
+  background-color: #1e3c20 !important;
+}
+
+.bg-green-800 {
+  background-color: #172f19 !important;
+}
+
+a.bg-green-800:focus {
+  background-color: #060d07 !important;
+}
+a.bg-green-800:hover {
+  background-color: #060d07 !important;
+}
+
+.bg-green-900 {
+  background-color: #0e1c0f !important;
+}
+
+a.bg-green-900:focus {
+  background-color: black !important;
+}
+a.bg-green-900:hover {
+  background-color: black !important;
+}
+
+.bg-blue-100 {
+  background-color: #edf3f8 !important;
+}
+
+a.bg-blue-100:focus {
+  background-color: #c8dbea !important;
+}
+a.bg-blue-100:hover {
+  background-color: #c8dbea !important;
+}
+
+.bg-blue-200 {
+  background-color: #d1e0ec !important;
+}
+
+a.bg-blue-200:focus {
+  background-color: #adc8dd !important;
+}
+a.bg-blue-200:hover {
+  background-color: #adc8dd !important;
+}
+
+.bg-blue-300 {
+  background-color: #a3c1da !important;
+}
+
+a.bg-blue-300:focus {
+  background-color: #7fa8cb !important;
+}
+a.bg-blue-300:hover {
+  background-color: #7fa8cb !important;
+}
+
+.bg-blue-400 {
+  background-color: #74a1c7 !important;
+}
+
+a.bg-blue-400:focus {
+  background-color: #5088b8 !important;
+}
+a.bg-blue-400:hover {
+  background-color: #5088b8 !important;
+}
+
+.bg-blue-500 {
+  background-color: steelblue !important;
+}
+
+a.bg-blue-500:focus {
+  background-color: #38678f !important;
+}
+a.bg-blue-500:hover {
+  background-color: #38678f !important;
+}
+
+.bg-blue-600 {
+  background-color: #356287 !important;
+}
+
+a.bg-blue-600:focus {
+  background-color: #274762 !important;
+}
+a.bg-blue-600:hover {
+  background-color: #274762 !important;
+}
+
+.bg-blue-700 {
+  background-color: #23415a !important;
+}
+
+a.bg-blue-700:focus {
+  background-color: #152635 !important;
+}
+a.bg-blue-700:hover {
+  background-color: #152635 !important;
+}
+
+.bg-blue-800 {
+  background-color: #12212d !important;
+}
+
+a.bg-blue-800:focus {
+  background-color: #030609 !important;
+}
+a.bg-blue-800:hover {
+  background-color: #030609 !important;
+}
+
+.bg-blue-900 {
+  background-color: #0b141b !important;
+}
+
+a.bg-blue-900:focus {
+  background-color: black !important;
+}
+a.bg-blue-900:hover {
+  background-color: black !important;
+}
+
+.bg-white-100 {
+  background-color: #fefefe !important;
+}
+
+a.bg-white-100:focus {
+  background-color: #e5e5e5 !important;
+}
+a.bg-white-100:hover {
+  background-color: #e5e5e5 !important;
+}
+
+.bg-white-200 {
+  background-color: #fdfdfd !important;
+}
+
+a.bg-white-200:focus {
+  background-color: #e4e4e4 !important;
+}
+a.bg-white-200:hover {
+  background-color: #e4e4e4 !important;
+}
+
+.bg-white-300 {
+  background-color: #fafafb !important;
+}
+
+a.bg-white-300:focus {
+  background-color: #dedee4 !important;
+}
+a.bg-white-300:hover {
+  background-color: #dedee4 !important;
+}
+
+.bg-white-400 {
+  background-color: #f8f8f9 !important;
+}
+
+a.bg-white-400:focus {
+  background-color: #dddde1 !important;
+}
+a.bg-white-400:hover {
+  background-color: #dddde1 !important;
+}
+
+.bg-white-500 {
+  background-color: #f5f5f7 !important;
+}
+
+a.bg-white-500:focus {
+  background-color: #d9d9e0 !important;
+}
+a.bg-white-500:hover {
+  background-color: #d9d9e0 !important;
+}
+
+.bg-white-600 {
+  background-color: #b8b8b9 !important;
+}
+
+a.bg-white-600:focus {
+  background-color: #9e9ea0 !important;
+}
+a.bg-white-600:hover {
+  background-color: #9e9ea0 !important;
+}
+
+.bg-white-700 {
+  background-color: #7b7b7c !important;
+}
+
+a.bg-white-700:focus {
+  background-color: #626262 !important;
+}
+a.bg-white-700:hover {
+  background-color: #626262 !important;
+}
+
+.bg-white-800 {
+  background-color: #3d3d3e !important;
+}
+
+a.bg-white-800:focus {
+  background-color: #242424 !important;
+}
+a.bg-white-800:hover {
+  background-color: #242424 !important;
+}
+
+.bg-white-900 {
+  background-color: #252525 !important;
+}
+
+a.bg-white-900:focus {
+  background-color: #0c0c0c !important;
+}
+a.bg-white-900:hover {
+  background-color: #0c0c0c !important;
+}
+
+.bg-gray-100 {
+  background-color: #e8e8e8 !important;
+}
+
+a.bg-gray-100:focus {
+  background-color: #cfcfcf !important;
+}
+a.bg-gray-100:hover {
+  background-color: #cfcfcf !important;
+}
+
+.bg-gray-200 {
+  background-color: #c6c6c6 !important;
+}
+
+a.bg-gray-200:focus {
+  background-color: #adadad !important;
+}
+a.bg-gray-200:hover {
+  background-color: #adadad !important;
+}
+
+.bg-gray-300 {
+  background-color: #8e8e8e !important;
+}
+
+a.bg-gray-300:focus {
+  background-color: #757575 !important;
+}
+a.bg-gray-300:hover {
+  background-color: #757575 !important;
+}
+
+.bg-gray-400 {
+  background-color: #555555 !important;
+}
+
+a.bg-gray-400:focus {
+  background-color: #3c3c3c !important;
+}
+a.bg-gray-400:hover {
+  background-color: #3c3c3c !important;
+}
+
+.bg-gray-500 {
+  background-color: #1c1c1c !important;
+}
+
+a.bg-gray-500:focus {
+  background-color: #030303 !important;
+}
+a.bg-gray-500:hover {
+  background-color: #030303 !important;
+}
+
+.bg-gray-600 {
+  background-color: #151515 !important;
+}
+
+a.bg-gray-600:focus {
+  background-color: black !important;
+}
+a.bg-gray-600:hover {
+  background-color: black !important;
+}
+
+.bg-gray-700 {
+  background-color: #0e0e0e !important;
+}
+
+a.bg-gray-700:focus {
+  background-color: black !important;
+}
+a.bg-gray-700:hover {
+  background-color: black !important;
+}
+
+.bg-gray-800 {
+  background-color: #070707 !important;
+}
+
+a.bg-gray-800:focus {
+  background-color: black !important;
+}
+a.bg-gray-800:hover {
+  background-color: black !important;
+}
+
+.bg-gray-900 {
+  background-color: #040404 !important;
+}
+
+a.bg-gray-900:focus {
+  background-color: black !important;
+}
+a.bg-gray-900:hover {
+  background-color: black !important;
+}
+
+.bg-yellow {
+  color: color-yiq(#f2b510);
+}
+
+.bg-orange {
+  color: color-yiq(#f98105);
+}
+
+.bg-red {
+  color: color-yiq(#d94e4c);
+}
+
+.bg-green {
+  color: color-yiq(#5dbb63);
+}
+
+.bg-blue {
+  color: color-yiq(#4682b4);
+}
+
+.bg-white {
+  color: color-yiq(#f5f5f7);
+}
+
+.bg-gray {
+  color: color-yiq(#1c1c1c);
+}
+
+.bg-yellow-100 {
+  color: color-yiq(#fef8e7);
+}
+
+.bg-yellow-200 {
+  color: color-yiq(#fcedc3);
+}
+
+.bg-yellow-300 {
+  color: color-yiq(#f9da88);
+}
+
+.bg-yellow-400 {
+  color: color-yiq(#f5c84c);
+}
+
+.bg-yellow-500 {
+  color: color-yiq(#f2b510);
+}
+
+.bg-yellow-600 {
+  color: color-yiq(#b6880c);
+}
+
+.bg-yellow-700 {
+  color: color-yiq(#795b08);
+}
+
+.bg-yellow-800 {
+  color: color-yiq(#3d2d04);
+}
+
+.bg-yellow-900 {
+  color: color-yiq(#241b02);
+}
+
+.bg-orange-100 {
+  color: color-yiq(#fef2e6);
+}
+
+.bg-orange-200 {
+  color: color-yiq(#fee0c1);
+}
+
+.bg-orange-300 {
+  color: color-yiq(#fcc082);
+}
+
+.bg-orange-400 {
+  color: color-yiq(#fba144);
+}
+
+.bg-orange-500 {
+  color: color-yiq(#f98105);
+}
+
+.bg-orange-600 {
+  color: color-yiq(#bb6104);
+}
+
+.bg-orange-700 {
+  color: color-yiq(#7d4103);
+}
+
+.bg-orange-800 {
+  color: color-yiq(#3e2001);
+}
+
+.bg-orange-900 {
+  color: color-yiq(#251301);
+}
+
+.bg-red-100 {
+  color: color-yiq(#fbeded);
+}
+
+.bg-red-200 {
+  color: color-yiq(#f6d3d2);
+}
+
+.bg-red-300 {
+  color: color-yiq(#eca7a6);
+}
+
+.bg-red-400 {
+  color: color-yiq(#e37a79);
+}
+
+.bg-red-500 {
+  color: color-yiq(#d94e4c);
+}
+
+.bg-red-600 {
+  color: color-yiq(#a33b39);
+}
+
+.bg-red-700 {
+  color: color-yiq(#6d2726);
+}
+
+.bg-red-800 {
+  color: color-yiq(#361413);
+}
+
+.bg-red-900 {
+  color: color-yiq(#210c0b);
+}
+
+.bg-green-100 {
+  color: color-yiq(#eff8ef);
+}
+
+.bg-green-200 {
+  color: color-yiq(#d7eed8);
+}
+
+.bg-green-300 {
+  color: color-yiq(#aeddb1);
+}
+
+.bg-green-400 {
+  color: color-yiq(#86cc8a);
+}
+
+.bg-green-500 {
+  color: color-yiq(#5dbb63);
+}
+
+.bg-green-600 {
+  color: color-yiq(#468c4a);
+}
+
+.bg-green-700 {
+  color: color-yiq(#2f5e32);
+}
+
+.bg-green-800 {
+  color: color-yiq(#172f19);
+}
+
+.bg-green-900 {
+  color: color-yiq(#0e1c0f);
+}
+
+.bg-blue-100 {
+  color: color-yiq(#edf3f8);
+}
+
+.bg-blue-200 {
+  color: color-yiq(#d1e0ec);
+}
+
+.bg-blue-300 {
+  color: color-yiq(#a3c1da);
+}
+
+.bg-blue-400 {
+  color: color-yiq(#74a1c7);
+}
+
+.bg-blue-500 {
+  color: color-yiq(steelblue);
+}
+
+.bg-blue-600 {
+  color: color-yiq(#356287);
+}
+
+.bg-blue-700 {
+  color: color-yiq(#23415a);
+}
+
+.bg-blue-800 {
+  color: color-yiq(#12212d);
+}
+
+.bg-blue-900 {
+  color: color-yiq(#0b141b);
+}
+
+.bg-white-100 {
+  color: color-yiq(#fefefe);
+}
+
+.bg-white-200 {
+  color: color-yiq(#fdfdfd);
+}
+
+.bg-white-300 {
+  color: color-yiq(#fafafb);
+}
+
+.bg-white-400 {
+  color: color-yiq(#f8f8f9);
+}
+
+.bg-white-500 {
+  color: color-yiq(#f5f5f7);
+}
+
+.bg-white-600 {
+  color: color-yiq(#b8b8b9);
+}
+
+.bg-white-700 {
+  color: color-yiq(#7b7b7c);
+}
+
+.bg-white-800 {
+  color: color-yiq(#3d3d3e);
+}
+
+.bg-white-900 {
+  color: color-yiq(#252525);
+}
+
+.bg-gray-100 {
+  color: color-yiq(#e8e8e8);
+}
+
+.bg-gray-200 {
+  color: color-yiq(#c6c6c6);
+}
+
+.bg-gray-300 {
+  color: color-yiq(#8e8e8e);
+}
+
+.bg-gray-400 {
+  color: color-yiq(#555555);
+}
+
+.bg-gray-500 {
+  color: color-yiq(#1c1c1c);
+}
+
+.bg-gray-600 {
+  color: color-yiq(#151515);
+}
+
+.bg-gray-700 {
+  color: color-yiq(#0e0e0e);
+}
+
+.bg-gray-800 {
+  color: color-yiq(#070707);
+}
+
+.bg-gray-900 {
+  color: color-yiq(#040404);
+}
+
+.border-yellow {
+  border-color: #f2b510 !important;
+}
+
+.border-orange {
+  border-color: #f98105 !important;
+}
+
+.border-red {
+  border-color: #d94e4c !important;
+}
+
+.border-green {
+  border-color: #5dbb63 !important;
+}
+
+.border-blue {
+  border-color: #4682b4 !important;
+}
+
+.border-white {
+  border-color: #f5f5f7 !important;
+}
+
+.border-gray {
+  border-color: #1c1c1c !important;
+}
+
+.border-yellow-100 {
+  border-color: #fef8e7 !important;
+}
+
+.border-yellow-200 {
+  border-color: #fcedc3 !important;
+}
+
+.border-yellow-300 {
+  border-color: #f9da88 !important;
+}
+
+.border-yellow-400 {
+  border-color: #f5c84c !important;
+}
+
+.border-yellow-500 {
+  border-color: #f2b510 !important;
+}
+
+.border-yellow-600 {
+  border-color: #b6880c !important;
+}
+
+.border-yellow-700 {
+  border-color: #795b08 !important;
+}
+
+.border-yellow-800 {
+  border-color: #3d2d04 !important;
+}
+
+.border-yellow-900 {
+  border-color: #241b02 !important;
+}
+
+.border-orange-100 {
+  border-color: #fef2e6 !important;
+}
+
+.border-orange-200 {
+  border-color: #fee0c1 !important;
+}
+
+.border-orange-300 {
+  border-color: #fcc082 !important;
+}
+
+.border-orange-400 {
+  border-color: #fba144 !important;
+}
+
+.border-orange-500 {
+  border-color: #f98105 !important;
+}
+
+.border-orange-600 {
+  border-color: #bb6104 !important;
+}
+
+.border-orange-700 {
+  border-color: #7d4103 !important;
+}
+
+.border-orange-800 {
+  border-color: #3e2001 !important;
+}
+
+.border-orange-900 {
+  border-color: #251301 !important;
+}
+
+.border-red-100 {
+  border-color: #fbeded !important;
+}
+
+.border-red-200 {
+  border-color: #f6d3d2 !important;
+}
+
+.border-red-300 {
+  border-color: #eca7a6 !important;
+}
+
+.border-red-400 {
+  border-color: #e37a79 !important;
+}
+
+.border-red-500 {
+  border-color: #d94e4c !important;
+}
+
+.border-red-600 {
+  border-color: #a33b39 !important;
+}
+
+.border-red-700 {
+  border-color: #6d2726 !important;
+}
+
+.border-red-800 {
+  border-color: #361413 !important;
+}
+
+.border-red-900 {
+  border-color: #210c0b !important;
+}
+
+.border-green-100 {
+  border-color: #eff8ef !important;
+}
+
+.border-green-200 {
+  border-color: #d7eed8 !important;
+}
+
+.border-green-300 {
+  border-color: #aeddb1 !important;
+}
+
+.border-green-400 {
+  border-color: #86cc8a !important;
+}
+
+.border-green-500 {
+  border-color: #5dbb63 !important;
+}
+
+.border-green-600 {
+  border-color: #468c4a !important;
+}
+
+.border-green-700 {
+  border-color: #2f5e32 !important;
+}
+
+.border-green-800 {
+  border-color: #172f19 !important;
+}
+
+.border-green-900 {
+  border-color: #0e1c0f !important;
+}
+
+.border-blue-100 {
+  border-color: #edf3f8 !important;
+}
+
+.border-blue-200 {
+  border-color: #d1e0ec !important;
+}
+
+.border-blue-300 {
+  border-color: #a3c1da !important;
+}
+
+.border-blue-400 {
+  border-color: #74a1c7 !important;
+}
+
+.border-blue-500 {
+  border-color: steelblue !important;
+}
+
+.border-blue-600 {
+  border-color: #356287 !important;
+}
+
+.border-blue-700 {
+  border-color: #23415a !important;
+}
+
+.border-blue-800 {
+  border-color: #12212d !important;
+}
+
+.border-blue-900 {
+  border-color: #0b141b !important;
+}
+
+.border-white-100 {
+  border-color: #fefefe !important;
+}
+
+.border-white-200 {
+  border-color: #fdfdfd !important;
+}
+
+.border-white-300 {
+  border-color: #fafafb !important;
+}
+
+.border-white-400 {
+  border-color: #f8f8f9 !important;
+}
+
+.border-white-500 {
+  border-color: #f5f5f7 !important;
+}
+
+.border-white-600 {
+  border-color: #b8b8b9 !important;
+}
+
+.border-white-700 {
+  border-color: #7b7b7c !important;
+}
+
+.border-white-800 {
+  border-color: #3d3d3e !important;
+}
+
+.border-white-900 {
+  border-color: #252525 !important;
+}
+
+.border-gray-100 {
+  border-color: #e8e8e8 !important;
+}
+
+.border-gray-200 {
+  border-color: #c6c6c6 !important;
+}
+
+.border-gray-300 {
+  border-color: #8e8e8e !important;
+}
+
+.border-gray-400 {
+  border-color: #555555 !important;
+}
+
+.border-gray-500 {
+  border-color: #1c1c1c !important;
+}
+
+.border-gray-600 {
+  border-color: #151515 !important;
+}
+
+.border-gray-700 {
+  border-color: #0e0e0e !important;
+}
+
+.border-gray-800 {
+  border-color: #070707 !important;
+}
+
+.border-gray-900 {
+  border-color: #040404 !important;
+}
+
+body {
+  background-color: #000000;
+  color: #f5f5f7;
+}
+
+body main .region-content {
+  text-align: center;
+}
+
+footer {
+  display: none;
+}
+
+#block-lkb10app-usermenu ul.nav {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  font-size: small;
+  text-transform: uppercase;
+}
+#block-lkb10app-usermenu ul.nav li a {
+  background-color: #1c1c1c;
+  border-radius: 6px;
+}
+#block-lkb10app-usermenu ul.nav li a:hover {
+  background-color: #f98105;
+}
+
+main .region-content {
+  margin-top: 15px;
+}
+
+.page-node-type-show #block-lkb10app-page-title {
+  display: none;
+}
+
+#block-lkb10app-page-title {
+  margin-bottom: 15px;
+  margin: 0;
+}
+
+.view-host .view-header,
+.view-live-shows .view-header,
+.view-entries .view-header {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.view-host .view-content,
+.view-live-shows .view-content,
+.view-entries .view-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 15px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.view-host .view-content .views-row,
+.view-live-shows .view-content .views-row,
+.view-entries .view-content .views-row {
+  background-color: #1c1c1c;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+  line-height: 1.2;
+}
+.view-host .view-content .views-row .views-field-field-show-date,
+.view-host .view-content .views-row .views-field-field-show-location,
+.view-host .view-content .views-row .views-field-created,
+.view-live-shows .view-content .views-row .views-field-field-show-date,
+.view-live-shows .view-content .views-row .views-field-field-show-location,
+.view-live-shows .view-content .views-row .views-field-created,
+.view-entries .view-content .views-row .views-field-field-show-date,
+.view-entries .view-content .views-row .views-field-field-show-location,
+.view-entries .view-content .views-row .views-field-created {
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+.view-host .view-content .views-row .views-field-webform-submission-value-2,
+.view-live-shows .view-content .views-row .views-field-webform-submission-value-2,
+.view-entries .view-content .views-row .views-field-webform-submission-value-2 {
+  margin-bottom: 5px;
+}
+.view-host .view-content .views-row .views-field-webform-submission-value-3,
+.view-live-shows .view-content .views-row .views-field-webform-submission-value-3,
+.view-entries .view-content .views-row .views-field-webform-submission-value-3 {
+  margin-bottom: 5px;
+}
+.view-host .view-content .views-row .views-field-view-node,
+.view-live-shows .view-content .views-row .views-field-view-node,
+.view-entries .view-content .views-row .views-field-view-node {
+  margin-top: 10px;
+}
+.view-host .view-content .views-row a:hover,
+.view-live-shows .view-content .views-row a:hover,
+.view-entries .view-content .views-row a:hover {
+  text-decoration: none;
+}
+
+.page-node-type-show .webform-confirmation .submission-summary {
+  border: 2px solid #f98105;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.page-node-type-show .webform-confirmation a:hover {
+  text-decoration: none;
+}
+
+#block-lkb10app-fblikebox {
+  margin-top: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,8 @@
+uuid: 2c9d0f46-8fca-4f93-b08f-76e62e1c7cf8
+langcode: en
+status: true
+dependencies: {  }
+id: suggest_tags
+label: 'Suggest tags'
+variables: {  }
+tokens: {  }

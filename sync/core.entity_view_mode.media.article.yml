@@ -1,0 +1,11 @@
+uuid: fa04ad77-0aea-4c53-9830-23a007bbb77e
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.article
+label: Article
+description: ''
+targetEntityType: media
+cache: true

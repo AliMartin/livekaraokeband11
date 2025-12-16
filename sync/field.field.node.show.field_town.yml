@@ -1,0 +1,19 @@
+uuid: 2a307fed-9155-417b-a0c3-f8b741b89620
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_town
+    - node.type.show
+id: node.show.field_town
+field_name: field_town
+entity_type: node
+bundle: show
+label: Town
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,25 @@
+uuid: 319a04d7-172e-454b-9e8a-761fd1e7e830
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_musician_vocals
+    - node.type.show
+id: node.show.field_musician_vocals
+field_name: field_musician_vocals
+entity_type: node
+bundle: show
+label: Vocals
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: skills
+      display_name: entity_reference_3
+      arguments: {  }
+field_type: entity_reference

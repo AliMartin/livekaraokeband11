@@ -1,0 +1,25 @@
+uuid: 453a1db0-cf3f-4349-8a17-3da496689aba
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:mega_menu:2f13c0a5-f423-460c-b202-b1284e85c240'
+  module:
+    - block_content
+  theme:
+    - lkb10
+id: lkb10_gallerylink
+theme: lkb10
+region: hidden_blocks
+weight: 0
+provider: null
+plugin: 'block_content:2f13c0a5-f423-460c-b202-b1284e85c240'
+settings:
+  id: 'block_content:2f13c0a5-f423-460c-b202-b1284e85c240'
+  label: 'Gallery link'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

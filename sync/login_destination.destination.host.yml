@@ -1,0 +1,16 @@
+uuid: 5d97bf98-8901-4537-8f6d-d850b54719dc
+langcode: en
+status: true
+dependencies: {  }
+name: host
+label: host
+triggers:
+  login: login
+destination_path: 'internal:/host'
+pages_type: 0
+pages: ''
+language: ''
+roles:
+  host: host
+weight: 0
+enabled: true

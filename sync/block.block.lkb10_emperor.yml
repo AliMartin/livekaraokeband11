@@ -1,0 +1,25 @@
+uuid: 0a9c23ab-92fe-434e-a9ad-9912b01fde0f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:mega_menu:bd1c6e19-0ac9-47b3-8290-02534e7ff914'
+  module:
+    - block_content
+  theme:
+    - lkb10
+id: lkb10_emperor
+theme: lkb10
+region: hidden_blocks
+weight: 0
+provider: null
+plugin: 'block_content:bd1c6e19-0ac9-47b3-8290-02534e7ff914'
+settings:
+  id: 'block_content:bd1c6e19-0ac9-47b3-8290-02534e7ff914'
+  label: Emperor
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

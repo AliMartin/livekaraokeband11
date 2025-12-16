@@ -1,0 +1,37 @@
+uuid: 4a072d73-5dbb-4e35-a776-2f45a5449bd2
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+label: article_layout
+name: article_layout
+group: null
+description: 'Content types with the same article layout.'
+requireAllConditions: false
+disabled: false
+conditions:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 3e2fc544-14ed-43b6-ad2e-0a9b7578e9e1
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      article: article
+      background_image: background_image
+      client: client
+      gallery: gallery
+      landing: landing
+      news: news
+      old_news: old_news
+      page: page
+      review: review
+      video: video
+      webform: webform
+reactions:
+  body_class:
+    id: body_class
+    body_class: article-layout
+    saved: false
+weight: 0

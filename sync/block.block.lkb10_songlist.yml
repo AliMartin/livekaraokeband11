@@ -1,0 +1,25 @@
+uuid: 4626b90b-68b2-4755-88dd-bddc7e5b6583
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:mega_menu:f589a36d-141c-4daf-bc45-20f04d6b083d'
+  module:
+    - block_content
+  theme:
+    - lkb10
+id: lkb10_songlist
+theme: lkb10
+region: hidden_blocks
+weight: 0
+provider: null
+plugin: 'block_content:f589a36d-141c-4daf-bc45-20f04d6b083d'
+settings:
+  id: 'block_content:f589a36d-141c-4daf-bc45-20f04d6b083d'
+  label: 'Song list'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

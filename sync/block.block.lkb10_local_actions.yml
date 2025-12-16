@@ -1,0 +1,20 @@
+uuid: 67bc0e9c-370e-46cf-91bd-06b9fe83d10d
+langcode: en
+status: true
+dependencies:
+  theme:
+    - lkb10
+_core:
+  default_config_hash: jB26erJWYAATbFJFf_QTK8Rk_dTagHMGuT4psk2VCaM
+id: lkb10_local_actions
+theme: lkb10
+region: content
+weight: -14
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

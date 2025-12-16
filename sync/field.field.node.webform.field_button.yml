@@ -1,0 +1,21 @@
+uuid: 198ee5f7-f865-41a9-91a1-03b3a5871fcb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_button
+    - node.type.webform
+  module:
+    - text
+id: node.webform.field_button
+field_name: field_button
+entity_type: node
+bundle: webform
+label: Button
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

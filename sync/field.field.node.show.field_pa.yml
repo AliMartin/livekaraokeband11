@@ -1,0 +1,29 @@
+uuid: 70392101-a778-4a07-9f51-74fb14cee693
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pa
+    - node.type.show
+    - taxonomy.vocabulary.pa
+id: node.show.field_pa
+field_name: field_pa
+entity_type: node
+bundle: show
+label: PA
+description: 'PA provider'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      pa: pa
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

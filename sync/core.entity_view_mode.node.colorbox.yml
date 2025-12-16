@@ -1,0 +1,11 @@
+uuid: a751bfed-aed2-4887-b472-a1645c36eba8
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.colorbox
+label: colorbox
+description: ''
+targetEntityType: node
+cache: true

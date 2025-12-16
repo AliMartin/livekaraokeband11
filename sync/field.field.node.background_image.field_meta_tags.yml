@@ -1,0 +1,21 @@
+uuid: 28f87bd3-a03d-428f-8664-a5b332c5905c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.background_image
+  module:
+    - metatag
+id: node.background_image.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: background_image
+label: 'Meta tags'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

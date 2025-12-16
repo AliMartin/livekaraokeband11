@@ -1,0 +1,30 @@
+uuid: 9cdd16d5-5bf9-4082-b82f-e499ec6b5220
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:6e197931-bdad-463a-bfc8-7203f10aa662'
+  module:
+    - block_content
+    - system
+  theme:
+    - lkb10
+id: lkb10_topbanner
+theme: lkb10
+region: content
+weight: -20
+provider: null
+plugin: 'block_content:6e197931-bdad-463a-bfc8-7203f10aa662'
+settings:
+  id: 'block_content:6e197931-bdad-463a-bfc8-7203f10aa662'
+  label: 'Top banner'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "<front>\r\n/node/726"

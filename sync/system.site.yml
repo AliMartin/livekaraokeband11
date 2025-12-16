@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE
+langcode: en
+uuid: 89027e8d-0fe2-4acf-af22-76145ace6338
+name: 'Live Karaoke Band'
+mail: info@livekaraokeband.co.uk
+slogan: 'The most popular rockaoke and bandeoke experience in the UK'
+page:
+  403: ''
+  404: ''
+  front: /node/726
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en
+mail_notification: ''

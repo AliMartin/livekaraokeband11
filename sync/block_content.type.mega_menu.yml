@@ -1,0 +1,8 @@
+uuid: 5c50db48-2a08-4728-829a-a008a1078b96
+langcode: en
+status: true
+dependencies: {  }
+id: mega_menu
+label: 'Mega menu'
+revision: false
+description: 'Blocks for populating the main menu.'

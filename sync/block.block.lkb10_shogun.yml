@@ -1,0 +1,25 @@
+uuid: 388c3e2a-95e4-4e84-948d-e50786f4b067
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:mega_menu:0cf2bb22-b69b-4538-8e77-19b1e3294cd0'
+  module:
+    - block_content
+  theme:
+    - lkb10
+id: lkb10_shogun
+theme: lkb10
+region: hidden_blocks
+weight: 0
+provider: null
+plugin: 'block_content:0cf2bb22-b69b-4538-8e77-19b1e3294cd0'
+settings:
+  id: 'block_content:0cf2bb22-b69b-4538-8e77-19b1e3294cd0'
+  label: Shogun
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

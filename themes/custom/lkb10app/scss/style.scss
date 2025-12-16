@@ -1,0 +1,13 @@
+// Sub theme styling.
+@import '../../lkb10/scss/variables_drupal';
+
+// Bootstrap overridden variables.
+// @see https://getbootstrap.com/docs/5.2/customize/sass/#variable-defaults.
+@import '../../lkb10/scss/variables_bootstrap';
+
+// Include bootstrap.
+// @import '../../../../themes/contrib/bootstrap5/scss/style';
+
+
+// @import '../../lkb10/scss/normalize';
+@import 'app';

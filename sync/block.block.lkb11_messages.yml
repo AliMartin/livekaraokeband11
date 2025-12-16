@@ -1,0 +1,22 @@
+uuid: 8797857a-ef8e-432a-9725-1bef854ada11
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - lkb11
+_core:
+  default_config_hash: WQP81H_GMFrAnql3KvTYHo5F9Rr6aGgXhAWiHAoCH90
+id: lkb11_messages
+theme: lkb11
+region: content
+weight: -7
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,27 @@
+uuid: 179c7b3e-73fc-4e77-b670-c6a9b6bab3a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - lkb11
+_core:
+  default_config_hash: iRy3Shib40kaXjjODPxf3GubiS8te8o4eunXMHoeMQQ
+id: lkb11_main_navigation
+theme: lkb11
+region: nav_main
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: true
+visibility: {  }

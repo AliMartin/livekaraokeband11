@@ -1,0 +1,370 @@
+uuid: 7ec954c5-d5b8-44b2-b096-965319f2643b
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  theme:
+    - lkb10
+id: main__lkb10
+menu: main
+theme: lkb10
+block_config: |-
+  {
+      "animation": "fading",
+      "duration": 200,
+      "delay": 300,
+      "breakpoint": 768,
+      "hide-mobile-menu": "",
+      "auto-arrow": "1",
+      "always-show-submenu": "",
+      "number-columns": 17
+  }
+menu_config: |-
+  {
+      "menu_link_content:346fa22b-8858-47d1-98a8-a542a376ebec": {
+          "rows_content": [
+              [
+                  {
+                      "col_content": [
+                          {
+                              "block_id": "lkb10_corporateeventsawardceremoniesandteambuilding",
+                              "type": "block",
+                              "tb_item_config": []
+                          }
+                      ],
+                      "col_config": {
+                          "width": "3",
+                          "class": "",
+                          "hidewcol": "",
+                          "showblocktitle": "1"
+                      }
+                  },
+                  {
+                      "col_content": [
+                          {
+                              "block_id": "lkb10_weddings",
+                              "type": "block",
+                              "tb_item_config": []
+                          }
+                      ],
+                      "col_config": {
+                          "width": "3",
+                          "class": "",
+                          "hidewcol": "",
+                          "showblocktitle": "1"
+                      }
+                  },
+                  {
+                      "col_content": [
+                          {
+                              "block_id": "lkb10_privateparties",
+                              "type": "block",
+                              "tb_item_config": []
+                          }
+                      ],
+                      "col_config": {
+                          "width": "3",
+                          "class": "",
+                          "hidewcol": "",
+                          "showblocktitle": "1"
+                      }
+                  },
+                  {
+                      "col_content": [
+                          {
+                              "block_id": "lkb10_christmasparties",
+                              "type": "block",
+                              "tb_item_config": []
+                          }
+                      ],
+                      "col_config": {
+                          "width": "3",
+                          "class": "",
+                          "hidewcol": "",
+                          "showblocktitle": "1"
+                      }
+                  }
+              ]
+          ],
+          "submenu_config": {
+              "width": "",
+              "class": "",
+              "group": "0"
+          },
+          "item_config": {
+              "class": "your-event",
+              "xicon": "",
+              "caption": "",
+              "alignsub": "",
+              "group": "0",
+              "hidewcol": "0",
+              "hidesub": "0",
+              "label": ""
+          }
+      },
+      "menu_link_content:27a56271-5250-464a-990c-bd7a34ad8e1a": {
+          "rows_content": [
+              [
+                  {
+                      "col_content": [
+                          {
+                              "block_id": "lkb10_samurai",
+                              "type": "block",
+                              "tb_item_config": []
+                          }
+                      ],
+                      "col_config": {
+                          "width": "3",
+                          "class": "",
+                          "hidewcol": "",
+                          "showblocktitle": "1"
+                      }
+                  },
+                  {
+                      "col_content": [
+                          {
+                              "block_id": "lkb10_shogun",
+                              "type": "block",
+                              "tb_item_config": []
+                          }
+                      ],
+                      "col_config": {
+                          "width": "3",
+                          "class": "",
+                          "hidewcol": "",
+                          "showblocktitle": "1"
+                      }
+                  },
+                  {
+                      "col_content": [
+                          {
+                              "block_id": "lkb10_emperor",
+                              "type": "block",
+                              "tb_item_config": []
+                          }
+                      ],
+                      "col_config": {
+                          "width": "3",
+                          "class": "",
+                          "hidewcol": "",
+                          "showblocktitle": "1"
+                      }
+                  },
+                  {
+                      "col_content": [
+                          {
+                              "block_id": "lkb10_custom",
+                              "type": "block",
+                              "tb_item_config": []
+                          }
+                      ],
+                      "col_config": {
+                          "width": "3",
+                          "class": "",
+                          "hidewcol": "",
+                          "showblocktitle": "1"
+                      }
+                  }
+              ],
+              [
+                  {
+                      "col_content": [
+                          {
+                              "block_id": "lkb10_songlist",
+                              "type": "block",
+                              "tb_item_config": []
+                          }
+                      ],
+                      "col_config": {
+                          "width": "12",
+                          "class": "",
+                          "hidewcol": "",
+                          "showblocktitle": "1"
+                      }
+                  }
+              ]
+          ],
+          "submenu_config": {
+              "width": "",
+              "class": "",
+              "group": "0"
+          },
+          "item_config": {
+              "class": "our-show",
+              "xicon": "",
+              "caption": "",
+              "alignsub": "",
+              "group": "0",
+              "hidewcol": "0",
+              "hidesub": "0",
+              "label": ""
+          }
+      },
+      "menu_link_content:4ce435fb-6bd6-485d-83af-8933a3a135f0": {
+          "rows_content": [
+              [
+                  {
+                      "col_content": [
+                          {
+                              "block_id": "lkb10_views_block__homepage_reviews_block_1",
+                              "type": "block",
+                              "tb_item_config": []
+                          }
+                      ],
+                      "col_config": {
+                          "width": "9",
+                          "class": "",
+                          "hidewcol": "",
+                          "showblocktitle": "1"
+                      }
+                  },
+                  {
+                      "col_content": [
+                          {
+                              "block_id": "lkb10_views_block__homepage_logos_block_1",
+                              "type": "block",
+                              "tb_item_config": []
+                          }
+                      ],
+                      "col_config": {
+                          "width": "3",
+                          "class": "",
+                          "hidewcol": "",
+                          "showblocktitle": "1"
+                      }
+                  }
+              ],
+              [
+                  {
+                      "col_content": [
+                          {
+                              "block_id": "lkb10_reviewslink",
+                              "type": "block",
+                              "tb_item_config": []
+                          }
+                      ],
+                      "col_config": {
+                          "width": "9",
+                          "class": "",
+                          "hidewcol": "",
+                          "showblocktitle": "1"
+                      }
+                  },
+                  {
+                      "col_content": [
+                          {
+                              "block_id": "lkb10_clientslink",
+                              "type": "block",
+                              "tb_item_config": []
+                          }
+                      ],
+                      "col_config": {
+                          "width": "3",
+                          "class": "",
+                          "hidewcol": "",
+                          "showblocktitle": "1"
+                      }
+                  }
+              ]
+          ],
+          "submenu_config": {
+              "width": "",
+              "class": "",
+              "group": "0"
+          },
+          "item_config": {
+              "class": "reviews",
+              "xicon": "",
+              "caption": "",
+              "alignsub": "",
+              "group": "0",
+              "hidewcol": "0",
+              "hidesub": "0",
+              "label": ""
+          }
+      },
+      "menu_link_content:93027567-b8e4-41bd-a2b6-5c621757a340": {
+          "rows_content": [
+              [
+                  {
+                      "col_content": [
+                          {
+                              "block_id": "lkb10_views_block__home_page_galleries_block_1",
+                              "type": "block",
+                              "tb_item_config": []
+                          }
+                      ],
+                      "col_config": {
+                          "width": "3",
+                          "class": "",
+                          "hidewcol": "",
+                          "showblocktitle": "1"
+                      }
+                  },
+                  {
+                      "col_content": [
+                          {
+                              "block_id": "lkb10_views_block__home_page_videos_block_1",
+                              "type": "block",
+                              "tb_item_config": []
+                          }
+                      ],
+                      "col_config": {
+                          "width": "9",
+                          "class": "",
+                          "hidewcol": "",
+                          "showblocktitle": "1"
+                      }
+                  }
+              ],
+              [
+                  {
+                      "col_content": [
+                          {
+                              "block_id": "lkb10_gallerylink",
+                              "type": "block",
+                              "tb_item_config": []
+                          }
+                      ],
+                      "col_config": {
+                          "width": "3",
+                          "class": "",
+                          "hidewcol": "",
+                          "showblocktitle": "1"
+                      }
+                  },
+                  {
+                      "col_content": [
+                          {
+                              "block_id": "lkb10_videolink",
+                              "type": "block",
+                              "tb_item_config": []
+                          }
+                      ],
+                      "col_config": {
+                          "width": "9",
+                          "class": "",
+                          "hidewcol": "",
+                          "showblocktitle": "1"
+                      }
+                  }
+              ]
+          ],
+          "submenu_config": {
+              "width": "",
+              "class": "",
+              "group": "0"
+          },
+          "item_config": {
+              "class": "media",
+              "xicon": "",
+              "caption": "",
+              "alignsub": "",
+              "group": "0",
+              "hidewcol": "0",
+              "hidesub": "0",
+              "label": ""
+          }
+      }
+  }

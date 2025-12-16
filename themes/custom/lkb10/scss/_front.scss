@@ -1,0 +1,306 @@
+.path-frontpage {
+  background-image: inherit;
+  background-color: $black;
+
+  main .region-content {
+    background-color: inherit;
+    border-radius: inherit;
+    max-width: inherit;
+    margin-top: inherit;
+    margin-bottom: 90px;
+    padding: inherit;
+  }
+
+  article.node {
+    display: none;
+  }
+}
+
+
+// Chesney
+
+.show-is-not-live #block-lkb10-topbanner {
+  border-radius: 0 0 $border-radius $border-radius;
+}
+
+.show-is-live #block-lkb10-topbanner {
+  border-radius: $border-radius;
+}
+
+#block-lkb10-topbanner {
+  background-image: url(/themes/custom/lkb10/images/banner-background.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 100%;
+  padding: 45px;
+  margin-top: 0;
+  margin-bottom: 45px;
+  text-align: center;
+
+  .banner-text {
+    font-family: $headings-font-family;
+    font-weight: $headings-font-weight;
+    font-size: xx-large;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+  
+  .banner-logo-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  img {
+    width: 180px;
+    height: auto;
+  }
+}
+
+
+// Promotional video
+#block-lkb10-promotionalvideo {
+  max-width: 850px;
+  margin: 0 auto 30px auto;
+  text-align: center;
+
+  h1 {
+    font-size: xxx-large;
+  }
+
+  h2 {
+    margin-top: 90px;
+  }
+}
+
+
+// Matrix
+#block-lkb10-frontpagematrix {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 90px;
+
+  .block-block-content {
+    width: 478px;
+
+    .layout__region {
+      position: relative;
+
+      .field--name-field-background-image img {
+        border-radius: $border-radius;
+      }
+
+      .field--name-body {
+        position: absolute;
+        bottom: 15px;
+        text-align: center;
+        margin-left: 15px;
+        margin-right: 15px;
+        background-color: rgba(0,0,0,0.5);
+        border-radius: 10px;
+        padding: 15px;
+
+        span {
+          display: block;
+        }
+
+        .home-icon {
+          display: inline-block;
+        }
+
+        .home-icon i {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          background-color: $yellow;
+          font-size: x-large;
+        }
+
+        .home-heading {
+          font-size: larger;
+          color: $yellow;
+        }
+
+        .home-description {
+          line-height: 1.4;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  #block-lkb10-frontpagematrix {
+    .block-block-content {
+      max-width: 400px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  #block-lkb10-frontpagematrix {
+    .block-block-content {
+      max-width: 330px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #block-lkb10-frontpagematrix {
+    .block-block-content {
+      max-width: inherit;
+      width: 100%;
+    }
+  }
+}
+
+
+// Latest news
+#block-lkb10-views-block-home-page-news-block-1 {
+  background-image: url('/sites/default/files/images/gallery/dsc_4790.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  z-index: auto;
+  background-size: cover;
+  text-align: center;
+  padding: 30px;
+  border-radius: $border-radius;
+  margin-bottom: 90px;
+
+  h2 {
+    margin-bottom: 30px;
+    line-height: 1;
+  }
+
+  .view-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+
+  .views-row {
+    display: flex;
+    flex-direction: revert;
+    width: 660px;
+
+    .field--name-field-media-image {
+      margin: 0;
+
+      img {
+        width: 200px;
+        min-width: 200px;
+        border-radius: $border-radius 0 0 $border-radius;
+      }  
+    }
+
+    .views-field-title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background-color: rgba(0,0,0,0.8);
+      padding: 20px;
+      border-radius: 0 $border-radius $border-radius 0;
+
+      a:hover {
+        text-decoration: none;
+      }
+    }
+
+  }
+}
+
+@media only screen and (max-width :767px) {
+  #block-lkb10-views-block-home-page-news-block-1 {
+    padding: 15px;
+
+    .views-row {
+      max-width: 100%;
+      display: inherit;
+      flex-direction: inherit;
+
+      .field--name-field-media-image {
+        img {
+          max-width: inherit;
+          min-width: inherit;
+          width: 100%;
+          border-radius: $border-radius $border-radius 0 0;
+        }  
+      }
+  
+      .views-field-title {
+        border-radius: 0 0 $border-radius $border-radius;
+      }
+    }
+  }
+}
+
+
+// Live shows block
+.view-show-banner-on-front-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 30px;
+  background-image: url('/themes/custom/lkb10/images/show-background.jpg');
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px;
+  margin-bottom: 60px;
+  border-radius: 0 0 $border-radius $border-radius;
+
+  .view-header {
+    background-color: rgba(0,0,0,0.8);
+    border-radius: $border-radius;
+    padding: 10px;
+  }
+
+  .view-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+
+    .views-row {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      background-color: rgba(0,0,0,0.8);
+      border: 1px solid $yellow;
+      border-radius: $border-radius;
+      padding: 30px;
+
+      .views-field-field-show-date,
+      .views-field-field-show-location {
+        font-size: 14px;
+        line-height: 1;
+        font-weight: $font-weight-bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      .views-field-title {
+        font-size: 24px;
+        line-height: 1;
+        margin: 10px 0;
+      }
+    }
+  }
+}

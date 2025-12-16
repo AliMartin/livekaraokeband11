@@ -1,0 +1,21 @@
+uuid: ffd0e2e8-9d5a-4c55-b29e-43c1d7521691
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_requests
+    - node.type.show
+id: node.show.field_requests
+field_name: field_requests
+entity_type: node
+bundle: show
+label: Requests
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

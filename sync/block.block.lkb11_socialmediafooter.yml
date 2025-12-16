@@ -1,0 +1,25 @@
+uuid: 5fb5211a-bc10-4cbe-ac04-b23ba3379265
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:588ecf89-4355-4f8a-a3c7-a4151b171bb4'
+  module:
+    - block_content
+  theme:
+    - lkb11
+id: lkb11_socialmediafooter
+theme: lkb11
+region: footer
+weight: -6
+provider: null
+plugin: 'block_content:588ecf89-4355-4f8a-a3c7-a4151b171bb4'
+settings:
+  id: 'block_content:588ecf89-4355-4f8a-a3c7-a4151b171bb4'
+  label: 'Social media footer'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

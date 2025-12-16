@@ -1,0 +1,25 @@
+uuid: 8ad06f17-554c-4e5f-8b4e-c85d524e32d1
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:588ecf89-4355-4f8a-a3c7-a4151b171bb4'
+  module:
+    - block_content
+  theme:
+    - lkb10
+id: lkb10_socialmediafooter
+theme: lkb10
+region: footer_lower
+weight: -8
+provider: null
+plugin: 'block_content:588ecf89-4355-4f8a-a3c7-a4151b171bb4'
+settings:
+  id: 'block_content:588ecf89-4355-4f8a-a3c7-a4151b171bb4'
+  label: 'Follow us on social media'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

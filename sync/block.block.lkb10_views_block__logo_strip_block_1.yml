@@ -1,0 +1,24 @@
+uuid: acff5878-42aa-4699-bf6e-6fb7c838ecb5
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.logo_strip
+  module:
+    - views
+  theme:
+    - lkb10
+id: lkb10_views_block__logo_strip_block_1
+theme: lkb10
+region: footer_upper
+weight: 0
+provider: null
+plugin: 'views_block:logo_strip-block_1'
+settings:
+  id: 'views_block:logo_strip-block_1'
+  label: 'Just some of our satisfied clients'
+  label_display: visible
+  provider: views
+  views_label: 'Just some of our satisfied clients'
+  items_per_page: null
+visibility: {  }

@@ -1,0 +1,122 @@
+.view-news,
+.view-reviews,
+.view-clients,
+.view-galleries,
+.view-media-page {
+
+  margin-bottom: 90px;
+
+  .view-header h1,
+  .field--name-field-teaser {
+    width: fit-content;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 60px auto;
+    text-align: center; 
+  }
+
+  .view-content > div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  figure.youtube-container {
+    margin: 0;
+
+    iframe {
+      width: 100%;
+      height: auto;
+    }  
+  }
+}
+
+.view-news,
+.view-reviews,
+.view-galleries,
+.view-media-page {
+
+  .views-row {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    max-width: 356px;
+    padding: 15px;
+
+    @media (min-width: 992px) and (max-width: 1200px) {
+      max-width: 296px;
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+      max-width: 332px;
+    }
+
+    @media (min-width: 540px) and (max-width: 767px) {
+      max-width: 356px;
+    }
+
+    @media (max-width: 539px) {
+      max-width: 356px;
+    }
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      text-align: center;
+
+      .field--name-field-media-image {
+        margin: 0;
+      }
+
+      h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 83px;
+        font-size: x-large;
+        margin: 0;
+      }
+
+      .body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 115px;
+        font-size: 18px;
+        line-height: 23px;
+      }
+
+      .link a.btn {
+        min-width: 130px;
+      }
+    }
+  }
+}
+
+
+
+.view-clients {
+  .views-row {
+    border-radius: 20px;
+    max-width: 234px;
+
+    @media (min-width: 768px) and (max-width: 991px) {
+      max-width: 216px;
+    }
+
+    @media (min-width: 540px) and (max-width: 767px) {
+      max-width: 156px;
+    }
+
+    @media (max-width: 539px) {
+      max-width: 101px;
+    }
+
+    .field--name-field-media-image {
+      margin: 0;
+    }
+  }
+}

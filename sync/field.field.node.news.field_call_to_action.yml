@@ -1,0 +1,32 @@
+uuid: ea89c105-90d0-47f3-b185-826571a2f01c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_call_to_action
+    - node.type.news
+  module:
+    - block_field
+id: node.news.field_call_to_action
+field_name: field_call_to_action
+entity_type: node
+bundle: news
+label: 'Call to action'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    plugin_id: 'block_content:4790e330-367d-4dc9-897d-3d74ee9a9e36'
+    settings:
+      provider: block_content
+      label: 'Call to action'
+      label_display: ''
+      view_mode: full
+default_value_callback: ''
+settings:
+  selection: blocks
+  selection_settings:
+    plugin_ids:
+      'block_content:4790e330-367d-4dc9-897d-3d74ee9a9e36': 'block_content:4790e330-367d-4dc9-897d-3d74ee9a9e36'
+field_type: block_field

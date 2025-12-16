@@ -1,0 +1,22 @@
+uuid: ba746dd9-b189-4de2-90a2-d6b585385d2a
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+  enforced:
+    module:
+      - responsive_image
+_core:
+  default_config_hash: YbP9GLqlo6fjA8GIfiC8CzCOjkUm0Cf3A0_aRw8vHhE
+name: max_325x325
+label: 'Max 325x325'
+effects:
+  003f343f-bce9-4a29-8e87-17995452b59b:
+    id: focal_point_scale_and_crop
+    data:
+      width: 325
+      height: 325
+      crop_type: focal_point
+    weight: 2
+    uuid: 003f343f-bce9-4a29-8e87-17995452b59b

@@ -1,0 +1,8 @@
+uuid: 375932f3-543e-418c-99e1-0f49d01741b5
+langcode: en
+status: true
+dependencies: {  }
+id: show
+label: Show
+locked: false
+pattern: 'l j F'

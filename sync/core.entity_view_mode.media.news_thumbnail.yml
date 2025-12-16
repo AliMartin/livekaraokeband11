@@ -1,0 +1,11 @@
+uuid: 361a9634-3c52-473c-ac72-f79f17d88823
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.news_thumbnail
+label: 'News thumbnail'
+description: ''
+targetEntityType: media
+cache: true

@@ -1,0 +1,11 @@
+uuid: 63911e5f-9638-44d1-a640-13b8cba5f73b
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.logo_strip
+label: 'Logo strip'
+description: ''
+targetEntityType: media
+cache: true

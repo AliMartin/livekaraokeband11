@@ -1,0 +1,22 @@
+uuid: 15153976-4baf-47c4-853a-54395dcfb8fa
+langcode: en
+status: true
+dependencies:
+  theme:
+    - lkb10
+_core:
+  default_config_hash: 1Ja7SY4B1M87VbGj2alc3XCF9E1Qol6B0oXhW5d5BhA
+id: lkb10_local_tasks
+theme: lkb10
+region: content
+weight: -22
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

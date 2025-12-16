@@ -1,0 +1,74 @@
+// Fix to place admin toolbar over logo
+.toolbar-oriented .toolbar-bar {
+  z-index: 1100;
+}
+
+header {
+  background-color: rgba(0,0,0,0.8);
+  color: $white;
+  border-bottom: 1px solid $yellow;
+  -webkit-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.75);
+}
+
+#upper-header-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  align-items: center;
+  padding: 20px 0;
+}
+
+#block-lkb10-branding {
+  position: absolute;
+  top: -20px;
+  z-index: 1000;
+
+  img {
+    height: 130px;
+    margin: 0;
+  }
+}
+
+#upper-left-container {
+  display: flex;
+  width: 50%;
+  justify-content: flex-start;
+  position: relative;
+}
+
+#upper-middle-container {
+  display: flex;
+  width: 200px;
+  justify-content: flex-start;
+}
+
+#upper-right-container {
+  display: flex;
+  width: 50%;
+  justify-content: flex-end;
+}
+
+
+
+@media screen and (max-width: 991px) {
+  #lower-header-container {
+    display: none;
+  }
+
+  #block-lkb10-branding {
+    img {
+      height: 80px;
+    }
+  }
+}
+
+@media screen and (max-width: 449px) {
+  #block-lkb10-branding {
+    img {
+      height: 70px;
+    }
+  }
+}

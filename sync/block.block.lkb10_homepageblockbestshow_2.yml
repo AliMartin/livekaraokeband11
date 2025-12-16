@@ -1,0 +1,25 @@
+uuid: f1699a0c-7f89-43ff-8243-ae64928dbd80
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:0e9af81b-288f-4448-8e0d-9afc2eda83e7'
+  module:
+    - block_content
+  theme:
+    - lkb10
+id: lkb10_homepageblockbestshow_2
+theme: lkb10
+region: front_page_matrix
+weight: -12
+provider: null
+plugin: 'block_content:0e9af81b-288f-4448-8e0d-9afc2eda83e7'
+settings:
+  id: 'block_content:0e9af81b-288f-4448-8e0d-9afc2eda83e7'
+  label: 'Home page block - best show'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

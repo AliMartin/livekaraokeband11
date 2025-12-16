@@ -1,0 +1,14 @@
+uuid: 2eb2110b-3033-49df-85ea-695acbea4d9e
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.host
+  module:
+    - user
+id: user_add_role_action.host
+label: 'Add the host role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: host

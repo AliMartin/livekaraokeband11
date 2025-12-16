@@ -1,0 +1,45 @@
+uuid: a91f6bca-ff84-4123-ac7d-04f43bccee1d
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.1600x1000
+    - image.style.400x300
+    - image.style.800x600
+  theme:
+    - lkb10
+id: gallery
+label: Gallery
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: 1600x1000
+    breakpoint_id: lkb10.screen.xl-min
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: 1600x1000
+    breakpoint_id: lkb10.screen.xl-min
+    multiplier: 2x
+  -
+    image_mapping_type: image_style
+    image_mapping: 800x600
+    breakpoint_id: lkb10.screen.md-min
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: 800x600
+    breakpoint_id: lkb10.screen.md-min
+    multiplier: 2x
+  -
+    image_mapping_type: image_style
+    image_mapping: 400x300
+    breakpoint_id: lkb10.screen.sm-max
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: 400x300
+    breakpoint_id: lkb10.screen.sm-max
+    multiplier: 2x
+breakpoint_group: lkb10.screen
+fallback_image_style: 400x300

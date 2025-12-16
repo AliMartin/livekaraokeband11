@@ -1,0 +1,25 @@
+uuid: e312e696-d037-4707-bf04-a5187cf83793
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:1a403912-4c2a-4f97-8532-e42406d828a2'
+  module:
+    - block_content
+  theme:
+    - lkb11
+id: lkb11_footertext
+theme: lkb11
+region: footer
+weight: -5
+provider: null
+plugin: 'block_content:1a403912-4c2a-4f97-8532-e42406d828a2'
+settings:
+  id: 'block_content:1a403912-4c2a-4f97-8532-e42406d828a2'
+  label: 'Footer text'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,20 @@
+uuid: ccbf0468-a719-4d8a-9221-3c5188b639bf
+langcode: en
+status: true
+dependencies:
+  theme:
+    - lkb10app
+_core:
+  default_config_hash: 5ql625wA6v7CUVT3KSB6s_ul5Xk9dHYbmzbfky_oqcw
+id: lkb10app_local_actions
+theme: lkb10app
+region: content
+weight: 0
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

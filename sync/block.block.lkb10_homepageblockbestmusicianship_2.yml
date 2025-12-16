@@ -1,0 +1,25 @@
+uuid: e1fc4b3d-7310-44b1-8fc1-b58540ad843c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:707bf745-79eb-4797-bcf5-d886a532a70c'
+  module:
+    - block_content
+  theme:
+    - lkb10
+id: lkb10_homepageblockbestmusicianship_2
+theme: lkb10
+region: front_page_matrix
+weight: -14
+provider: null
+plugin: 'block_content:707bf745-79eb-4797-bcf5-d886a532a70c'
+settings:
+  id: 'block_content:707bf745-79eb-4797-bcf5-d886a532a70c'
+  label: 'Home page block - best musicianship'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

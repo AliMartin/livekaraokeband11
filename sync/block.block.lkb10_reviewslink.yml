@@ -1,0 +1,25 @@
+uuid: 73409516-c027-47a3-b069-531148a377e9
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:mega_menu:99bd0fbd-0654-42b6-b14e-c428fe98519a'
+  module:
+    - block_content
+  theme:
+    - lkb10
+id: lkb10_reviewslink
+theme: lkb10
+region: hidden_blocks
+weight: 0
+provider: null
+plugin: 'block_content:99bd0fbd-0654-42b6-b14e-c428fe98519a'
+settings:
+  id: 'block_content:99bd0fbd-0654-42b6-b14e-c428fe98519a'
+  label: 'Reviews link'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

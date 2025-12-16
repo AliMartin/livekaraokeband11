@@ -1,0 +1,24 @@
+uuid: f640adcb-6b2a-4548-91ba-a0ae44fac36b
+langcode: en
+status: true
+dependencies: {  }
+id: 5_piece_2022
+title: '5-piece 2022'
+webform: song_request_5_piece_2022
+content_type: null
+field_title: null
+use_encrypt: null
+encryption_profile: null
+sync_content: false
+sync_content_delete: false
+sync_content_node_field: null
+elements:
+  notes:
+    type: false
+    mapping: default_mapping
+    webform_field: your_song_choice
+    custom_check: 0
+    custom_value: ''
+sync_content_field: ''
+target_entity_type: webform_submission
+target_bundle: song_analysis

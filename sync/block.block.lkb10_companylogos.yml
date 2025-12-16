@@ -1,0 +1,25 @@
+uuid: b559c3bd-81ae-4461-9211-2cdce297eed2
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a1b3aeeb-db9c-4caf-a24c-14a8b76819f8'
+  module:
+    - block_content
+  theme:
+    - lkb10
+id: lkb10_companylogos
+theme: lkb10
+region: footer_lower
+weight: -5
+provider: null
+plugin: 'block_content:a1b3aeeb-db9c-4caf-a24c-14a8b76819f8'
+settings:
+  id: 'block_content:a1b3aeeb-db9c-4caf-a24c-14a8b76819f8'
+  label: 'Company logos'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

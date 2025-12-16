@@ -1,0 +1,25 @@
+uuid: bb4ccc85-f635-43f2-b144-4268057822dc
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:mega_menu:f43840a3-6da4-4e87-930f-3a26c9609839'
+  module:
+    - block_content
+  theme:
+    - lkb10
+id: lkb10_privateparties
+theme: lkb10
+region: hidden_blocks
+weight: -14
+provider: null
+plugin: 'block_content:f43840a3-6da4-4e87-930f-3a26c9609839'
+settings:
+  id: 'block_content:f43840a3-6da4-4e87-930f-3a26c9609839'
+  label: 'Private parties'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

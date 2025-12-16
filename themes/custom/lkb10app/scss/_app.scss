@@ -1,0 +1,124 @@
+body {
+  background-color: $black;
+  color: $white;
+}
+
+body main .region-content {
+  text-align: center;
+}
+
+footer {
+  display: none;
+}
+
+#block-lkb10app-usermenu {
+  ul.nav {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-size: small;
+    text-transform: uppercase;
+
+    li a {
+      background-color: $gray;
+      border-radius: 6px;
+
+      &:hover {
+        background-color: $orange;
+      }
+    }
+  }
+}
+
+
+main .region-content {
+  margin-top: 15px;
+}
+
+.page-node-type-show {
+  #block-lkb10app-page-title {
+    display: none;
+  }
+}
+
+#block-lkb10app-page-title {
+  margin-bottom: 15px;
+  margin: 0;
+}
+
+.view-host,
+.view-live-shows,
+.view-entries {
+
+  .view-header {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: $font-weight-bold;
+    margin-bottom: 15px;
+  }
+
+  .view-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 15px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .views-row {
+      background-color: $gray;
+      padding: 15px;
+      border-radius: 10px;
+      font-size: 18px;
+      line-height: 1.2;
+
+      .views-field-field-show-date,
+      .views-field-field-show-location,
+      .views-field-created {
+        text-transform: uppercase;
+        font-size: 14px;
+        letter-spacing: 1px;
+        margin-bottom: 5px;
+      }
+
+      // Name
+      .views-field-webform-submission-value-2 {
+        margin-bottom: 5px;
+      }
+
+      // Song
+      .views-field-webform-submission-value-3 {
+        margin-bottom: 5px;
+      }
+
+      .views-field-view-node {
+        margin-top: 10px;
+      }
+
+      a:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.page-node-type-show .webform-confirmation {
+  .submission-summary {
+    border: 2px solid $orange;
+    padding: 10px;
+    border-radius: 10px;
+    // color: $orange;
+    font-weight: $font-weight-bold;
+    margin-bottom: 15px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+#block-lkb10app-fblikebox {
+  margin-top: 20px;
+}

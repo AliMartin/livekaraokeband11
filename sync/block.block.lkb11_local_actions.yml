@@ -1,0 +1,20 @@
+uuid: 12564106-cca7-4627-97ac-6d9304844474
+langcode: en
+status: true
+dependencies:
+  theme:
+    - lkb11
+_core:
+  default_config_hash: Sq9buP81PDkDVK8LpJF3H7uB0tL09uxZmfWRiADigmA
+id: lkb11_local_actions
+theme: lkb11
+region: content
+weight: -2
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

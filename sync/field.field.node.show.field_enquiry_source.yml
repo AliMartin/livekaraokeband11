@@ -1,0 +1,21 @@
+uuid: 112de130-daf6-47fe-b57e-29098b80eb27
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_enquiry_source
+    - node.type.show
+  module:
+    - options
+id: node.show.field_enquiry_source
+field_name: field_enquiry_source
+entity_type: node
+bundle: show
+label: 'Enquiry source'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

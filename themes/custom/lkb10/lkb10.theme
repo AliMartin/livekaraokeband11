@@ -1,0 +1,43 @@
+<?php
+
+/**
+ * @file
+ * Live Karaoke Band theme file.
+ */
+
+/**
+ * Add node ID to body classes
+ */
+function lkb10_preprocess_html(&$variables) {
+  // Add node ID to the body class.
+  $node = \Drupal::routeMatch()->getParameter('node');
+  if (is_object($node)) {
+    $variables['attributes']['class'][] = 'node-' . $node->id();
+  }
+}
+
+
+/**
+ * Implements hook_preprocess_page().
+ * Checks to see if there is a published content of type "show"
+ */
+function lkb10_preprocess_page(&$variables) {
+  // Query to check if there is a published node of content type 'show'.
+  $query = \Drupal::entityQuery('node')
+    ->condition('status', 1) // Only published nodes.
+    ->condition('type', 'show') // Ensure it's content type 'show'.
+    ->range(0, 1) // Limit results to 1 node.
+    ->accessCheck(TRUE); // Check user permissions.
+
+  // Execute the query.
+  $nids = $query->execute();
+
+  // Check if there is a result and pass a variable to Twig.
+  if (!empty($nids)) {
+    // \Drupal::logger('lkb10')->notice('Published SHOW node found.');
+    $variables['has_show_content'] = TRUE;
+  } else {
+    // \Drupal::logger('lkb10')->notice('No published SHOW node found.');
+    $variables['has_show_content'] = FALSE;
+  }
+}

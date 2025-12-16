@@ -1,0 +1,20 @@
+uuid: 604b20c5-8115-4341-9775-0bfea70bba7f
+langcode: en
+status: true
+dependencies:
+  theme:
+    - lkb10app
+_core:
+  default_config_hash: c6VXq2UpVFi81ebclCYuJulYIa5T1tuyXy_MjA4cG-0
+id: lkb10app_page_title
+theme: lkb10app
+region: content
+weight: -1
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

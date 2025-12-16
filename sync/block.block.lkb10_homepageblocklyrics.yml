@@ -1,0 +1,25 @@
+uuid: 270917d5-b4cf-4221-9ea1-b730a5608176
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:cdf61b7d-12e0-40bd-b37b-f8462a0b685d'
+  module:
+    - block_content
+  theme:
+    - lkb10
+id: lkb10_homepageblocklyrics
+theme: lkb10
+region: front_page_matrix
+weight: -11
+provider: null
+plugin: 'block_content:cdf61b7d-12e0-40bd-b37b-f8462a0b685d'
+settings:
+  id: 'block_content:cdf61b7d-12e0-40bd-b37b-f8462a0b685d'
+  label: 'Home page block - lyrics'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

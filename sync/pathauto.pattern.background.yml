@@ -1,0 +1,22 @@
+uuid: fa4a8578-5f29-4afb-8822-1f4704c2e887
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: background
+label: Background
+type: 'canonical_entities:node'
+pattern: 'background/[node:title]'
+selection_criteria:
+  047a3512-a860-4475-8d11-2906806f1849:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 047a3512-a860-4475-8d11-2906806f1849
+    context_mapping:
+      node: node
+    bundles:
+      background_image: background_image
+selection_logic: and
+weight: -5
+relationships: {  }

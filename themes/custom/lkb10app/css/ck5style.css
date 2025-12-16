@@ -1,0 +1,1797 @@
+.ck-content {
+  /* remap grays */
+  /* Bootstrap 4 mixins - no change */
+  /* from Bootstrap 4 utilities - replaced $theme-colors with $colors */
+}
+.ck-content .text-yellow {
+  color: #f2b510 !important;
+}
+.ck-content a.text-yellow:focus {
+  color: #c4920b !important;
+}
+.ck-content a.text-yellow:hover {
+  color: #c4920b !important;
+}
+.ck-content .text-orange {
+  color: #f98105 !important;
+}
+.ck-content a.text-orange:focus {
+  color: #c76704 !important;
+}
+.ck-content a.text-orange:hover {
+  color: #c76704 !important;
+}
+.ck-content .text-red {
+  color: #d94e4c !important;
+}
+.ck-content a.text-red:focus {
+  color: #c82d2a !important;
+}
+.ck-content a.text-red:hover {
+  color: #c82d2a !important;
+}
+.ck-content .text-green {
+  color: #5dbb63 !important;
+}
+.ck-content a.text-green:focus {
+  color: #44a14a !important;
+}
+.ck-content a.text-green:hover {
+  color: #44a14a !important;
+}
+.ck-content .text-blue {
+  color: #4682b4 !important;
+}
+.ck-content a.text-blue:focus {
+  color: #38678f !important;
+}
+.ck-content a.text-blue:hover {
+  color: #38678f !important;
+}
+.ck-content .text-white {
+  color: #f5f5f7 !important;
+}
+.ck-content a.text-white:focus {
+  color: #d9d9e0 !important;
+}
+.ck-content a.text-white:hover {
+  color: #d9d9e0 !important;
+}
+.ck-content .text-gray {
+  color: #1c1c1c !important;
+}
+.ck-content a.text-gray:focus {
+  color: #030303 !important;
+}
+.ck-content a.text-gray:hover {
+  color: #030303 !important;
+}
+.ck-content .text-yellow-100 {
+  color: #fef8e7 !important;
+}
+.ck-content a.text-yellow-100:focus {
+  color: #fceab6 !important;
+}
+.ck-content a.text-yellow-100:hover {
+  color: #fceab6 !important;
+}
+.ck-content .text-yellow-200 {
+  color: #fcedc3 !important;
+}
+.ck-content a.text-yellow-200:focus {
+  color: #fade92 !important;
+}
+.ck-content a.text-yellow-200:hover {
+  color: #fade92 !important;
+}
+.ck-content .text-yellow-300 {
+  color: #f9da88 !important;
+}
+.ck-content a.text-yellow-300:focus {
+  color: #f7cb57 !important;
+}
+.ck-content a.text-yellow-300:hover {
+  color: #f7cb57 !important;
+}
+.ck-content .text-yellow-400 {
+  color: #f5c84c !important;
+}
+.ck-content a.text-yellow-400:focus {
+  color: #f2b91c !important;
+}
+.ck-content a.text-yellow-400:hover {
+  color: #f2b91c !important;
+}
+.ck-content .text-yellow-500 {
+  color: #f2b510 !important;
+}
+.ck-content a.text-yellow-500:focus {
+  color: #c4920b !important;
+}
+.ck-content a.text-yellow-500:hover {
+  color: #c4920b !important;
+}
+.ck-content .text-yellow-600 {
+  color: #b6880c !important;
+}
+.ck-content a.text-yellow-600:focus {
+  color: #866409 !important;
+}
+.ck-content a.text-yellow-600:hover {
+  color: #866409 !important;
+}
+.ck-content .text-yellow-700 {
+  color: #795b08 !important;
+}
+.ck-content a.text-yellow-700:focus {
+  color: #493705 !important;
+}
+.ck-content a.text-yellow-700:hover {
+  color: #493705 !important;
+}
+.ck-content .text-yellow-800 {
+  color: #3d2d04 !important;
+}
+.ck-content a.text-yellow-800:focus {
+  color: #0d0a01 !important;
+}
+.ck-content a.text-yellow-800:hover {
+  color: #0d0a01 !important;
+}
+.ck-content .text-yellow-900 {
+  color: #241b02 !important;
+}
+.ck-content a.text-yellow-900:focus {
+  color: black !important;
+}
+.ck-content a.text-yellow-900:hover {
+  color: black !important;
+}
+.ck-content .text-orange-100 {
+  color: #fef2e6 !important;
+}
+.ck-content a.text-orange-100:focus {
+  color: #fcd9b5 !important;
+}
+.ck-content a.text-orange-100:hover {
+  color: #fcd9b5 !important;
+}
+.ck-content .text-orange-200 {
+  color: #fee0c1 !important;
+}
+.ck-content a.text-orange-200:focus {
+  color: #fdc78f !important;
+}
+.ck-content a.text-orange-200:hover {
+  color: #fdc78f !important;
+}
+.ck-content .text-orange-300 {
+  color: #fcc082 !important;
+}
+.ck-content a.text-orange-300:focus {
+  color: #fba750 !important;
+}
+.ck-content a.text-orange-300:hover {
+  color: #fba750 !important;
+}
+.ck-content .text-orange-400 {
+  color: #fba144 !important;
+}
+.ck-content a.text-orange-400:focus {
+  color: #fa8812 !important;
+}
+.ck-content a.text-orange-400:hover {
+  color: #fa8812 !important;
+}
+.ck-content .text-orange-500 {
+  color: #f98105 !important;
+}
+.ck-content a.text-orange-500:focus {
+  color: #c76704 !important;
+}
+.ck-content a.text-orange-500:hover {
+  color: #c76704 !important;
+}
+.ck-content .text-orange-600 {
+  color: #bb6104 !important;
+}
+.ck-content a.text-orange-600:focus {
+  color: #894703 !important;
+}
+.ck-content a.text-orange-600:hover {
+  color: #894703 !important;
+}
+.ck-content .text-orange-700 {
+  color: #7d4103 !important;
+}
+.ck-content a.text-orange-700:focus {
+  color: #4b2702 !important;
+}
+.ck-content a.text-orange-700:hover {
+  color: #4b2702 !important;
+}
+.ck-content .text-orange-800 {
+  color: #3e2001 !important;
+}
+.ck-content a.text-orange-800:focus {
+  color: #0c0600 !important;
+}
+.ck-content a.text-orange-800:hover {
+  color: #0c0600 !important;
+}
+.ck-content .text-orange-900 {
+  color: #251301 !important;
+}
+.ck-content a.text-orange-900:focus {
+  color: black !important;
+}
+.ck-content a.text-orange-900:hover {
+  color: black !important;
+}
+.ck-content .text-red-100 {
+  color: #fbeded !important;
+}
+.ck-content a.text-red-100:focus {
+  color: #f2c3c3 !important;
+}
+.ck-content a.text-red-100:hover {
+  color: #f2c3c3 !important;
+}
+.ck-content .text-red-200 {
+  color: #f6d3d2 !important;
+}
+.ck-content a.text-red-200:focus {
+  color: #eea9a8 !important;
+}
+.ck-content a.text-red-200:hover {
+  color: #eea9a8 !important;
+}
+.ck-content .text-red-300 {
+  color: #eca7a6 !important;
+}
+.ck-content a.text-red-300:focus {
+  color: #e37d7c !important;
+}
+.ck-content a.text-red-300:hover {
+  color: #e37d7c !important;
+}
+.ck-content .text-red-400 {
+  color: #e37a79 !important;
+}
+.ck-content a.text-red-400:focus {
+  color: #da504f !important;
+}
+.ck-content a.text-red-400:hover {
+  color: #da504f !important;
+}
+.ck-content .text-red-500 {
+  color: #d94e4c !important;
+}
+.ck-content a.text-red-500:focus {
+  color: #c82d2a !important;
+}
+.ck-content a.text-red-500:hover {
+  color: #c82d2a !important;
+}
+.ck-content .text-red-600 {
+  color: #a33b39 !important;
+}
+.ck-content a.text-red-600:focus {
+  color: #7d2d2c !important;
+}
+.ck-content a.text-red-600:hover {
+  color: #7d2d2c !important;
+}
+.ck-content .text-red-700 {
+  color: #6d2726 !important;
+}
+.ck-content a.text-red-700:focus {
+  color: #471919 !important;
+}
+.ck-content a.text-red-700:hover {
+  color: #471919 !important;
+}
+.ck-content .text-red-800 {
+  color: #361413 !important;
+}
+.ck-content a.text-red-800:focus {
+  color: #100606 !important;
+}
+.ck-content a.text-red-800:hover {
+  color: #100606 !important;
+}
+.ck-content .text-red-900 {
+  color: #210c0b !important;
+}
+.ck-content a.text-red-900:focus {
+  color: black !important;
+}
+.ck-content a.text-red-900:hover {
+  color: black !important;
+}
+.ck-content .text-green-100 {
+  color: #eff8ef !important;
+}
+.ck-content a.text-green-100:focus {
+  color: #cce8cc !important;
+}
+.ck-content a.text-green-100:hover {
+  color: #cce8cc !important;
+}
+.ck-content .text-green-200 {
+  color: #d7eed8 !important;
+}
+.ck-content a.text-green-200:focus {
+  color: #b3dfb5 !important;
+}
+.ck-content a.text-green-200:hover {
+  color: #b3dfb5 !important;
+}
+.ck-content .text-green-300 {
+  color: #aeddb1 !important;
+}
+.ck-content a.text-green-300:focus {
+  color: #8ace8e !important;
+}
+.ck-content a.text-green-300:hover {
+  color: #8ace8e !important;
+}
+.ck-content .text-green-400 {
+  color: #86cc8a !important;
+}
+.ck-content a.text-green-400:focus {
+  color: #62bd67 !important;
+}
+.ck-content a.text-green-400:hover {
+  color: #62bd67 !important;
+}
+.ck-content .text-green-500 {
+  color: #5dbb63 !important;
+}
+.ck-content a.text-green-500:focus {
+  color: #44a14a !important;
+}
+.ck-content a.text-green-500:hover {
+  color: #44a14a !important;
+}
+.ck-content .text-green-600 {
+  color: #468c4a !important;
+}
+.ck-content a.text-green-600:focus {
+  color: #356a38 !important;
+}
+.ck-content a.text-green-600:hover {
+  color: #356a38 !important;
+}
+.ck-content .text-green-700 {
+  color: #2f5e32 !important;
+}
+.ck-content a.text-green-700:focus {
+  color: #1e3c20 !important;
+}
+.ck-content a.text-green-700:hover {
+  color: #1e3c20 !important;
+}
+.ck-content .text-green-800 {
+  color: #172f19 !important;
+}
+.ck-content a.text-green-800:focus {
+  color: #060d07 !important;
+}
+.ck-content a.text-green-800:hover {
+  color: #060d07 !important;
+}
+.ck-content .text-green-900 {
+  color: #0e1c0f !important;
+}
+.ck-content a.text-green-900:focus {
+  color: black !important;
+}
+.ck-content a.text-green-900:hover {
+  color: black !important;
+}
+.ck-content .text-blue-100 {
+  color: #edf3f8 !important;
+}
+.ck-content a.text-blue-100:focus {
+  color: #c8dbea !important;
+}
+.ck-content a.text-blue-100:hover {
+  color: #c8dbea !important;
+}
+.ck-content .text-blue-200 {
+  color: #d1e0ec !important;
+}
+.ck-content a.text-blue-200:focus {
+  color: #adc8dd !important;
+}
+.ck-content a.text-blue-200:hover {
+  color: #adc8dd !important;
+}
+.ck-content .text-blue-300 {
+  color: #a3c1da !important;
+}
+.ck-content a.text-blue-300:focus {
+  color: #7fa8cb !important;
+}
+.ck-content a.text-blue-300:hover {
+  color: #7fa8cb !important;
+}
+.ck-content .text-blue-400 {
+  color: #74a1c7 !important;
+}
+.ck-content a.text-blue-400:focus {
+  color: #5088b8 !important;
+}
+.ck-content a.text-blue-400:hover {
+  color: #5088b8 !important;
+}
+.ck-content .text-blue-500 {
+  color: steelblue !important;
+}
+.ck-content a.text-blue-500:focus {
+  color: #38678f !important;
+}
+.ck-content a.text-blue-500:hover {
+  color: #38678f !important;
+}
+.ck-content .text-blue-600 {
+  color: #356287 !important;
+}
+.ck-content a.text-blue-600:focus {
+  color: #274762 !important;
+}
+.ck-content a.text-blue-600:hover {
+  color: #274762 !important;
+}
+.ck-content .text-blue-700 {
+  color: #23415a !important;
+}
+.ck-content a.text-blue-700:focus {
+  color: #152635 !important;
+}
+.ck-content a.text-blue-700:hover {
+  color: #152635 !important;
+}
+.ck-content .text-blue-800 {
+  color: #12212d !important;
+}
+.ck-content a.text-blue-800:focus {
+  color: #030609 !important;
+}
+.ck-content a.text-blue-800:hover {
+  color: #030609 !important;
+}
+.ck-content .text-blue-900 {
+  color: #0b141b !important;
+}
+.ck-content a.text-blue-900:focus {
+  color: black !important;
+}
+.ck-content a.text-blue-900:hover {
+  color: black !important;
+}
+.ck-content .text-white-100 {
+  color: #fefefe !important;
+}
+.ck-content a.text-white-100:focus {
+  color: #e5e5e5 !important;
+}
+.ck-content a.text-white-100:hover {
+  color: #e5e5e5 !important;
+}
+.ck-content .text-white-200 {
+  color: #fdfdfd !important;
+}
+.ck-content a.text-white-200:focus {
+  color: #e4e4e4 !important;
+}
+.ck-content a.text-white-200:hover {
+  color: #e4e4e4 !important;
+}
+.ck-content .text-white-300 {
+  color: #fafafb !important;
+}
+.ck-content a.text-white-300:focus {
+  color: #dedee4 !important;
+}
+.ck-content a.text-white-300:hover {
+  color: #dedee4 !important;
+}
+.ck-content .text-white-400 {
+  color: #f8f8f9 !important;
+}
+.ck-content a.text-white-400:focus {
+  color: #dddde1 !important;
+}
+.ck-content a.text-white-400:hover {
+  color: #dddde1 !important;
+}
+.ck-content .text-white-500 {
+  color: #f5f5f7 !important;
+}
+.ck-content a.text-white-500:focus {
+  color: #d9d9e0 !important;
+}
+.ck-content a.text-white-500:hover {
+  color: #d9d9e0 !important;
+}
+.ck-content .text-white-600 {
+  color: #b8b8b9 !important;
+}
+.ck-content a.text-white-600:focus {
+  color: #9e9ea0 !important;
+}
+.ck-content a.text-white-600:hover {
+  color: #9e9ea0 !important;
+}
+.ck-content .text-white-700 {
+  color: #7b7b7c !important;
+}
+.ck-content a.text-white-700:focus {
+  color: #626262 !important;
+}
+.ck-content a.text-white-700:hover {
+  color: #626262 !important;
+}
+.ck-content .text-white-800 {
+  color: #3d3d3e !important;
+}
+.ck-content a.text-white-800:focus {
+  color: #242424 !important;
+}
+.ck-content a.text-white-800:hover {
+  color: #242424 !important;
+}
+.ck-content .text-white-900 {
+  color: #252525 !important;
+}
+.ck-content a.text-white-900:focus {
+  color: #0c0c0c !important;
+}
+.ck-content a.text-white-900:hover {
+  color: #0c0c0c !important;
+}
+.ck-content .text-gray-100 {
+  color: #e8e8e8 !important;
+}
+.ck-content a.text-gray-100:focus {
+  color: #cfcfcf !important;
+}
+.ck-content a.text-gray-100:hover {
+  color: #cfcfcf !important;
+}
+.ck-content .text-gray-200 {
+  color: #c6c6c6 !important;
+}
+.ck-content a.text-gray-200:focus {
+  color: #adadad !important;
+}
+.ck-content a.text-gray-200:hover {
+  color: #adadad !important;
+}
+.ck-content .text-gray-300 {
+  color: #8e8e8e !important;
+}
+.ck-content a.text-gray-300:focus {
+  color: #757575 !important;
+}
+.ck-content a.text-gray-300:hover {
+  color: #757575 !important;
+}
+.ck-content .text-gray-400 {
+  color: #555555 !important;
+}
+.ck-content a.text-gray-400:focus {
+  color: #3c3c3c !important;
+}
+.ck-content a.text-gray-400:hover {
+  color: #3c3c3c !important;
+}
+.ck-content .text-gray-500 {
+  color: #1c1c1c !important;
+}
+.ck-content a.text-gray-500:focus {
+  color: #030303 !important;
+}
+.ck-content a.text-gray-500:hover {
+  color: #030303 !important;
+}
+.ck-content .text-gray-600 {
+  color: #151515 !important;
+}
+.ck-content a.text-gray-600:focus {
+  color: black !important;
+}
+.ck-content a.text-gray-600:hover {
+  color: black !important;
+}
+.ck-content .text-gray-700 {
+  color: #0e0e0e !important;
+}
+.ck-content a.text-gray-700:focus {
+  color: black !important;
+}
+.ck-content a.text-gray-700:hover {
+  color: black !important;
+}
+.ck-content .text-gray-800 {
+  color: #070707 !important;
+}
+.ck-content a.text-gray-800:focus {
+  color: black !important;
+}
+.ck-content a.text-gray-800:hover {
+  color: black !important;
+}
+.ck-content .text-gray-900 {
+  color: #040404 !important;
+}
+.ck-content a.text-gray-900:focus {
+  color: black !important;
+}
+.ck-content a.text-gray-900:hover {
+  color: black !important;
+}
+.ck-content .bg-yellow {
+  background-color: #f2b510 !important;
+}
+.ck-content a.bg-yellow:focus {
+  background-color: #c4920b !important;
+}
+.ck-content a.bg-yellow:hover {
+  background-color: #c4920b !important;
+}
+.ck-content .bg-orange {
+  background-color: #f98105 !important;
+}
+.ck-content a.bg-orange:focus {
+  background-color: #c76704 !important;
+}
+.ck-content a.bg-orange:hover {
+  background-color: #c76704 !important;
+}
+.ck-content .bg-red {
+  background-color: #d94e4c !important;
+}
+.ck-content a.bg-red:focus {
+  background-color: #c82d2a !important;
+}
+.ck-content a.bg-red:hover {
+  background-color: #c82d2a !important;
+}
+.ck-content .bg-green {
+  background-color: #5dbb63 !important;
+}
+.ck-content a.bg-green:focus {
+  background-color: #44a14a !important;
+}
+.ck-content a.bg-green:hover {
+  background-color: #44a14a !important;
+}
+.ck-content .bg-blue {
+  background-color: #4682b4 !important;
+}
+.ck-content a.bg-blue:focus {
+  background-color: #38678f !important;
+}
+.ck-content a.bg-blue:hover {
+  background-color: #38678f !important;
+}
+.ck-content .bg-white {
+  background-color: #f5f5f7 !important;
+}
+.ck-content a.bg-white:focus {
+  background-color: #d9d9e0 !important;
+}
+.ck-content a.bg-white:hover {
+  background-color: #d9d9e0 !important;
+}
+.ck-content .bg-gray {
+  background-color: #1c1c1c !important;
+}
+.ck-content a.bg-gray:focus {
+  background-color: #030303 !important;
+}
+.ck-content a.bg-gray:hover {
+  background-color: #030303 !important;
+}
+.ck-content .bg-yellow-100 {
+  background-color: #fef8e7 !important;
+}
+.ck-content a.bg-yellow-100:focus {
+  background-color: #fceab6 !important;
+}
+.ck-content a.bg-yellow-100:hover {
+  background-color: #fceab6 !important;
+}
+.ck-content .bg-yellow-200 {
+  background-color: #fcedc3 !important;
+}
+.ck-content a.bg-yellow-200:focus {
+  background-color: #fade92 !important;
+}
+.ck-content a.bg-yellow-200:hover {
+  background-color: #fade92 !important;
+}
+.ck-content .bg-yellow-300 {
+  background-color: #f9da88 !important;
+}
+.ck-content a.bg-yellow-300:focus {
+  background-color: #f7cb57 !important;
+}
+.ck-content a.bg-yellow-300:hover {
+  background-color: #f7cb57 !important;
+}
+.ck-content .bg-yellow-400 {
+  background-color: #f5c84c !important;
+}
+.ck-content a.bg-yellow-400:focus {
+  background-color: #f2b91c !important;
+}
+.ck-content a.bg-yellow-400:hover {
+  background-color: #f2b91c !important;
+}
+.ck-content .bg-yellow-500 {
+  background-color: #f2b510 !important;
+}
+.ck-content a.bg-yellow-500:focus {
+  background-color: #c4920b !important;
+}
+.ck-content a.bg-yellow-500:hover {
+  background-color: #c4920b !important;
+}
+.ck-content .bg-yellow-600 {
+  background-color: #b6880c !important;
+}
+.ck-content a.bg-yellow-600:focus {
+  background-color: #866409 !important;
+}
+.ck-content a.bg-yellow-600:hover {
+  background-color: #866409 !important;
+}
+.ck-content .bg-yellow-700 {
+  background-color: #795b08 !important;
+}
+.ck-content a.bg-yellow-700:focus {
+  background-color: #493705 !important;
+}
+.ck-content a.bg-yellow-700:hover {
+  background-color: #493705 !important;
+}
+.ck-content .bg-yellow-800 {
+  background-color: #3d2d04 !important;
+}
+.ck-content a.bg-yellow-800:focus {
+  background-color: #0d0a01 !important;
+}
+.ck-content a.bg-yellow-800:hover {
+  background-color: #0d0a01 !important;
+}
+.ck-content .bg-yellow-900 {
+  background-color: #241b02 !important;
+}
+.ck-content a.bg-yellow-900:focus {
+  background-color: black !important;
+}
+.ck-content a.bg-yellow-900:hover {
+  background-color: black !important;
+}
+.ck-content .bg-orange-100 {
+  background-color: #fef2e6 !important;
+}
+.ck-content a.bg-orange-100:focus {
+  background-color: #fcd9b5 !important;
+}
+.ck-content a.bg-orange-100:hover {
+  background-color: #fcd9b5 !important;
+}
+.ck-content .bg-orange-200 {
+  background-color: #fee0c1 !important;
+}
+.ck-content a.bg-orange-200:focus {
+  background-color: #fdc78f !important;
+}
+.ck-content a.bg-orange-200:hover {
+  background-color: #fdc78f !important;
+}
+.ck-content .bg-orange-300 {
+  background-color: #fcc082 !important;
+}
+.ck-content a.bg-orange-300:focus {
+  background-color: #fba750 !important;
+}
+.ck-content a.bg-orange-300:hover {
+  background-color: #fba750 !important;
+}
+.ck-content .bg-orange-400 {
+  background-color: #fba144 !important;
+}
+.ck-content a.bg-orange-400:focus {
+  background-color: #fa8812 !important;
+}
+.ck-content a.bg-orange-400:hover {
+  background-color: #fa8812 !important;
+}
+.ck-content .bg-orange-500 {
+  background-color: #f98105 !important;
+}
+.ck-content a.bg-orange-500:focus {
+  background-color: #c76704 !important;
+}
+.ck-content a.bg-orange-500:hover {
+  background-color: #c76704 !important;
+}
+.ck-content .bg-orange-600 {
+  background-color: #bb6104 !important;
+}
+.ck-content a.bg-orange-600:focus {
+  background-color: #894703 !important;
+}
+.ck-content a.bg-orange-600:hover {
+  background-color: #894703 !important;
+}
+.ck-content .bg-orange-700 {
+  background-color: #7d4103 !important;
+}
+.ck-content a.bg-orange-700:focus {
+  background-color: #4b2702 !important;
+}
+.ck-content a.bg-orange-700:hover {
+  background-color: #4b2702 !important;
+}
+.ck-content .bg-orange-800 {
+  background-color: #3e2001 !important;
+}
+.ck-content a.bg-orange-800:focus {
+  background-color: #0c0600 !important;
+}
+.ck-content a.bg-orange-800:hover {
+  background-color: #0c0600 !important;
+}
+.ck-content .bg-orange-900 {
+  background-color: #251301 !important;
+}
+.ck-content a.bg-orange-900:focus {
+  background-color: black !important;
+}
+.ck-content a.bg-orange-900:hover {
+  background-color: black !important;
+}
+.ck-content .bg-red-100 {
+  background-color: #fbeded !important;
+}
+.ck-content a.bg-red-100:focus {
+  background-color: #f2c3c3 !important;
+}
+.ck-content a.bg-red-100:hover {
+  background-color: #f2c3c3 !important;
+}
+.ck-content .bg-red-200 {
+  background-color: #f6d3d2 !important;
+}
+.ck-content a.bg-red-200:focus {
+  background-color: #eea9a8 !important;
+}
+.ck-content a.bg-red-200:hover {
+  background-color: #eea9a8 !important;
+}
+.ck-content .bg-red-300 {
+  background-color: #eca7a6 !important;
+}
+.ck-content a.bg-red-300:focus {
+  background-color: #e37d7c !important;
+}
+.ck-content a.bg-red-300:hover {
+  background-color: #e37d7c !important;
+}
+.ck-content .bg-red-400 {
+  background-color: #e37a79 !important;
+}
+.ck-content a.bg-red-400:focus {
+  background-color: #da504f !important;
+}
+.ck-content a.bg-red-400:hover {
+  background-color: #da504f !important;
+}
+.ck-content .bg-red-500 {
+  background-color: #d94e4c !important;
+}
+.ck-content a.bg-red-500:focus {
+  background-color: #c82d2a !important;
+}
+.ck-content a.bg-red-500:hover {
+  background-color: #c82d2a !important;
+}
+.ck-content .bg-red-600 {
+  background-color: #a33b39 !important;
+}
+.ck-content a.bg-red-600:focus {
+  background-color: #7d2d2c !important;
+}
+.ck-content a.bg-red-600:hover {
+  background-color: #7d2d2c !important;
+}
+.ck-content .bg-red-700 {
+  background-color: #6d2726 !important;
+}
+.ck-content a.bg-red-700:focus {
+  background-color: #471919 !important;
+}
+.ck-content a.bg-red-700:hover {
+  background-color: #471919 !important;
+}
+.ck-content .bg-red-800 {
+  background-color: #361413 !important;
+}
+.ck-content a.bg-red-800:focus {
+  background-color: #100606 !important;
+}
+.ck-content a.bg-red-800:hover {
+  background-color: #100606 !important;
+}
+.ck-content .bg-red-900 {
+  background-color: #210c0b !important;
+}
+.ck-content a.bg-red-900:focus {
+  background-color: black !important;
+}
+.ck-content a.bg-red-900:hover {
+  background-color: black !important;
+}
+.ck-content .bg-green-100 {
+  background-color: #eff8ef !important;
+}
+.ck-content a.bg-green-100:focus {
+  background-color: #cce8cc !important;
+}
+.ck-content a.bg-green-100:hover {
+  background-color: #cce8cc !important;
+}
+.ck-content .bg-green-200 {
+  background-color: #d7eed8 !important;
+}
+.ck-content a.bg-green-200:focus {
+  background-color: #b3dfb5 !important;
+}
+.ck-content a.bg-green-200:hover {
+  background-color: #b3dfb5 !important;
+}
+.ck-content .bg-green-300 {
+  background-color: #aeddb1 !important;
+}
+.ck-content a.bg-green-300:focus {
+  background-color: #8ace8e !important;
+}
+.ck-content a.bg-green-300:hover {
+  background-color: #8ace8e !important;
+}
+.ck-content .bg-green-400 {
+  background-color: #86cc8a !important;
+}
+.ck-content a.bg-green-400:focus {
+  background-color: #62bd67 !important;
+}
+.ck-content a.bg-green-400:hover {
+  background-color: #62bd67 !important;
+}
+.ck-content .bg-green-500 {
+  background-color: #5dbb63 !important;
+}
+.ck-content a.bg-green-500:focus {
+  background-color: #44a14a !important;
+}
+.ck-content a.bg-green-500:hover {
+  background-color: #44a14a !important;
+}
+.ck-content .bg-green-600 {
+  background-color: #468c4a !important;
+}
+.ck-content a.bg-green-600:focus {
+  background-color: #356a38 !important;
+}
+.ck-content a.bg-green-600:hover {
+  background-color: #356a38 !important;
+}
+.ck-content .bg-green-700 {
+  background-color: #2f5e32 !important;
+}
+.ck-content a.bg-green-700:focus {
+  background-color: #1e3c20 !important;
+}
+.ck-content a.bg-green-700:hover {
+  background-color: #1e3c20 !important;
+}
+.ck-content .bg-green-800 {
+  background-color: #172f19 !important;
+}
+.ck-content a.bg-green-800:focus {
+  background-color: #060d07 !important;
+}
+.ck-content a.bg-green-800:hover {
+  background-color: #060d07 !important;
+}
+.ck-content .bg-green-900 {
+  background-color: #0e1c0f !important;
+}
+.ck-content a.bg-green-900:focus {
+  background-color: black !important;
+}
+.ck-content a.bg-green-900:hover {
+  background-color: black !important;
+}
+.ck-content .bg-blue-100 {
+  background-color: #edf3f8 !important;
+}
+.ck-content a.bg-blue-100:focus {
+  background-color: #c8dbea !important;
+}
+.ck-content a.bg-blue-100:hover {
+  background-color: #c8dbea !important;
+}
+.ck-content .bg-blue-200 {
+  background-color: #d1e0ec !important;
+}
+.ck-content a.bg-blue-200:focus {
+  background-color: #adc8dd !important;
+}
+.ck-content a.bg-blue-200:hover {
+  background-color: #adc8dd !important;
+}
+.ck-content .bg-blue-300 {
+  background-color: #a3c1da !important;
+}
+.ck-content a.bg-blue-300:focus {
+  background-color: #7fa8cb !important;
+}
+.ck-content a.bg-blue-300:hover {
+  background-color: #7fa8cb !important;
+}
+.ck-content .bg-blue-400 {
+  background-color: #74a1c7 !important;
+}
+.ck-content a.bg-blue-400:focus {
+  background-color: #5088b8 !important;
+}
+.ck-content a.bg-blue-400:hover {
+  background-color: #5088b8 !important;
+}
+.ck-content .bg-blue-500 {
+  background-color: steelblue !important;
+}
+.ck-content a.bg-blue-500:focus {
+  background-color: #38678f !important;
+}
+.ck-content a.bg-blue-500:hover {
+  background-color: #38678f !important;
+}
+.ck-content .bg-blue-600 {
+  background-color: #356287 !important;
+}
+.ck-content a.bg-blue-600:focus {
+  background-color: #274762 !important;
+}
+.ck-content a.bg-blue-600:hover {
+  background-color: #274762 !important;
+}
+.ck-content .bg-blue-700 {
+  background-color: #23415a !important;
+}
+.ck-content a.bg-blue-700:focus {
+  background-color: #152635 !important;
+}
+.ck-content a.bg-blue-700:hover {
+  background-color: #152635 !important;
+}
+.ck-content .bg-blue-800 {
+  background-color: #12212d !important;
+}
+.ck-content a.bg-blue-800:focus {
+  background-color: #030609 !important;
+}
+.ck-content a.bg-blue-800:hover {
+  background-color: #030609 !important;
+}
+.ck-content .bg-blue-900 {
+  background-color: #0b141b !important;
+}
+.ck-content a.bg-blue-900:focus {
+  background-color: black !important;
+}
+.ck-content a.bg-blue-900:hover {
+  background-color: black !important;
+}
+.ck-content .bg-white-100 {
+  background-color: #fefefe !important;
+}
+.ck-content a.bg-white-100:focus {
+  background-color: #e5e5e5 !important;
+}
+.ck-content a.bg-white-100:hover {
+  background-color: #e5e5e5 !important;
+}
+.ck-content .bg-white-200 {
+  background-color: #fdfdfd !important;
+}
+.ck-content a.bg-white-200:focus {
+  background-color: #e4e4e4 !important;
+}
+.ck-content a.bg-white-200:hover {
+  background-color: #e4e4e4 !important;
+}
+.ck-content .bg-white-300 {
+  background-color: #fafafb !important;
+}
+.ck-content a.bg-white-300:focus {
+  background-color: #dedee4 !important;
+}
+.ck-content a.bg-white-300:hover {
+  background-color: #dedee4 !important;
+}
+.ck-content .bg-white-400 {
+  background-color: #f8f8f9 !important;
+}
+.ck-content a.bg-white-400:focus {
+  background-color: #dddde1 !important;
+}
+.ck-content a.bg-white-400:hover {
+  background-color: #dddde1 !important;
+}
+.ck-content .bg-white-500 {
+  background-color: #f5f5f7 !important;
+}
+.ck-content a.bg-white-500:focus {
+  background-color: #d9d9e0 !important;
+}
+.ck-content a.bg-white-500:hover {
+  background-color: #d9d9e0 !important;
+}
+.ck-content .bg-white-600 {
+  background-color: #b8b8b9 !important;
+}
+.ck-content a.bg-white-600:focus {
+  background-color: #9e9ea0 !important;
+}
+.ck-content a.bg-white-600:hover {
+  background-color: #9e9ea0 !important;
+}
+.ck-content .bg-white-700 {
+  background-color: #7b7b7c !important;
+}
+.ck-content a.bg-white-700:focus {
+  background-color: #626262 !important;
+}
+.ck-content a.bg-white-700:hover {
+  background-color: #626262 !important;
+}
+.ck-content .bg-white-800 {
+  background-color: #3d3d3e !important;
+}
+.ck-content a.bg-white-800:focus {
+  background-color: #242424 !important;
+}
+.ck-content a.bg-white-800:hover {
+  background-color: #242424 !important;
+}
+.ck-content .bg-white-900 {
+  background-color: #252525 !important;
+}
+.ck-content a.bg-white-900:focus {
+  background-color: #0c0c0c !important;
+}
+.ck-content a.bg-white-900:hover {
+  background-color: #0c0c0c !important;
+}
+.ck-content .bg-gray-100 {
+  background-color: #e8e8e8 !important;
+}
+.ck-content a.bg-gray-100:focus {
+  background-color: #cfcfcf !important;
+}
+.ck-content a.bg-gray-100:hover {
+  background-color: #cfcfcf !important;
+}
+.ck-content .bg-gray-200 {
+  background-color: #c6c6c6 !important;
+}
+.ck-content a.bg-gray-200:focus {
+  background-color: #adadad !important;
+}
+.ck-content a.bg-gray-200:hover {
+  background-color: #adadad !important;
+}
+.ck-content .bg-gray-300 {
+  background-color: #8e8e8e !important;
+}
+.ck-content a.bg-gray-300:focus {
+  background-color: #757575 !important;
+}
+.ck-content a.bg-gray-300:hover {
+  background-color: #757575 !important;
+}
+.ck-content .bg-gray-400 {
+  background-color: #555555 !important;
+}
+.ck-content a.bg-gray-400:focus {
+  background-color: #3c3c3c !important;
+}
+.ck-content a.bg-gray-400:hover {
+  background-color: #3c3c3c !important;
+}
+.ck-content .bg-gray-500 {
+  background-color: #1c1c1c !important;
+}
+.ck-content a.bg-gray-500:focus {
+  background-color: #030303 !important;
+}
+.ck-content a.bg-gray-500:hover {
+  background-color: #030303 !important;
+}
+.ck-content .bg-gray-600 {
+  background-color: #151515 !important;
+}
+.ck-content a.bg-gray-600:focus {
+  background-color: black !important;
+}
+.ck-content a.bg-gray-600:hover {
+  background-color: black !important;
+}
+.ck-content .bg-gray-700 {
+  background-color: #0e0e0e !important;
+}
+.ck-content a.bg-gray-700:focus {
+  background-color: black !important;
+}
+.ck-content a.bg-gray-700:hover {
+  background-color: black !important;
+}
+.ck-content .bg-gray-800 {
+  background-color: #070707 !important;
+}
+.ck-content a.bg-gray-800:focus {
+  background-color: black !important;
+}
+.ck-content a.bg-gray-800:hover {
+  background-color: black !important;
+}
+.ck-content .bg-gray-900 {
+  background-color: #040404 !important;
+}
+.ck-content a.bg-gray-900:focus {
+  background-color: black !important;
+}
+.ck-content a.bg-gray-900:hover {
+  background-color: black !important;
+}
+.ck-content .bg-yellow {
+  color: color-yiq(#f2b510);
+}
+.ck-content .bg-orange {
+  color: color-yiq(#f98105);
+}
+.ck-content .bg-red {
+  color: color-yiq(#d94e4c);
+}
+.ck-content .bg-green {
+  color: color-yiq(#5dbb63);
+}
+.ck-content .bg-blue {
+  color: color-yiq(#4682b4);
+}
+.ck-content .bg-white {
+  color: color-yiq(#f5f5f7);
+}
+.ck-content .bg-gray {
+  color: color-yiq(#1c1c1c);
+}
+.ck-content .bg-yellow-100 {
+  color: color-yiq(#fef8e7);
+}
+.ck-content .bg-yellow-200 {
+  color: color-yiq(#fcedc3);
+}
+.ck-content .bg-yellow-300 {
+  color: color-yiq(#f9da88);
+}
+.ck-content .bg-yellow-400 {
+  color: color-yiq(#f5c84c);
+}
+.ck-content .bg-yellow-500 {
+  color: color-yiq(#f2b510);
+}
+.ck-content .bg-yellow-600 {
+  color: color-yiq(#b6880c);
+}
+.ck-content .bg-yellow-700 {
+  color: color-yiq(#795b08);
+}
+.ck-content .bg-yellow-800 {
+  color: color-yiq(#3d2d04);
+}
+.ck-content .bg-yellow-900 {
+  color: color-yiq(#241b02);
+}
+.ck-content .bg-orange-100 {
+  color: color-yiq(#fef2e6);
+}
+.ck-content .bg-orange-200 {
+  color: color-yiq(#fee0c1);
+}
+.ck-content .bg-orange-300 {
+  color: color-yiq(#fcc082);
+}
+.ck-content .bg-orange-400 {
+  color: color-yiq(#fba144);
+}
+.ck-content .bg-orange-500 {
+  color: color-yiq(#f98105);
+}
+.ck-content .bg-orange-600 {
+  color: color-yiq(#bb6104);
+}
+.ck-content .bg-orange-700 {
+  color: color-yiq(#7d4103);
+}
+.ck-content .bg-orange-800 {
+  color: color-yiq(#3e2001);
+}
+.ck-content .bg-orange-900 {
+  color: color-yiq(#251301);
+}
+.ck-content .bg-red-100 {
+  color: color-yiq(#fbeded);
+}
+.ck-content .bg-red-200 {
+  color: color-yiq(#f6d3d2);
+}
+.ck-content .bg-red-300 {
+  color: color-yiq(#eca7a6);
+}
+.ck-content .bg-red-400 {
+  color: color-yiq(#e37a79);
+}
+.ck-content .bg-red-500 {
+  color: color-yiq(#d94e4c);
+}
+.ck-content .bg-red-600 {
+  color: color-yiq(#a33b39);
+}
+.ck-content .bg-red-700 {
+  color: color-yiq(#6d2726);
+}
+.ck-content .bg-red-800 {
+  color: color-yiq(#361413);
+}
+.ck-content .bg-red-900 {
+  color: color-yiq(#210c0b);
+}
+.ck-content .bg-green-100 {
+  color: color-yiq(#eff8ef);
+}
+.ck-content .bg-green-200 {
+  color: color-yiq(#d7eed8);
+}
+.ck-content .bg-green-300 {
+  color: color-yiq(#aeddb1);
+}
+.ck-content .bg-green-400 {
+  color: color-yiq(#86cc8a);
+}
+.ck-content .bg-green-500 {
+  color: color-yiq(#5dbb63);
+}
+.ck-content .bg-green-600 {
+  color: color-yiq(#468c4a);
+}
+.ck-content .bg-green-700 {
+  color: color-yiq(#2f5e32);
+}
+.ck-content .bg-green-800 {
+  color: color-yiq(#172f19);
+}
+.ck-content .bg-green-900 {
+  color: color-yiq(#0e1c0f);
+}
+.ck-content .bg-blue-100 {
+  color: color-yiq(#edf3f8);
+}
+.ck-content .bg-blue-200 {
+  color: color-yiq(#d1e0ec);
+}
+.ck-content .bg-blue-300 {
+  color: color-yiq(#a3c1da);
+}
+.ck-content .bg-blue-400 {
+  color: color-yiq(#74a1c7);
+}
+.ck-content .bg-blue-500 {
+  color: color-yiq(steelblue);
+}
+.ck-content .bg-blue-600 {
+  color: color-yiq(#356287);
+}
+.ck-content .bg-blue-700 {
+  color: color-yiq(#23415a);
+}
+.ck-content .bg-blue-800 {
+  color: color-yiq(#12212d);
+}
+.ck-content .bg-blue-900 {
+  color: color-yiq(#0b141b);
+}
+.ck-content .bg-white-100 {
+  color: color-yiq(#fefefe);
+}
+.ck-content .bg-white-200 {
+  color: color-yiq(#fdfdfd);
+}
+.ck-content .bg-white-300 {
+  color: color-yiq(#fafafb);
+}
+.ck-content .bg-white-400 {
+  color: color-yiq(#f8f8f9);
+}
+.ck-content .bg-white-500 {
+  color: color-yiq(#f5f5f7);
+}
+.ck-content .bg-white-600 {
+  color: color-yiq(#b8b8b9);
+}
+.ck-content .bg-white-700 {
+  color: color-yiq(#7b7b7c);
+}
+.ck-content .bg-white-800 {
+  color: color-yiq(#3d3d3e);
+}
+.ck-content .bg-white-900 {
+  color: color-yiq(#252525);
+}
+.ck-content .bg-gray-100 {
+  color: color-yiq(#e8e8e8);
+}
+.ck-content .bg-gray-200 {
+  color: color-yiq(#c6c6c6);
+}
+.ck-content .bg-gray-300 {
+  color: color-yiq(#8e8e8e);
+}
+.ck-content .bg-gray-400 {
+  color: color-yiq(#555555);
+}
+.ck-content .bg-gray-500 {
+  color: color-yiq(#1c1c1c);
+}
+.ck-content .bg-gray-600 {
+  color: color-yiq(#151515);
+}
+.ck-content .bg-gray-700 {
+  color: color-yiq(#0e0e0e);
+}
+.ck-content .bg-gray-800 {
+  color: color-yiq(#070707);
+}
+.ck-content .bg-gray-900 {
+  color: color-yiq(#040404);
+}
+.ck-content .border-yellow {
+  border-color: #f2b510 !important;
+}
+.ck-content .border-orange {
+  border-color: #f98105 !important;
+}
+.ck-content .border-red {
+  border-color: #d94e4c !important;
+}
+.ck-content .border-green {
+  border-color: #5dbb63 !important;
+}
+.ck-content .border-blue {
+  border-color: #4682b4 !important;
+}
+.ck-content .border-white {
+  border-color: #f5f5f7 !important;
+}
+.ck-content .border-gray {
+  border-color: #1c1c1c !important;
+}
+.ck-content .border-yellow-100 {
+  border-color: #fef8e7 !important;
+}
+.ck-content .border-yellow-200 {
+  border-color: #fcedc3 !important;
+}
+.ck-content .border-yellow-300 {
+  border-color: #f9da88 !important;
+}
+.ck-content .border-yellow-400 {
+  border-color: #f5c84c !important;
+}
+.ck-content .border-yellow-500 {
+  border-color: #f2b510 !important;
+}
+.ck-content .border-yellow-600 {
+  border-color: #b6880c !important;
+}
+.ck-content .border-yellow-700 {
+  border-color: #795b08 !important;
+}
+.ck-content .border-yellow-800 {
+  border-color: #3d2d04 !important;
+}
+.ck-content .border-yellow-900 {
+  border-color: #241b02 !important;
+}
+.ck-content .border-orange-100 {
+  border-color: #fef2e6 !important;
+}
+.ck-content .border-orange-200 {
+  border-color: #fee0c1 !important;
+}
+.ck-content .border-orange-300 {
+  border-color: #fcc082 !important;
+}
+.ck-content .border-orange-400 {
+  border-color: #fba144 !important;
+}
+.ck-content .border-orange-500 {
+  border-color: #f98105 !important;
+}
+.ck-content .border-orange-600 {
+  border-color: #bb6104 !important;
+}
+.ck-content .border-orange-700 {
+  border-color: #7d4103 !important;
+}
+.ck-content .border-orange-800 {
+  border-color: #3e2001 !important;
+}
+.ck-content .border-orange-900 {
+  border-color: #251301 !important;
+}
+.ck-content .border-red-100 {
+  border-color: #fbeded !important;
+}
+.ck-content .border-red-200 {
+  border-color: #f6d3d2 !important;
+}
+.ck-content .border-red-300 {
+  border-color: #eca7a6 !important;
+}
+.ck-content .border-red-400 {
+  border-color: #e37a79 !important;
+}
+.ck-content .border-red-500 {
+  border-color: #d94e4c !important;
+}
+.ck-content .border-red-600 {
+  border-color: #a33b39 !important;
+}
+.ck-content .border-red-700 {
+  border-color: #6d2726 !important;
+}
+.ck-content .border-red-800 {
+  border-color: #361413 !important;
+}
+.ck-content .border-red-900 {
+  border-color: #210c0b !important;
+}
+.ck-content .border-green-100 {
+  border-color: #eff8ef !important;
+}
+.ck-content .border-green-200 {
+  border-color: #d7eed8 !important;
+}
+.ck-content .border-green-300 {
+  border-color: #aeddb1 !important;
+}
+.ck-content .border-green-400 {
+  border-color: #86cc8a !important;
+}
+.ck-content .border-green-500 {
+  border-color: #5dbb63 !important;
+}
+.ck-content .border-green-600 {
+  border-color: #468c4a !important;
+}
+.ck-content .border-green-700 {
+  border-color: #2f5e32 !important;
+}
+.ck-content .border-green-800 {
+  border-color: #172f19 !important;
+}
+.ck-content .border-green-900 {
+  border-color: #0e1c0f !important;
+}
+.ck-content .border-blue-100 {
+  border-color: #edf3f8 !important;
+}
+.ck-content .border-blue-200 {
+  border-color: #d1e0ec !important;
+}
+.ck-content .border-blue-300 {
+  border-color: #a3c1da !important;
+}
+.ck-content .border-blue-400 {
+  border-color: #74a1c7 !important;
+}
+.ck-content .border-blue-500 {
+  border-color: steelblue !important;
+}
+.ck-content .border-blue-600 {
+  border-color: #356287 !important;
+}
+.ck-content .border-blue-700 {
+  border-color: #23415a !important;
+}
+.ck-content .border-blue-800 {
+  border-color: #12212d !important;
+}
+.ck-content .border-blue-900 {
+  border-color: #0b141b !important;
+}
+.ck-content .border-white-100 {
+  border-color: #fefefe !important;
+}
+.ck-content .border-white-200 {
+  border-color: #fdfdfd !important;
+}
+.ck-content .border-white-300 {
+  border-color: #fafafb !important;
+}
+.ck-content .border-white-400 {
+  border-color: #f8f8f9 !important;
+}
+.ck-content .border-white-500 {
+  border-color: #f5f5f7 !important;
+}
+.ck-content .border-white-600 {
+  border-color: #b8b8b9 !important;
+}
+.ck-content .border-white-700 {
+  border-color: #7b7b7c !important;
+}
+.ck-content .border-white-800 {
+  border-color: #3d3d3e !important;
+}
+.ck-content .border-white-900 {
+  border-color: #252525 !important;
+}
+.ck-content .border-gray-100 {
+  border-color: #e8e8e8 !important;
+}
+.ck-content .border-gray-200 {
+  border-color: #c6c6c6 !important;
+}
+.ck-content .border-gray-300 {
+  border-color: #8e8e8e !important;
+}
+.ck-content .border-gray-400 {
+  border-color: #555555 !important;
+}
+.ck-content .border-gray-500 {
+  border-color: #1c1c1c !important;
+}
+.ck-content .border-gray-600 {
+  border-color: #151515 !important;
+}
+.ck-content .border-gray-700 {
+  border-color: #0e0e0e !important;
+}
+.ck-content .border-gray-800 {
+  border-color: #070707 !important;
+}
+.ck-content .border-gray-900 {
+  border-color: #040404 !important;
+}
+.ck-content body {
+  background-color: #000000;
+  color: #f5f5f7;
+}
+.ck-content body main .region-content {
+  text-align: center;
+}
+.ck-content footer {
+  display: none;
+}
+.ck-content #block-lkb10app-usermenu ul.nav {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  font-size: small;
+  text-transform: uppercase;
+}
+.ck-content #block-lkb10app-usermenu ul.nav li a {
+  background-color: #1c1c1c;
+  border-radius: 6px;
+}
+.ck-content #block-lkb10app-usermenu ul.nav li a:hover {
+  background-color: #f98105;
+}
+.ck-content main .region-content {
+  margin-top: 15px;
+}
+.ck-content .page-node-type-show #block-lkb10app-page-title {
+  display: none;
+}
+.ck-content #block-lkb10app-page-title {
+  margin-bottom: 15px;
+  margin: 0;
+}
+.ck-content .view-host .view-header,
+.ck-content .view-live-shows .view-header,
+.ck-content .view-entries .view-header {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.ck-content .view-host .view-content,
+.ck-content .view-live-shows .view-content,
+.ck-content .view-entries .view-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 15px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ck-content .view-host .view-content .views-row,
+.ck-content .view-live-shows .view-content .views-row,
+.ck-content .view-entries .view-content .views-row {
+  background-color: #1c1c1c;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+  line-height: 1.2;
+}
+.ck-content .view-host .view-content .views-row .views-field-field-show-date,
+.ck-content .view-host .view-content .views-row .views-field-field-show-location,
+.ck-content .view-host .view-content .views-row .views-field-created,
+.ck-content .view-live-shows .view-content .views-row .views-field-field-show-date,
+.ck-content .view-live-shows .view-content .views-row .views-field-field-show-location,
+.ck-content .view-live-shows .view-content .views-row .views-field-created,
+.ck-content .view-entries .view-content .views-row .views-field-field-show-date,
+.ck-content .view-entries .view-content .views-row .views-field-field-show-location,
+.ck-content .view-entries .view-content .views-row .views-field-created {
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+.ck-content .view-host .view-content .views-row .views-field-webform-submission-value-2,
+.ck-content .view-live-shows .view-content .views-row .views-field-webform-submission-value-2,
+.ck-content .view-entries .view-content .views-row .views-field-webform-submission-value-2 {
+  margin-bottom: 5px;
+}
+.ck-content .view-host .view-content .views-row .views-field-webform-submission-value-3,
+.ck-content .view-live-shows .view-content .views-row .views-field-webform-submission-value-3,
+.ck-content .view-entries .view-content .views-row .views-field-webform-submission-value-3 {
+  margin-bottom: 5px;
+}
+.ck-content .view-host .view-content .views-row .views-field-view-node,
+.ck-content .view-live-shows .view-content .views-row .views-field-view-node,
+.ck-content .view-entries .view-content .views-row .views-field-view-node {
+  margin-top: 10px;
+}
+.ck-content .view-host .view-content .views-row a:hover,
+.ck-content .view-live-shows .view-content .views-row a:hover,
+.ck-content .view-entries .view-content .views-row a:hover {
+  text-decoration: none;
+}
+.ck-content .page-node-type-show .webform-confirmation .submission-summary {
+  border: 2px solid #f98105;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.ck-content .page-node-type-show .webform-confirmation a:hover {
+  text-decoration: none;
+}
+.ck-content #block-lkb10app-fblikebox {
+  margin-top: 20px;
+}
+
+/*# sourceMappingURL=ck5style.css.map */

@@ -1,0 +1,22 @@
+uuid: 4730f212-b410-475b-992e-dbabf9fc90c3
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - lkb10app
+_core:
+  default_config_hash: KNZu_18XFKkJCFJMExPq6HKBJDOp1frDTEAk-o8qta4
+id: lkb10app_help
+theme: lkb10app
+region: content
+weight: -3
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

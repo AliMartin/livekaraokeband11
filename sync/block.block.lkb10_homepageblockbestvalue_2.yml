@@ -1,0 +1,25 @@
+uuid: 4e4ba682-3f6f-4cfc-b3ed-2e5fa57a9ccc
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f891ece0-ab6d-4eac-bbe7-c3850d95cde9'
+  module:
+    - block_content
+  theme:
+    - lkb10
+id: lkb10_homepageblockbestvalue_2
+theme: lkb10
+region: front_page_matrix
+weight: -9
+provider: null
+plugin: 'block_content:f891ece0-ab6d-4eac-bbe7-c3850d95cde9'
+settings:
+  id: 'block_content:f891ece0-ab6d-4eac-bbe7-c3850d95cde9'
+  label: 'Home page block - best value'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

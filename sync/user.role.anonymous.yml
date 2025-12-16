@@ -1,0 +1,22 @@
+uuid: 7c228053-4cad-46e8-a33a-c58079ef4614
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.filtered_html
+  module:
+    - filter
+    - klaro
+    - media
+    - system
+_core:
+  default_config_hash: pq_mEIu_B4widZN7Ap81iCJSjShFFdcL0jEiCi8VrDk
+id: anonymous
+label: 'anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access content'
+  - 'use klaro'
+  - 'use text format filtered_html'
+  - 'view media'

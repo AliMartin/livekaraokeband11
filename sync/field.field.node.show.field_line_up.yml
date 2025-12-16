@@ -1,0 +1,21 @@
+uuid: da59de14-779a-4b82-ba03-f4ec0e0b6cc4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_line_up
+    - node.type.show
+  module:
+    - options
+id: node.show.field_line_up
+field_name: field_line_up
+entity_type: node
+bundle: show
+label: Line-up
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

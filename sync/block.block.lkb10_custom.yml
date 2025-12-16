@@ -1,0 +1,25 @@
+uuid: 377498ff-2fc8-41ab-90c1-1b0e6932ca5f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:mega_menu:b06f8d1d-305f-47df-a5c4-1cc4b3527dcc'
+  module:
+    - block_content
+  theme:
+    - lkb10
+id: lkb10_custom
+theme: lkb10
+region: hidden_blocks
+weight: 0
+provider: null
+plugin: 'block_content:b06f8d1d-305f-47df-a5c4-1cc4b3527dcc'
+settings:
+  id: 'block_content:b06f8d1d-305f-47df-a5c4-1cc4b3527dcc'
+  label: Custom
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

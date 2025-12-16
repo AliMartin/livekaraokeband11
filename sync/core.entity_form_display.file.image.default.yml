@@ -1,0 +1,38 @@
+uuid: eed8bfbc-9221-4feb-935c-809d0424dd45
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.file.image.field_file_image_alt_text
+    - field.field.file.image.field_file_image_title_text
+  module:
+    - field_layout
+    - file
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: file.image.default
+targetEntityType: file
+bundle: image
+mode: default
+content:
+  field_file_image_alt_text:
+    type: string_textfield
+    weight: -4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_file_image_title_text:
+    type: string_textfield
+    weight: -3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

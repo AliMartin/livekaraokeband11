@@ -1,0 +1,410 @@
+uuid: 77e3fe81-b890-45cc-968f-9d7b3949922a
+langcode: en
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 1
+template: false
+archive: false
+id: song_request_5_piece_2022
+title: 'Song request - 5 piece 2022'
+description: 'Allows a guest to select a song from the 2022 5-piece set list.'
+categories: {  }
+elements: |-
+  processed_text:
+    '#type': processed_text
+    '#text': |
+      <h2>Send your song straight to the stage</h2>
+
+      <p>If you want to sing with the band then simply enter your song and name, press SUBMIT and listen out for your name. Good luck!</p>
+    '#format': full_html
+  your_song_choice:
+    '#type': select
+    '#title': 'Your song choice'
+    '#options':
+      20th_century_boy: '20th Century Boy (T-Rex)'
+      9_to_5: '9 to 5 (Dolly Parton)'
+      africa: 'Africa (Toto)'
+      aint_nobody: 'Ain''t Nobody (Chaka Khan)'
+      all_i_want_for_christmas_is_you: 'All I Want for Christmas is You (Mariah Carey)'
+      all_of_me: 'All Of Me (John Legend)'
+      all_right_now: 'All Right Now (Free)'
+      all_star: 'All Star (Smash Mouth)'
+      all_the_small_things: 'All The Small Things (Blink 182)'
+      american_boy: 'American Boy (Estelle)'
+      american_pie: 'American Pie (Don McLean)'
+      angels: 'Angels (Robbie Williams)'
+      baby_one_more_time: 'Baby One More Time (Britney Spears)'
+      back_in_black: 'Back in Black (AC/DC)'
+      bad_habits: 'Bad Habits (Ed Sheeran)'
+      baggy_trousers: 'Baggy Trousers (Madness)'
+      basket_case: 'Basket Case (Green Day)'
+      beautiful: 'Beautiful (Christina Aguilera)'
+      billie_jean: 'Billie Jean (Michael Jackson)'
+      black_velvet: 'Black Velvet (Alannah Myles)'
+      blame_it_on_the_boogie: 'Blame It On The Boogie (The Jackson Five)'
+      blinding_lights: 'Blinding Lights (The Weeknd)'
+      bootylicious: 'Bootylicious (Destiny''s Child)'
+      brown_eyed_girl: 'Brown Eyed Girl (Van Morrison)'
+      brown_sugar: 'Brown Sugar (The Rolling Stones)'
+      build_me_up_buttercup: 'Build Me Up Buttercup (The Foundations)'
+      california_gurls: 'California Gurls (Katy Perry)'
+      cant_take_my_eyes_off_you: 'Can''t Take My Eyes Off You (Frankie Valli)'
+      car_wash: 'Car Wash (Rose Royce)'
+      chelsea_dagger: 'Chelsea Dagger (The Fratellis)'
+      crazy: 'Crazy (Gnarls Barkley)'
+      crazy_in_love: 'Crazy In Love (Beyonce)'
+      crazy_little_thing_called_love: 'Crazy Little Thing Called Love (Queen)'
+      creep: 'Creep (Radiohead)'
+      dakota: 'Dakota (Stereophonics)'
+      dance_the_night_away: 'Dance The Night Away (The Mavericks)'
+      dancing_in_the_dark: 'Dancing In The Dark (Bruce Springsteen)'
+      dancing_queen: 'Dancing Queen (Abba)'
+      daydream_believer: 'Daydream Believer (The Monkees)'
+      december_1963: 'December 1963 (Frankie Valli)'
+      delilah: 'Delilah (Tom Jones)'
+      disco_2000: 'Disco 2000 (Pulp)'
+      do_they_know_its_christmas: 'Do They Know It''s Christmas? (Band Aid)'
+      dont_go_breaking_my_heart: 'Don''t Go Breaking My Heart (Elton John and Kiki Dee)'
+      dont_let_the_sun_go_down_on_me: 'Don''t Let the Sun Go Down on Me (George Michael and Elton John)'
+      dont_look_back_in_anger: 'Don''t Look Back In Anger (Oasis)'
+      dont_speak: 'Don''t Speak (No Doubt)'
+      dont_stop_believing: 'Don''t Stop Believing (Journey)'
+      dont_stop_me_now: 'Don''t Stop Me Now (Queen)'
+      down_under: 'Down Under (Men At Work)'
+      easy_lover: 'Easy Lover (Philip Bailey and Phil Collins)'
+      every_breath_you_take: 'Every Breath You Take (The Police)'
+      everybody_backstreets_back: 'Everybody (Backstreet''s Back) (Backstreet Boys)'
+      everybody_needs_somebody: 'Everybody Needs Somebody (The Blues Brothers)'
+      fairytale_new_york: 'Fairytake of New York (The Pogues and Kirsty MacColl)'
+      faith: 'Faith (George Michael)'
+      fight_for_your_right_to_party: 'Fight For Your RIght (To Party!) (Beastie Boys)'
+      firework: 'Firework (Katy Perry)'
+      forget_you: 'Forget You (Cee Lo Green)'
+      gangstas_paradise: 'Gangsta''s Paradise (Coolio)'
+      gimme_gimme_gimme: 'Gimme! Gimme! Gimme! (Abba)'
+      girls_just_wanna_have_fun: 'Girls Just Wanna Have Fun (Cindy Lauper)'
+      go_your_own_way: 'Go Your Own Way (Fleetwood Mac)'
+      gold: 'Gold (Spandau Ballet)'
+      good_riddance: 'Good Riddance (Time Of Your Life) (Green Day)'
+      grease_megamix: 'Grease Megamix (John Travolta and Olivia Newton-John)'
+      happy: 'Happy (Pharrell Williams)'
+      hey_jude: 'Hey Jude (The Beatles)'
+      hi_ho_silver_lining: 'Hi Ho Silver Lining (Jeff Beck)'
+      highway_to_hell: 'Highway to Hell (AC/DC)'
+      i_believe_in_a_thing_called_love: 'I Believe In A Thing Called Love (The Darkness)'
+      i_bet_you_look_good_on_the_dancefloor: 'I Bet You Look Good On The Dancefloor (The Arctic Monkeys)'
+      i_feel_good: 'I Feel Good (James Brown)'
+      i_gotta_feeling: 'I Gotta Feeling (The Black Eyed Peas)'
+      i_kissed_a_girl: 'I Kissed A Girl (Katy Perry)'
+      i_love_rock_and_roll: 'I Love Rock And Roll (Joan Jett and The Blackhearts)'
+      i_predict_a_riot: 'I Predict A Riot (The Kaiser Chiefs)'
+      i_saw_her_standing_there: 'I Saw Her Standing There (The Beatles)'
+      i_think_were_alone_now: 'I Think We''re Alone Now (Tiffany)'
+      i_wanna_dance_with_somebody: 'I Wanna Dance With Somebody (Whitney Houston)'
+      i_will_always_love_you: 'I Will Always Love You (Whitney Houston)'
+      i_will_survive: 'I Will Survive (Gloria Gaynor)'
+      ill_be_there_for_you: 'I''ll Be There For You (The Rembrandts)'
+      im_a_believer: 'I''m A Believer (The Monkees)'
+      im_gonna_be: 'I''m Gonna Be (500 Miles) (The Proclaimers)'
+      ive_had_the_time_of_my_life: 'I''ve Had The Time Of My Life (Bill Medley and Jennifer Warnes)'
+      ironic: 'Ironic (Alanis Morissette)'
+      is_this_the_way_to_amarillo: 'Is This The Way To Amarillo? (Tony Christie)'
+      islands_in_the_stream: 'Islands In The Stream (Kenny Rogers and Dolly Parton)'
+      its_not_unusual: 'It''s Not Unusual (Tom Jones)'
+      johnny_b_goode: 'Johnny B. Goode (Chuck Berry)'
+      jolene: 'Jolene (Dolly Parton)'
+      jumping_jack_flash: 'Jumping Jack Flash (The Rolling Stones)'
+      karma_chameleon: 'Karma Chameleon (Culture Club)'
+      kiss: 'Kiss (Prince)'
+      lady_marmalade: 'Lady Marmalade (Patti Labelle)'
+      let_it_go: 'Let It Go (Frozen OST / Idina Menzel)'
+      let_me_entertain_you: 'Let Me Entertain You (Robbie Williams)'
+      like_a_prayer: 'Like A Prayer (Madonna)'
+      like_a_virgin: 'Like A Virgin (Madonna)'
+      living_on_a_prayer: 'Living On A Prayer (Bon Jovi)'
+      locked_out_of_heaven: 'Locked Out Of Heaven (Bruno Mars)'
+      love_shack: 'Love Shack (The B52s)'
+      lovely_day: 'Lovely Day (Bill Withers)'
+      maggie_may: 'Maggie May (Rod Stewart)'
+      make_you_feel_my_love: 'Make You Feel My Love (Adele)'
+      mamma_mia: 'Mamma Mia (Abba)'
+      man_i_feel_like_a_woman: 'Man I Feel Like A Woman (Shania Twain)'
+      merry_xmas_everybody: 'Merry Xmas Everybody (Slade)'
+      moves_like_jagger: 'Moves Like Jagger (Maroon 5)'
+      mr_brightside: 'Mr Brightside (The Killers)'
+      mustang_sally: 'Mustang Sally (The Commitments)'
+      my_generation: 'My Generation (The Who)'
+      my_girl: 'My Girl (The Temptations)'
+      my_way: 'My Way (Frank Sinatra)'
+      mysterious_girl: 'Mysterious Girl (Peter Andre)'
+      naïve: 'Naive (The Kooks)'
+      never_forget: 'Never Forget (Take That)'
+      never_gonna_give_you_up: 'Never Gonna Give You Up (Rick Astley)'
+      new_york_new_york: 'New York, New York (Frank Sinatra)'
+      papa_dont_preach: 'Papa Don''t Preach (Madonna)'
+      parklife: 'Parklife (Blur)'
+      place_your_hands: 'Place Your Hands (Reef)'
+      play_that_funky_music: 'Play That Funky Music (Wild Cherry)'
+      price_tag: 'Price Tag (Jessie J)'
+      rappers_delight: 'Rapper''s Delight (The Sugarhill Gang)'
+      reach: 'Reach (S Club 7)'
+      rehab: 'Rehab (Amy Winehouse)'
+      rocking_all_over_the_world: 'Rocking All Over The World (Status Quo)'
+      rocks: 'Rocks (Primal Scream)'
+      rolling_in_the_deep: 'Rolling In The Deep (Adele)'
+      ruby: 'Ruby (The Kaiser Chiefs)'
+      rule_the_world: 'Rule The World (Take That)'
+      satisfaction: 'Satisfaction (The Rolling Stones)'
+      seven_nation_army: 'Seven Nation Army (The White Stripes)'
+      sex_on_fire: 'Sex On Fire (Kings Of Leon)'
+      shallow: 'Shallow (Lady Gaga and Bradley Cooper)'
+      shape_of_you: 'Shape of You (Ed Sheeran)'
+      shes_electric: 'She''s Electric (Oasis)'
+      shine: 'Shine (Take That)'
+      shut_up_and_dance: 'Shut up and Dance (Walk the Moon)'
+      signed_sealed_delivered_im_yours: 'Signed, Sealed, Delivered I''m Yours (Stevie Wonder)'
+      sit_down: 'Sit Down (James)'
+      smells_like_teen_spirit: 'Smells Like Teen Spirit (Nirvana)'
+      somebody_told_me: 'Somebody Told Me (The Killers)'
+      someone_like_you: 'Someone Like You (Adele)'
+      song_two: 'Song 2 (Blur)'
+      spirit_in_the_sky: 'Spirit In The Sky (Doctor and The Medics)'
+      stand_by_me: 'Stand By Me (Ben E King)'
+      stop: 'Stop (The Spice Girls)'
+      stuck_in_the_middle_with_you: 'Stuck In The Middle With You (Stealers Wheel)'
+      summer_of_69: 'Summer Of 69 (Bryan Adams)'
+      superstition: 'Superstition (Stevie Wonder)'
+      suspicious_minds: 'Suspicious Minds (Elvis Presley)'
+      sweet_caroline: 'Sweet Caroline (Neil Diamond)'
+      sweet_child_of_mine: 'Sweet Child Of Mine (Guns ''n'' Roses)'
+      sweet_home_alabama: 'Sweet Home Alabama (Lynyrd Skynyrd)'
+      take_me_home_country_roads: 'Take Me Home, Country Roads (John Denver)'
+      take_me_out: 'Take Me Out (Franz Ferdinand)'
+      take_on_me: 'Take On Me (A-Ha)'
+      teenage_dirtbag: 'Teenage Dirtbag (Wheatus)'
+      teenage_kicks: 'Teenage Kicks (The Undertones)'
+      the_best: 'The Best (Tina Turner)'
+      the_one_and_only: 'The One And Only (Chesney Hawkes)'
+      the_power_of_love: 'The Power Of Love (Huey Lewis and The News)'
+      thinking_out_loud: 'Thinking Out Loud (Ed Sheeran)'
+      this_is_me: 'This is Me (The Greatest Showman)'
+      three_little_birds: 'Three Little Birds (Bob Marley and The Wailers)'
+      town_called_malice: 'Town Called Malice (The Jam)'
+      tribute: 'Tribute (Tenacious D)'
+      twist_and_shout: 'Twist and Shout (The Beatles)'
+      uptown_funk: 'Uptown Funk (Mark Ronson)'
+      uptown_girl: 'Uptown Girl (Billy Joel)'
+      valerie: 'Valerie (Amy Winehouse)'
+      video_killed_the_radio_star: 'Video Killed The Radio Star (Buggles)'
+      wake_me_up_before_you_go_go: 'Wake Me Up Before You Go Go (Wham!)'
+      walking_on_sunshine: 'Walking On Sunshine (Katrina and The Waves)'
+      wannabe: 'Wannabe (The Spice Girls)'
+      waterloo: 'Waterloo (Abba)'
+      we_are_family: 'We Are Family (Sister Sledge)'
+      we_are_the_champions: 'We Are The Champions (Queen)'
+      we_will_rock_you: 'We Will Rock You (Queen)'
+      what_makes_you_beautiful: 'What Makes You Beautiful (One Direction)'
+      whats_up: 'What''s Up (4 Non Blondes)'
+      when_youre_gone: 'When You''re Gone (Brian Adams and Mel C)'
+      white_wedding: 'White Wedding (Billy Idol)'
+      wonderful_tonight: 'Wonderful Tonight (Eric Clapton)'
+      wonderwall: 'Wonderwall (Oasis)'
+      ymca: 'YMCA (The Village People)'
+      you_really_got_me: 'You Really Got Me (The Kinks)'
+      you_shook_me_all_night_long: 'You Shook Me All Night Long (AC/DC)'
+    '#required': true
+  your_name:
+    '#type': textfield
+    '#title': 'Your name'
+    '#required': true
+    '#format_items': comma
+css: ''
+javascript: ''
+settings:
+  ajax: false
+  ajax_scroll_top: form
+  ajax_progress_type: ''
+  ajax_effect: ''
+  ajax_speed: null
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  page_theme_name: ''
+  form_title: source_entity_webform
+  form_submit_once: false
+  form_open_message: ''
+  form_close_message: ''
+  form_exception_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_disable_remote_addr: false
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_disable_inline_errors: false
+  form_required: false
+  form_autofocus: false
+  form_details_toggle: false
+  form_reset: false
+  form_access_denied: default
+  form_access_denied_title: ''
+  form_access_denied_message: ''
+  form_access_denied_attributes: {  }
+  form_file_limit: ''
+  form_attributes: {  }
+  form_method: ''
+  form_action: ''
+  share: false
+  share_node: false
+  share_theme_name: ''
+  share_title: true
+  share_page_body_attributes: {  }
+  submission_label: ''
+  submission_exception_message: ''
+  submission_locked_message: ''
+  submission_log: false
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
+  submission_views: {  }
+  submission_views_replace: {  }
+  submission_user_columns: {  }
+  submission_user_duplicate: false
+  submission_access_denied: default
+  submission_access_denied_title: ''
+  submission_access_denied_message: ''
+  submission_access_denied_attributes: {  }
+  previous_submission_message: ''
+  previous_submissions_message: ''
+  autofill: false
+  autofill_message: ''
+  autofill_excluded_elements: {  }
+  wizard_progress_bar: false
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_progress_link: false
+  wizard_progress_states: false
+  wizard_start_label: ''
+  wizard_preview_link: false
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
+  wizard_track: ''
+  wizard_prev_button_label: ''
+  wizard_next_button_label: ''
+  wizard_toggle: true
+  wizard_toggle_show_label: ''
+  wizard_toggle_hide_label: ''
+  wizard_page_type: container
+  wizard_page_title_tag: h2
+  preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  preview_exclude_empty_checkbox: false
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  draft_pending_single_message: ''
+  draft_pending_multiple_message: ''
+  confirmation_type: inline
+  confirmation_url: ''
+  confirmation_title: ''
+  confirmation_message: "<p>Thank you for your request.</p>\r\n\r\n<div class=\"submission-summary\">[webform_submission:values:your_song_choice]<br />\r\n[webform_submission:values:your_name]</div>\r\n\r\n<p>Listen out for your name to be called to the stage. Good luck!</p>"
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: 'Enter again'
+  confirmation_back_attributes: {  }
+  confirmation_exclude_query: false
+  confirmation_exclude_token: false
+  confirmation_update: false
+  limit_total: null
+  limit_total_interval: null
+  limit_total_message: ''
+  limit_total_unique: false
+  limit_user: null
+  limit_user_interval: null
+  limit_user_message: ''
+  limit_user_unique: false
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: none
+  purge_days: null
+  results_disabled: false
+  results_disabled_ignore: false
+  results_customize: false
+  token_view: false
+  token_update: false
+  token_delete: false
+  serial_disabled: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles:
+      - host
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles:
+      - host
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  administer:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  test:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  configuration:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+handlers: {  }
+variants: {  }

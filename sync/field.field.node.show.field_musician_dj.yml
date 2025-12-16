@@ -1,0 +1,25 @@
+uuid: d1eea063-1a69-4341-87ee-b8d7c3a71363
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_musician_dj
+    - node.type.show
+id: node.show.field_musician_dj
+field_name: field_musician_dj
+entity_type: node
+bundle: show
+label: DJ
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: skills
+      display_name: entity_reference_8
+      arguments: {  }
+field_type: entity_reference

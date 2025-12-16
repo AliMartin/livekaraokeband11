@@ -1,0 +1,6 @@
+uuid: 487e8125-2672-41d1-a549-f5e35fc8bbde
+langcode: en
+status: true
+dependencies: {  }
+id: front_page_matrix
+label: 'Front page matrix'

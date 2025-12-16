@@ -1,0 +1,21 @@
+uuid: 6b86a070-6cc4-4f7f-84b3-28da23e4d4e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_show_length
+    - node.type.show
+  module:
+    - options
+id: node.show.field_show_length
+field_name: field_show_length
+entity_type: node
+bundle: show
+label: 'Show length'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

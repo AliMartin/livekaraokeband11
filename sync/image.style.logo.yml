@@ -1,0 +1,17 @@
+uuid: d8878f86-71c9-47eb-ba53-1bce07305570
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: logo
+label: 'Logo strip'
+effects:
+  5c11e4a8-bfaf-4084-94dd-c7f4bef895d8:
+    uuid: 5c11e4a8-bfaf-4084-94dd-c7f4bef895d8
+    id: focal_point_scale_and_crop
+    weight: -10
+    data:
+      width: 80
+      height: 45
+      crop_type: focal_point

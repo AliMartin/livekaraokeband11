@@ -1,0 +1,25 @@
+uuid: 738f2d67-c47a-4301-bc63-549c96829c68
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:4790e330-367d-4dc9-897d-3d74ee9a9e36'
+  module:
+    - block_content
+  theme:
+    - lkb10
+id: lkb10_calltoaction
+theme: lkb10
+region: upper_cta
+weight: 0
+provider: null
+plugin: 'block_content:4790e330-367d-4dc9-897d-3d74ee9a9e36'
+settings:
+  id: 'block_content:4790e330-367d-4dc9-897d-3d74ee9a9e36'
+  label: 'Call to action'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

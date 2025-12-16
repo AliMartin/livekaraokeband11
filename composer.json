@@ -1,0 +1,191 @@
+{
+    "name": "drupal/legacy-project",
+    "description": "Project template for Drupal projects with composer following drupal/drupal layout",
+    "type": "project",
+    "license": "GPL-2.0-or-later",
+    "homepage": "https://www.drupal.org/project/drupal",
+    "support": {
+        "docs": "https://www.drupal.org/docs/user_guide/en/index.html",
+        "chat": "https://www.drupal.org/node/314178"
+    },
+    "repositories": [
+      {
+          "type": "composer",
+          "url": "https://packages.drupal.org/8"
+      },
+      {
+          "type": "composer",
+          "url": "https://asset-packagist.org"
+      },
+      {
+          "type": "package",
+          "package": {
+              "name": "jackmoore/colorbox",
+              "version": "1.6.4",
+              "type": "drupal-library",
+              "dist": {
+                  "url": "https://github.com/jackmoore/colorbox/archive/1.6.4.zip",
+                  "type": "zip"
+              }
+          }
+      }
+    ],
+    "require": {
+        "bower-asset/fitvids": "^1.0",
+        "bower-asset/mmenu": "^8.0",
+        "composer/installers": "^2.0",
+        "cweagans/composer-patches": "^1.7",
+        "drupal/admin_toolbar": "^3.6",
+        "drupal/ai": "^1.2@alpha",
+        "drupal/ai_provider_openai": "^1.0",
+        "drupal/backup_migrate": "^5.0@RC",
+        "drupal/better_exposed_filters": "^7.1@beta",
+        "drupal/bg_image_formatter": "^1.17",
+        "drupal/block_field": "^1.0@RC",
+        "drupal/blockgroup": "^2.0",
+        "drupal/bootstrap5": "^4.0@beta",
+        "drupal/captcha": "^2.0",
+        "drupal/colorbox": "^2.0",
+        "drupal/context": "^5.0@RC",
+        "drupal/core-composer-scaffold": "^11",
+        "drupal/core-project-message": "^11",
+        "drupal/core-recommended": "^11",
+        "drupal/core-vendor-hardening": "11",
+        "drupal/crop": "^2.1",
+        "drupal/ctools": "^4.0",
+        "drupal/dynamic_entity_reference": "^4.0@alpha",
+        "drupal/field_group": "^4.0",
+        "drupal/fitvids": "^2.0",
+        "drupal/focal_point": "^2.0",
+        "drupal/gin": "^5.0",
+        "drupal/honeypot": "^2.1",
+        "drupal/httpswww": "^2.1",
+        "drupal/insert_view": "^3.0",
+        "drupal/jquery_ui": "^1.7",
+        "drupal/jquery_ui_datepicker": "^2.1",
+        "drupal/jquery_ui_slider": "^2.1",
+        "drupal/jquery_ui_touch_punch": "^1.1",
+        "drupal/klaro": "^3.0",
+        "drupal/libraries": "^4.0",
+        "drupal/linkchecker": "^2.0@alpha",
+        "drupal/linkit": "^7.0",
+        "drupal/login_destination": "^2.0@beta",
+        "drupal/manage_display": "^3.0",
+        "drupal/menu_item_role_access": "^2.0",
+        "drupal/metatag": "^2.0",
+        "drupal/navigation": "^1.0@beta",
+        "drupal/pathauto": "^1.8",
+        "drupal/recaptcha": "^3.0",
+        "drupal/redirect": "^1.6",
+        "drupal/responsive_favicons": "^4.0@alpha",
+        "drupal/responsive_menu": "4.4.x-dev@dev",
+        "drupal/scheduler": "^2.0@alpha",
+        "drupal/slick": "^3.0",
+        "drupal/stage_file_proxy": "^3.1",
+        "drupal/tb_megamenu": "^3.0@alpha",
+        "drupal/theme_switcher": "^2.0",
+        "drupal/token": "^1.9",
+        "drupal/twig_tweak": "^3.4",
+        "drupal/upgrade_status": "^4.3",
+        "drupal/views_auto_refresh": "^2.0",
+        "drupal/views_bootstrap": "^5.5@alpha",
+        "drupal/views_infinite_scroll": "^2.0",
+        "drupal/views_random_seed": "^1.2",
+        "drupal/webform": "^6.3@beta",
+        "drupal/webform_content_creator": "^4.0",
+        "drupal/webform_remote_handlers": "^3.0",
+        "drupal/webform_views": "^5.0@alpha",
+        "drupal/xmlsitemap": "^2.0",
+        "drupal/yoast_seo": "^2.2",
+        "drupal/youtube": "^3.0@beta",
+        "drush/drush": "^13.7",
+        "jackmoore/colorbox": "^1.6",
+        "npm-asset/blazy": "^1.8",
+        "npm-asset/cropper": "^4.1",
+        "npm-asset/slick-carousel": "^1.8",
+        "npm-asset/superfish": "^1.7",
+        "oomphinc/composer-installers-extender": "^2.0"
+    },
+    "conflict": {
+        "drupal/drupal": "*"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true,
+            "drupal/core-composer-scaffold": true,
+            "drupal/core-project-message": true,
+            "drupal/core-vendor-hardening": true,
+            "phpstan/extension-installer": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "php-http/discovery": true,
+            "cweagans/composer-patches": true,
+            "oomphinc/composer-installers-extender": true
+        },
+        "sort-packages": true
+    },
+    "extra": {
+        "installer-types": [
+          "bower-asset",
+          "npm-asset"
+        ],
+        "drupal-scaffold": {
+            "locations": {
+                "web-root": "./"
+            }
+        },
+        "installer-paths": {
+            "core": [
+                "type:drupal-core"
+            ],
+            "libraries/{$name}": [
+                "type:drupal-library",
+                "type:bower-asset",
+                "type:npm-asset"
+            ],
+            "modules/contrib/{$name}": [
+                "type:drupal-module"
+            ],
+            "profiles/contrib/{$name}": [
+                "type:drupal-profile"
+            ],
+            "themes/contrib/{$name}": [
+                "type:drupal-theme"
+            ],
+            "drush/Commands/contrib/{$name}": [
+                "type:drupal-drush"
+            ],
+            "modules/custom/{$name}": [
+                "type:drupal-custom-module"
+            ],
+            "profiles/custom/{$name}": [
+                "type:drupal-custom-profile"
+            ],
+            "themes/custom/{$name}": [
+                "type:drupal-custom-theme"
+            ]
+        },
+        "drupal-core-project-message": {
+            "include-keys": [
+                "homepage",
+                "support"
+            ],
+            "post-create-project-cmd-message": [
+                "<bg=blue;fg=white>                                                         </>",
+                "<bg=blue;fg=white>  Congratulations, you’ve installed the Drupal codebase  </>",
+                "<bg=blue;fg=white>  from the drupal/legacy-project template!               </>",
+                "<bg=blue;fg=white>                                                         </>",
+                "",
+                "<bg=yellow;fg=black>Next steps</>:",
+                "  * Install the site: https://www.drupal.org/docs/installing-drupal",
+                "  * Read the user guide: https://www.drupal.org/docs/user_guide/en/index.html",
+                "  * Get support: https://www.drupal.org/support",
+                "  * Get involved with the Drupal community:",
+                "      https://www.drupal.org/getting-involved",
+                "  * Remove the plugin that prints this message:",
+                "      composer remove drupal/core-project-message"
+            ]
+        }
+    }
+}

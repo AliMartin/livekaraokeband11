@@ -1,0 +1,345 @@
+uuid: c08972dc-3388-45bd-806e-e32d33903c1d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.show.field_dj
+    - field.field.node.show.field_enquiry_date
+    - field.field.node.show.field_enquiry_source
+    - field.field.node.show.field_line_up
+    - field.field.node.show.field_meta_tags
+    - field.field.node.show.field_musician_bass
+    - field.field.node.show.field_musician_dj
+    - field.field.node.show.field_musician_drums
+    - field.field.node.show.field_musician_guitar
+    - field.field.node.show.field_musician_keyboards
+    - field.field.node.show.field_musician_vocals
+    - field.field.node.show.field_pa
+    - field.field.node.show.field_requests
+    - field.field.node.show.field_show_date
+    - field.field.node.show.field_show_length
+    - field.field.node.show.field_show_location
+    - field.field.node.show.field_song_list
+    - field.field.node.show.field_sound
+    - field.field.node.show.field_status
+    - field.field.node.show.field_town
+    - node.type.show
+  module:
+    - datetime
+    - field_group
+    - field_layout
+    - layout_discovery
+    - metatag
+    - path
+    - scheduler
+    - webform
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  field_group:
+    group_enquiry:
+      children:
+        - field_enquiry_date
+        - field_enquiry_source
+        - field_status
+      label: Enquiry
+      region: content
+      parent_name: group_booking
+      weight: 12
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_band:
+      children:
+        - field_musician_vocals
+        - field_musician_drums
+        - field_musician_bass
+        - field_musician_guitar
+        - field_musician_keyboards
+        - field_pa
+        - field_sound
+        - field_musician_dj
+      label: Band
+      region: content
+      parent_name: group_booking
+      weight: 15
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_show:
+      children:
+        - field_show_date
+        - field_show_location
+        - field_town
+        - field_show_length
+        - field_requests
+        - field_dj
+        - field_line_up
+        - field_song_list
+      label: Show
+      region: content
+      parent_name: group_booking
+      weight: 13
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_booking:
+      children:
+        - group_enquiry
+        - group_show
+        - group_schedule
+        - group_band
+      label: Booking
+      region: content
+      parent_name: ''
+      weight: 8
+      format_type: tabs
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        direction: vertical
+        width_breakpoint: 640
+    group_schedule:
+      children:
+        - publish_on
+        - unpublish_on
+      label: Schedule
+      region: content
+      parent_name: group_booking
+      weight: 14
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        label_as_html: false
+        formatter: closed
+        description: ''
+        required_fields: true
+id: node.show.default
+targetEntityType: node
+bundle: show
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_dj:
+    type: boolean_checkbox
+    weight: 29
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_enquiry_date:
+    type: datetime_default
+    weight: 15
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_enquiry_source:
+    type: options_select
+    weight: 16
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_line_up:
+    type: options_select
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_meta_tags:
+    type: metatag_firehose
+    weight: 32
+    region: content
+    settings:
+      sidebar: true
+      use_details: true
+    third_party_settings: {  }
+  field_musician_bass:
+    type: options_select
+    weight: 24
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_musician_dj:
+    type: options_select
+    weight: 29
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_musician_drums:
+    type: options_select
+    weight: 23
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_musician_guitar:
+    type: options_select
+    weight: 25
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_musician_keyboards:
+    type: options_select
+    weight: 26
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_musician_vocals:
+    type: options_select
+    weight: 21
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_pa:
+    type: options_select
+    weight: 27
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_requests:
+    type: boolean_checkbox
+    weight: 25
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_show_date:
+    type: datetime_default
+    weight: 21
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_show_length:
+    type: options_select
+    weight: 24
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_show_location:
+    type: string_textfield
+    weight: 22
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_song_list:
+    type: webform_entity_reference_select
+    weight: 31
+    region: content
+    settings:
+      default_data: true
+      webforms: {  }
+    third_party_settings: {  }
+  field_sound:
+    type: options_select
+    weight: 28
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_status:
+    type: options_select
+    weight: 17
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_town:
+    type: string_textfield
+    weight: 23
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 3
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  publish_on:
+    type: datetime_timestamp_no_default
+    weight: 27
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 7
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 4
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 1
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  unpublish_on:
+    type: datetime_timestamp_no_default
+    weight: 28
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  url_redirects:
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  scheduler_settings: true

@@ -1,0 +1,25 @@
+uuid: 5c8850a3-af04-4996-80ee-bf9e689151cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_musician_bass
+    - node.type.show
+id: node.show.field_musician_bass
+field_name: field_musician_bass
+entity_type: node
+bundle: show
+label: Bass
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: skills
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

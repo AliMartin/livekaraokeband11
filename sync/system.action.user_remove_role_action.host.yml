@@ -1,0 +1,14 @@
+uuid: ec62b154-c165-404b-85ce-dab0d266e600
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.host
+  module:
+    - user
+id: user_remove_role_action.host
+label: 'Remove the host role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: host

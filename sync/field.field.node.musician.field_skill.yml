@@ -1,0 +1,29 @@
+uuid: c969e4cf-85da-4c67-a39a-4e314125305b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_skill
+    - node.type.musician
+    - taxonomy.vocabulary.skill
+id: node.musician.field_skill
+field_name: field_skill
+entity_type: node
+bundle: musician
+label: Skill
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      skill: skill
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

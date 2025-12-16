@@ -1,0 +1,25 @@
+uuid: 519f6417-b0bf-486d-b21f-4cf1783c3181
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_musician_drums
+    - node.type.show
+id: node.show.field_musician_drums
+field_name: field_musician_drums
+entity_type: node
+bundle: show
+label: Drums
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: skills
+      display_name: entity_reference_2
+      arguments: {  }
+field_type: entity_reference

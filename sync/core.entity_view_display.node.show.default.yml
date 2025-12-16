@@ -1,0 +1,109 @@
+uuid: b22996b9-13ab-4824-9256-0e39537be89a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.show.field_dj
+    - field.field.node.show.field_enquiry_date
+    - field.field.node.show.field_enquiry_source
+    - field.field.node.show.field_line_up
+    - field.field.node.show.field_meta_tags
+    - field.field.node.show.field_musician_bass
+    - field.field.node.show.field_musician_dj
+    - field.field.node.show.field_musician_drums
+    - field.field.node.show.field_musician_guitar
+    - field.field.node.show.field_musician_keyboards
+    - field.field.node.show.field_musician_vocals
+    - field.field.node.show.field_pa
+    - field.field.node.show.field_requests
+    - field.field.node.show.field_show_date
+    - field.field.node.show.field_show_length
+    - field.field.node.show.field_show_location
+    - field.field.node.show.field_song_list
+    - field.field.node.show.field_sound
+    - field.field.node.show.field_status
+    - field.field.node.show.field_town
+    - node.type.show
+  module:
+    - datetime
+    - field_layout
+    - layout_discovery
+    - manage_display
+    - metatag
+    - webform
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: node.show.default
+targetEntityType: node
+bundle: show
+mode: default
+content:
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_show_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: show
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_show_location:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_song_list:
+    type: webform_entity_reference_entity_view
+    label: hidden
+    settings:
+      source_entity: true
+      lazy: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  title:
+    type: title
+    label: hidden
+    settings:
+      link_to_entity: false
+      tag: h1
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  field_dj: true
+  field_enquiry_date: true
+  field_enquiry_source: true
+  field_line_up: true
+  field_musician_bass: true
+  field_musician_dj: true
+  field_musician_drums: true
+  field_musician_guitar: true
+  field_musician_keyboards: true
+  field_musician_vocals: true
+  field_pa: true
+  field_requests: true
+  field_show_length: true
+  field_sound: true
+  field_status: true
+  field_town: true
+  uid: true

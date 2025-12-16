@@ -1,0 +1,81 @@
+// Curator feed
+
+#curator-feed-default-feed-layout {
+  background-image: url('/sites/default/files/images/gallery/curator.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  z-index: auto;
+  background-size: cover;
+  text-align: center;
+  padding: 30px;
+  border-radius: $border-radius;
+
+  article.crt-post {
+    background-color: rgba(0,0,0,0.8) !important;
+    border-top-color: inherit;
+    border-top-width: 0;
+    border-radius: $border-radius;
+    border: inherit;
+    color: inherit
+  }
+
+  .crt-post-border {
+    border: inherit;
+  }
+  .crt-social-icon svg {
+    color: $white;
+  }
+  .crt-post-fullname a {
+    color: $white;
+  }
+  .crt-post-text {
+    color: $white;
+    a {
+      color: $yellow;
+      text-decoration: underline;
+      &:hover {
+        color: $orange;
+        text-decoration: underline;
+      }
+    }
+  }
+  .crt-post-footer {
+    background-color: $black;
+    a {
+      color: #ffffff;
+      text-decoration: none;
+      opacity: 1;
+    }
+  }
+  .crt-post-share {
+    // display: none;
+  }
+
+  .crt-load-more-container {
+    margin-top: 20px;
+    button {
+      padding: 5px 15px;
+      border: inherit;
+      border-radius: 50px;
+      background-color: $yellow;
+      color: $white;
+      line-height: 28px;
+      font-weight: $font-weight-bold;
+      text-decoration: none;
+      text-transform: uppercase;
+      outline: none;
+  
+      &:hover,
+      &:focus {
+        background-color: $orange;
+      }
+    }
+  }
+
+  a.crt-logo {
+    text-transform: uppercase;
+    font-size: 0.8em;
+  }
+
+}

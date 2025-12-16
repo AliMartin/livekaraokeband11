@@ -1,0 +1,8 @@
+uuid: 7f2d1419-84ff-40a4-98b2-a8f73cd106c7
+langcode: en
+status: true
+dependencies: {  }
+id: suggest_vocabulary
+label: 'Suggest vocabulary'
+variables: {  }
+tokens: {  }

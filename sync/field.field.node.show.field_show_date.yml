@@ -1,0 +1,21 @@
+uuid: 353bd2c2-4593-4bec-b592-a78b8b0af23e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_show_date
+    - node.type.show
+  module:
+    - datetime
+id: node.show.field_show_date
+field_name: field_show_date
+entity_type: node
+bundle: show
+label: 'Show date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

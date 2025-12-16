@@ -1,0 +1,112 @@
+uuid: d98524ef-13ab-4a38-8475-f7a3a192b782
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.video.body
+    - field.field.node.video.field_meta_tags
+    - field.field.node.video.field_metatag
+    - field.field.node.video.field_youtube
+    - node.type.video
+  module:
+    - field_layout
+    - layout_discovery
+    - metatag
+    - path
+    - text
+    - youtube
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: node.video.default
+targetEntityType: node
+bundle: video
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 2
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  created:
+    type: datetime_timestamp
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_meta_tags:
+    type: metatag_firehose
+    weight: 10
+    region: content
+    settings:
+      sidebar: false
+      use_details: true
+    third_party_settings: {  }
+  field_youtube:
+    type: youtube
+    weight: 1
+    region: content
+    settings:
+      placeholder_url: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 5
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 9
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 6
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 3
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  url_redirects:
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_metatag: true
+  publish_on: true
+  unpublish_on: true

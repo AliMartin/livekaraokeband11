@@ -1,0 +1,25 @@
+uuid: 48f70341-4b7d-4a6f-892f-90d604229807
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.menu-footer-menu
+  module:
+    - system
+  theme:
+    - lkb10
+id: lkb10_footermenu
+theme: lkb10
+region: footer_lower
+weight: -6
+provider: null
+plugin: 'system_menu_block:menu-footer-menu'
+settings:
+  id: 'system_menu_block:menu-footer-menu'
+  label: 'Footer Menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: null
+  expand_all_items: false
+visibility: {  }

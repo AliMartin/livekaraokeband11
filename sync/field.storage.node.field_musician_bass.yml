@@ -1,0 +1,19 @@
+uuid: 98a1e187-cc25-4657-ba96-8f2a21abfd6e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_musician_bass
+field_name: field_musician_bass
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,25 @@
+uuid: 4c4d8f10-7fb1-421b-a7eb-8a0990eb0866
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - lkb10app
+id: lkb10app_usermenu
+theme: lkb10app
+region: nav_additional
+weight: 0
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: null
+  expand_all_items: false
+visibility: {  }

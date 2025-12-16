@@ -1,0 +1,18 @@
+uuid: 9518c533-c474-48f2-b9ad-9db1c83628db
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.show
+id: node.show.title
+field_name: title
+entity_type: node
+bundle: show
+label: 'Client name'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

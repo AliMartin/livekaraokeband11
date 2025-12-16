@@ -1,0 +1,25 @@
+uuid: a5eb5cb6-a688-4a12-bdb3-a2197efa45f0
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:mega_menu:eebe5953-3411-46aa-b7d4-79b780dc46d7'
+  module:
+    - block_content
+  theme:
+    - lkb10
+id: lkb10_ninja
+theme: lkb10
+region: hidden_blocks
+weight: 0
+provider: null
+plugin: 'block_content:eebe5953-3411-46aa-b7d4-79b780dc46d7'
+settings:
+  id: 'block_content:eebe5953-3411-46aa-b7d4-79b780dc46d7'
+  label: Ninja
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

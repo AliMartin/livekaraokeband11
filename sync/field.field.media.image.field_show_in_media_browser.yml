@@ -1,0 +1,21 @@
+uuid: ed00763f-bf3b-4954-a9a0-9964bc436d4e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_show_in_media_browser
+    - media.type.image
+id: media.image.field_show_in_media_browser
+field_name: field_show_in_media_browser
+entity_type: media
+bundle: image
+label: 'Show in Media Browser'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

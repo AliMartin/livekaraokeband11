@@ -1,0 +1,22 @@
+uuid: 4bf97e18-9963-4ae1-b5b4-99005c349f07
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - lkb11
+_core:
+  default_config_hash: xgGJX24whzNJHzD4CNJItc2ZD2Ly0fDAXmDYLicaqWg
+id: lkb11_content
+theme: lkb11
+region: content
+weight: -1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

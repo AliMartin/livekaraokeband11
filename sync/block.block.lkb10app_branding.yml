@@ -1,0 +1,25 @@
+uuid: f268ecfd-b553-4139-b5e0-125fcab01a62
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - lkb10app
+_core:
+  default_config_hash: oc9ZXWX9BVJMvqN8EoDi7hWdhDyk5_Y20gAXh24ale8
+id: lkb10app_branding
+theme: lkb10app
+region: nav_branding
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

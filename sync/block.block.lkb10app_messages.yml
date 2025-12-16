@@ -1,0 +1,22 @@
+uuid: 8e6dfdda-42c6-4018-8770-cdd7fee37139
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - lkb10app
+_core:
+  default_config_hash: 4a6_PRPFXyazFdeH-OlJXPsqR4JqwXOnR8NGjoD6s-c
+id: lkb10app_messages
+theme: lkb10app
+region: content
+weight: -4
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,20 @@
+uuid: 7cb80b95-db08-444c-823f-8a39e82f6108
+langcode: en
+status: true
+dependencies:
+  module:
+    - responsive_menu
+  theme:
+    - lkb10
+id: lkb10_responsivemenumobileicon
+theme: lkb10
+region: nav_additional
+weight: 0
+provider: null
+plugin: responsive_menu_toggle
+settings:
+  id: responsive_menu_toggle
+  label: 'Responsive menu mobile icon'
+  label_display: '0'
+  provider: responsive_menu
+visibility: {  }

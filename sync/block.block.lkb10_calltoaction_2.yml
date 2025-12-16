@@ -1,0 +1,40 @@
+uuid: f92afaf2-a314-4454-8047-37a8c322aca5
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:4790e330-367d-4dc9-897d-3d74ee9a9e36'
+  module:
+    - block_content
+    - node
+  theme:
+    - lkb10
+id: lkb10_calltoaction_2
+theme: lkb10
+region: lower_cta
+weight: 0
+provider: null
+plugin: 'block_content:4790e330-367d-4dc9-897d-3d74ee9a9e36'
+settings:
+  id: 'block_content:4790e330-367d-4dc9-897d-3d74ee9a9e36'
+  label: 'Call to action'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      article: article
+      client: client
+      gallery: gallery
+      landing: landing
+      news: news
+      page: page
+      review: review
+      video: video
