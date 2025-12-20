@@ -1,0 +1,25 @@
+uuid: b0cc0c1b-8524-4952-8723-6e66745b72ff
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:mega_menu:5e134196-c7ce-4524-85d2-bbc05737b60a'
+  module:
+    - block_content
+  theme:
+    - lkb11
+id: lkb11_christmasparties
+theme: lkb11
+region: hidden_blocks
+weight: 0
+provider: null
+plugin: 'block_content:5e134196-c7ce-4524-85d2-bbc05737b60a'
+settings:
+  id: 'block_content:5e134196-c7ce-4524-85d2-bbc05737b60a'
+  label: 'Christmas parties'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

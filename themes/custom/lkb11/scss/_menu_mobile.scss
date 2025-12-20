@@ -1,0 +1,99 @@
+#block-lkb11-responsivemenumobileicon {
+  display: flex;
+
+  span.label {
+    display: none;
+  }
+
+  .responsive-menu-toggle-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    border: 2px solid $white;
+    border-radius: 50%;
+  }
+
+  .responsive-menu-toggle-icon::before,
+  .responsive-menu-toggle-icon::after,
+  .responsive-menu-toggle-icon span.icon {
+    width: 16px;
+    height: 2px;
+    left: inherit;
+  }
+
+  .responsive-menu-toggle-icon::before    {top: 11px;}
+  .responsive-menu-toggle-icon span.icon  {top: 16px;}
+  .responsive-menu-toggle-icon::after     {top: 21px;}
+}
+
+body.mm-wrapper_opening {
+  #block-lkb10-responsivemenumobileicon {  
+    .responsive-menu-toggle-icon::before    {top: 16px;}
+    .responsive-menu-toggle-icon::after     {top: 16px;}
+  }
+}
+
+
+
+.mm-menu_theme-dark {
+  background-color: $white;
+  --mm-color-background: $white;
+  color: $black;
+
+  .mm-panels {
+    .mm-navbar:before {
+      content: '';
+      background: url("/themes/custom/lkb11/logo.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      display: block;
+      position: relative;
+      left: 35%;
+      width: 30%;
+      height: 100px;
+    } 
+
+    .mm-navbar {
+      border-bottom: none;
+    }
+
+    .mm-navbar a {
+      display: none;
+    }
+  }
+
+  ul.mm-listview {
+    li.mm-listitem {
+      font-family: $headings-font-family;
+      line-height: 1;
+      // text-transform: uppercase;
+      font-weight: $font-weight-bold;
+      color: $black;
+      --mm-color-text: $black;
+      text-align: center;
+    }
+    li.mm-listitem::after {
+      display: none;
+    }
+    li.mm-listitem a:hover {
+      background-color: $yellow;
+      color: $white;
+    }
+
+    .mm-listitem__text {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .mm-listitem_selected > .mm-listitem__text {
+      color: $white;
+      background: $orange;
+    }
+  }
+}
+
+

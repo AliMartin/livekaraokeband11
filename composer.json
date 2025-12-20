@@ -135,6 +135,11 @@
                 "web-root": "./"
             }
         },
+        "patches": {
+            "drupal/bg_image_formatter": {
+                "Drupal 11 fix": "https://www.drupal.org/files/issues/2025-06-13/3525581-bg_image_formatter-addcsscommand-array.patch"
+            }
+        },
         "installer-paths": {
             "core": [
                 "type:drupal-core"

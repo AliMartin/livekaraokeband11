@@ -11,7 +11,6 @@ dependencies:
     - field.field.node.news.field_media_image
     - field.field.node.news.field_meta_tags
     - field.field.node.news.field_metatag
-    - field.field.node.news.field_teaser
     - field.field.node.news.field_yoast_seo
     - node.type.news
   module:
@@ -59,6 +58,5 @@ hidden:
   field_media_image: true
   field_meta_tags: true
   field_metatag: true
-  field_teaser: true
   field_yoast_seo: true
   uid: true

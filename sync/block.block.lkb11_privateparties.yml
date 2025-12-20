@@ -1,0 +1,25 @@
+uuid: 8874e824-9159-4803-a3c0-0668e5d49ae2
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:mega_menu:f43840a3-6da4-4e87-930f-3a26c9609839'
+  module:
+    - block_content
+  theme:
+    - lkb11
+id: lkb11_privateparties
+theme: lkb11
+region: hidden_blocks
+weight: 0
+provider: null
+plugin: 'block_content:f43840a3-6da4-4e87-930f-3a26c9609839'
+settings:
+  id: 'block_content:f43840a3-6da4-4e87-930f-3a26c9609839'
+  label: 'Private parties'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

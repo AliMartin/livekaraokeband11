@@ -7,3 +7,21 @@
 
 // Include bootstrap.
 @import '../../../../themes/contrib/bootstrap5/scss/style';
+
+// Google fonts
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+@import 'normalize';
+@import 'links';
+@import 'buttons';
+@import 'header';
+@import 'footer';
+@import 'node';
+@import 'views';
+@import 'webform';
+@import 'front';
+@import 'pricing';
+@import 'curator';
+@import 'menu_desktop';
+@import 'menu_mobile';
+@import 'cookies';

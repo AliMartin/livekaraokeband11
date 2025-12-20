@@ -16,8 +16,8 @@ provider: null
 plugin: 'block_content:588ecf89-4355-4f8a-a3c7-a4151b171bb4'
 settings:
   id: 'block_content:588ecf89-4355-4f8a-a3c7-a4151b171bb4'
-  label: 'Social media footer'
-  label_display: '0'
+  label: 'Follow us on social media'
+  label_display: visible
   provider: block_content
   status: true
   info: ''

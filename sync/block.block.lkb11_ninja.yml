@@ -1,0 +1,25 @@
+uuid: 6f79b1a8-f707-47a7-a36f-8639ab72b5d0
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:mega_menu:eebe5953-3411-46aa-b7d4-79b780dc46d7'
+  module:
+    - block_content
+  theme:
+    - lkb11
+id: lkb11_ninja
+theme: lkb11
+region: hidden_blocks
+weight: 0
+provider: null
+plugin: 'block_content:eebe5953-3411-46aa-b7d4-79b780dc46d7'
+settings:
+  id: 'block_content:eebe5953-3411-46aa-b7d4-79b780dc46d7'
+  label: Ninja
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,25 @@
+uuid: 9b35ee2f-cc07-48ac-b1f3-0167ad6b9fec
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:mega_menu:712d4016-8191-44f2-829a-59a2994e4412'
+  module:
+    - block_content
+  theme:
+    - lkb11
+id: lkb11_corporateevents
+theme: lkb11
+region: hidden_blocks
+weight: 0
+provider: null
+plugin: 'block_content:712d4016-8191-44f2-829a-59a2994e4412'
+settings:
+  id: 'block_content:712d4016-8191-44f2-829a-59a2994e4412'
+  label: 'Corporate events'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

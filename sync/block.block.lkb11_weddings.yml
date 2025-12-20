@@ -1,0 +1,25 @@
+uuid: abb0a6fc-6985-432c-8142-cc24afab949e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:mega_menu:05d36d67-7e36-4ee8-8866-294acecf9d28'
+  module:
+    - block_content
+  theme:
+    - lkb11
+id: lkb11_weddings
+theme: lkb11
+region: hidden_blocks
+weight: 0
+provider: null
+plugin: 'block_content:05d36d67-7e36-4ee8-8866-294acecf9d28'
+settings:
+  id: 'block_content:05d36d67-7e36-4ee8-8866-294acecf9d28'
+  label: Weddings
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

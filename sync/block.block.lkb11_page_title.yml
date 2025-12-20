@@ -1,6 +1,6 @@
 uuid: 798d9bf9-5163-4542-8e4f-4bb6e3633ddc
 langcode: en
-status: true
+status: false
 dependencies:
   theme:
     - lkb11
@@ -9,7 +9,7 @@ _core:
 id: lkb11_page_title
 theme: lkb11
 region: content
-weight: -6
+weight: -2
 provider: null
 plugin: page_title_block
 settings:

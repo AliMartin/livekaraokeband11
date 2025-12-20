@@ -1,0 +1,68 @@
+#block-lkb11-mainmenu .field--name-field-link a,
+#klaro .cn-buttons button,
+#klaro .cm-footer-buttons button,
+.btn {
+  display: inline-block;
+  width: 160px;
+  min-width: max-content;
+  padding: 5px 15px;
+  border: inherit;
+  border-radius: 50px;
+  background-color: $yellow;
+  color: $white;
+  font-weight: $font-weight-bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  outline: none;
+
+  &:hover {
+    border: inherit;
+    background-color: $orange;
+    color: $white;
+  }
+
+  &:active {
+    border: inherit !important;
+    background-color: darken($orange, 10%) !important;
+    color: $white !important;
+  }
+}
+
+#block-lkb11-mainmenu .field--name-field-link {
+  text-align: center;
+}
+
+a.make-enquiry {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 45px;
+  width: 160px;
+  min-width: max-content;
+  padding: 5px 15px;
+  border: 1px solid $yellow;
+  border-radius: 50px;
+  background-color: inherit;
+  color: $white;
+  font-weight: $font-weight-bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  outline: none;
+
+  i {
+    margin-right: 10px;
+  }
+
+  &:hover {
+    border: 1px solid $orange;
+    background-color: inherit;
+    color: $white;
+  }
+
+  &:active {
+    border: 1px solid darken($orange, 10%) !important;
+    background-color: inherit !important;
+    color: $white !important;
+  }
+
+}

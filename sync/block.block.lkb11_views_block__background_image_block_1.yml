@@ -1,0 +1,24 @@
+uuid: fa720a2e-4a4f-4ca3-b5b4-3ff99119e554
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.background_image
+  module:
+    - views
+  theme:
+    - lkb11
+id: lkb11_views_block__background_image_block_1
+theme: lkb11
+region: header
+weight: -8
+provider: null
+plugin: 'views_block:background_image-block_1'
+settings:
+  id: 'views_block:background_image-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: null
+visibility: {  }

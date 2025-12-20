@@ -1,0 +1,30 @@
+uuid: 1a8762c8-b65e-4bf6-a8a0-902284fba18e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:76b8bc2c-62c8-48c7-80a3-ad74f09fffa0'
+  module:
+    - block_content
+    - system
+  theme:
+    - lkb11
+id: lkb11_videowallpaper
+theme: lkb11
+region: video_wallpaper
+weight: -7
+provider: null
+plugin: 'block_content:76b8bc2c-62c8-48c7-80a3-ad74f09fffa0'
+settings:
+  id: 'block_content:76b8bc2c-62c8-48c7-80a3-ad74f09fffa0'
+  label: 'Video wallpaper'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
