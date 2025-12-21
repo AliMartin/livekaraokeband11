@@ -1,0 +1,5 @@
+name: Custom homepage
+type: module
+description: Provides a /home route for a block-built homepage (no node).
+core_version_requirement: ^11
+package: Custom

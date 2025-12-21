@@ -1,0 +1,57 @@
+.form-control {
+  border: 2px solid $yellow;
+
+  &:focus {
+    border: 2px solid $orange;
+    box-shadow: inherit;
+  }
+}
+
+// Contact form specific styling
+form.webform-submission-contact-form {
+  text-align: center;
+
+  input {
+    text-align: center;
+  }
+
+  .webform-options-display-one-column {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+
+    .form-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+
+  .webform-actions {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+
+    input {
+      margin: 0;
+    }
+  }
+
+  .form-item-package {
+    label {
+      font-weight: $font-weight-bold;
+      margin-bottom: 5px;
+
+    }
+    select {
+      margin-bottom: 5px;
+    }
+    .description {
+      line-height: 1.2;
+      margin-bottom: 15px;
+    }
+  }
+}

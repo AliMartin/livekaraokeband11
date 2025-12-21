@@ -750,7 +750,7 @@ display:
         type: normal
         title: Reviews
         description: null
-        weight: -43
+        weight: -40
         enabled: true
         expanded: false
         menu_name: menu-mmenu

@@ -1,0 +1,7 @@
+custom_homepage.home:
+  path: '/home'
+  defaults:
+    _controller: '\Drupal\custom_homepage\Controller\HomepageController::home'
+    _title: 'The most popular rockaoke and bandeoke band in the UK'
+  requirements:
+    _access: 'TRUE'

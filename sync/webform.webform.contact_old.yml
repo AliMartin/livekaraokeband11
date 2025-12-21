@@ -1,6 +1,6 @@
-uuid: 8680484f-d2cc-419f-a866-c9b7882c4b3d
+uuid: 0e2da513-36ea-412b-bc76-6a109aa71122
 langcode: en
-status: open
+status: closed
 dependencies:
   enforced:
     module:
@@ -10,12 +10,12 @@ _core:
 weight: 0
 open: null
 close: null
-uid: null
+uid: 1
 template: false
 archive: false
-id: contact
-title: Contact
-description: '<p>Basic email contact webform.</p>'
+id: contact_old
+title: 'Contact old'
+description: '<p>Basic email contact webform - TE backup</p>'
 categories: {  }
 elements: |-
   step_1:
@@ -134,6 +134,7 @@ settings:
   form_access_denied_message: ''
   form_access_denied_attributes: {  }
   form_file_limit: ''
+  form_file_limit_message: ''
   form_attributes: {  }
   form_method: ''
   form_action: ''
@@ -326,7 +327,7 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: info@alimartin.com
+      to_mail: 'info@alimartin.com,bookingagent1@tailored-entertainment.com'
       to_options: {  }
       bcc_mail: ''
       bcc_options: {  }
@@ -367,7 +368,7 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: info@alimartin.com
+      to_mail: 'info@alimartin.com,bookingagent1@tailored-entertainment.com'
       to_options: {  }
       bcc_mail: ''
       bcc_options: {  }
@@ -408,7 +409,7 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: info@alimartin.com
+      to_mail: 'info@alimartin.com,bookingagent1@tailored-entertainment.com'
       to_options: {  }
       bcc_mail: ''
       bcc_options: {  }

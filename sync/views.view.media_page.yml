@@ -804,7 +804,7 @@ display:
         type: normal
         title: Videos
         description: null
-        weight: -40
+        weight: -49
         enabled: true
         expanded: false
         menu_name: menu-mmenu
