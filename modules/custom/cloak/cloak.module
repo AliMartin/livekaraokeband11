@@ -1,0 +1,9 @@
+<?php
+
+/**
+ * Implements hook_preprocess_html().
+ */
+function cloak_preprocess_html(array &$variables): void {
+  $enabled = (bool) \Drupal::config('cloak.settings')->get('enabled');
+  $variables['attributes']['class'][] = $enabled ? 'icarus-on' : 'icarus-off';
+}

@@ -1,0 +1,8 @@
+cloak.settings:
+  path: '/admin/config/system/cloak'
+  defaults:
+    _form: '\Drupal\cloak\Form\CloakSettingsForm'
+    _title: 'Cloaking'
+  requirements:
+    _permission: 'administer cloak settings'
+    

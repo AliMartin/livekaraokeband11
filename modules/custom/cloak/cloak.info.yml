@@ -1,0 +1,5 @@
+name: Cloak
+type: module
+description: Adds a simple on/off cloaking switch and body class (cloak-on / cloak-off).
+core_version_requirement: ^11
+package: Custom

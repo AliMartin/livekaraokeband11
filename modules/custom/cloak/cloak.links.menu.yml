@@ -1,0 +1,7 @@
+cloak.settings:
+  title: 'Cloaking'
+  description: 'Enable or disable cloaking body classes.'
+  route_name: cloak.settings
+  parent: system.admin_config_system
+  weight: 100
+  

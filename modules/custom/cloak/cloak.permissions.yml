@@ -1,0 +1,3 @@
+administer cloak settings:
+  title: 'Administer Cloak settings'
+  description: 'Configure the Cloak module.'
