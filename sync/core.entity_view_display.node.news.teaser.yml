@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.news.body
+    - field.field.node.news.field_archive
     - field.field.node.news.field_attachments
     - field.field.node.news.field_call_to_action
     - field.field.node.news.field_event_type
@@ -52,6 +53,7 @@ content:
     region: content
 hidden:
   created: true
+  field_archive: true
   field_attachments: true
   field_call_to_action: true
   field_event_type: true

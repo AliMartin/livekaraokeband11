@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.news.body
+    - field.field.node.news.field_archive
     - field.field.node.news.field_attachments
     - field.field.node.news.field_call_to_action
     - field.field.node.news.field_event_type
@@ -36,6 +37,26 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 4
+    region: content
+  created:
+    type: timestamp
+    label: inline
+    settings:
+      date_format: archive
+      custom_date_format: ''
+      timezone: ''
+      tooltip:
+        date_format: archive
+        custom_date_format: ''
+      time_diff:
+        enabled: false
+        future_format: '@interval hence'
+        past_format: '@interval ago'
+        granularity: 2
+        refresh: 60
+        description: ''
+    third_party_settings: {  }
     weight: 3
     region: content
   field_attachments:
@@ -44,14 +65,14 @@ content:
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
-    weight: 4
+    weight: 5
     region: content
   field_call_to_action:
     type: block_field
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 5
+    weight: 6
     region: content
   field_event_type:
     type: entity_reference_label
@@ -75,26 +96,26 @@ content:
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 8
+    weight: 9
     region: content
   field_metatag:
     type: metatag_empty_formatter
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 6
+    weight: 7
     region: content
   field_yoast_seo:
     type: yoastseo_empty_formatter
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 9
+    weight: 10
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 7
+    weight: 8
     region: content
   title:
     type: title
@@ -106,5 +127,5 @@ content:
     weight: 2
     region: content
 hidden:
-  created: true
+  field_archive: true
   uid: true

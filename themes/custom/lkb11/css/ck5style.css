@@ -163,6 +163,7 @@
   /* Scaleable fonts for headings */
   /* Adjust paddings on headings */
   /* Prices page */
+  /* Archive block */
 }
 .ck-content .text-yellow {
   color: #f2b510 !important;
@@ -14266,6 +14267,43 @@ a > .ck-content code {
 }
 .ck-content span.yellow-text {
   color: #f2b510;
+}
+.ck-content body.archive-no #block-lkb11-archivenotice,
+.ck-content body.archive-no .field--name-created {
+  display: none;
+}
+.ck-content body.archive-yes #block-lkb11-archivenotice {
+  display: block;
+}
+.ck-content body.archive-yes main > .container .region-content .field--name-field-media-image {
+  display: none;
+}
+.ck-content #block-lkb11-archivenotice {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+.ck-content #block-lkb11-archivenotice h2, .ck-content #block-lkb11-archivenotice .h2 {
+  margin-top: 0;
+  padding: 0;
+}
+.ck-content #block-lkb11-archivenotice p:first-of-type {
+  font-size: inherit;
+  text-align: left;
+  margin-bottom: 0;
+}
+.ck-content .field--name-created {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: small;
+  color: #f2b510;
+  margin-bottom: 20px;
+}
+.ck-content .node--unpublished {
+  background-color: rgba(255, 0, 0, 0.2);
 }
 .ck-content .form-control {
   border: 2px solid #f2b510;

@@ -9,7 +9,7 @@ _core:
 id: lkb11_local_tasks
 theme: lkb11
 region: content
-weight: -6
+weight: -15
 provider: null
 plugin: local_tasks_block
 settings:

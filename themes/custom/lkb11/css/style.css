@@ -15706,6 +15706,49 @@ span.yellow-text {
   color: #f2b510;
 }
 
+/* Archive block */
+body.archive-no #block-lkb11-archivenotice,
+body.archive-no .field--name-created {
+  display: none;
+}
+
+body.archive-yes #block-lkb11-archivenotice {
+  display: block;
+}
+body.archive-yes main > .container .region-content .field--name-field-media-image {
+  display: none;
+}
+
+#block-lkb11-archivenotice {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+#block-lkb11-archivenotice h2, #block-lkb11-archivenotice .h2 {
+  margin-top: 0;
+  padding: 0;
+}
+#block-lkb11-archivenotice p:first-of-type {
+  font-size: inherit;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.field--name-created {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: small;
+  color: #f2b510;
+  margin-bottom: 20px;
+}
+
+.node--unpublished {
+  background-color: rgba(255, 0, 0, 0.2);
+}
+
 .form-control {
   border: 2px solid #f2b510;
 }

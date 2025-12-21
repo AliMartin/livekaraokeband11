@@ -1,4 +1,4 @@
-selectors: ".node\r\n.field--name-body\r\n.youtube-container"
+selectors: ".node\r\n.field--name-body\r\n.youtube-container\r\n.field--name-field-media-oembed-video"
 custom_vendors: ''
 ignore_selectors: ''
 _core:

@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.news.body
+    - field.field.node.news.field_archive
     - field.field.node.news.field_attachments
     - field.field.node.news.field_call_to_action
     - field.field.node.news.field_event_type
@@ -48,6 +49,13 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_archive:
+    type: boolean_checkbox
+    weight: 1
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
   field_attachments:
     type: file_generic
     weight: 11
@@ -66,13 +74,13 @@ content:
     third_party_settings: {  }
   field_event_type:
     type: options_buttons
-    weight: 1
+    weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
   field_media_image:
     type: media_library_widget
-    weight: 2
+    weight: 3
     region: content
     settings:
       media_types: {  }
@@ -90,7 +98,10 @@ content:
     weight: 15
     region: content
     settings:
-      body: body
+      edit_title: false
+      edit_description: false
+      render_theme: null
+      render_view_mode: default
     third_party_settings: {  }
   path:
     type: path

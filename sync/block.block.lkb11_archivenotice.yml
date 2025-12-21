@@ -1,0 +1,25 @@
+uuid: 02b2ad81-356c-4d5e-8ce9-5ce031edd554
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:bf8b0281-d6e2-47da-98bc-105130f1f0ad'
+  module:
+    - block_content
+  theme:
+    - lkb11
+id: lkb11_archivenotice
+theme: lkb11
+region: content
+weight: -12
+provider: null
+plugin: 'block_content:bf8b0281-d6e2-47da-98bc-105130f1f0ad'
+settings:
+  id: 'block_content:bf8b0281-d6e2-47da-98bc-105130f1f0ad'
+  label: 'Archive content'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

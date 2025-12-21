@@ -9,7 +9,7 @@ _core:
 id: lkb11_page_title
 theme: lkb11
 region: content
-weight: -2
+weight: -10
 provider: null
 plugin: page_title_block
 settings:

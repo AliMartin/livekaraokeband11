@@ -1,0 +1,8 @@
+uuid: e20c2c5b-b0db-49eb-96be-4319644e8f64
+langcode: en
+status: true
+dependencies: {  }
+id: archive
+label: Archive
+locked: false
+pattern: 'F Y'
