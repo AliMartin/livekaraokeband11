@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.video.body
+    - field.field.node.video.field_content_bottom
     - field.field.node.video.field_meta_tags
     - field.field.node.video.field_metatag
     - field.field.node.video.field_youtube
@@ -48,6 +49,7 @@ content:
     region: content
 hidden:
   created: true
+  field_content_bottom: true
   field_meta_tags: true
   field_metatag: true
   field_youtube: true

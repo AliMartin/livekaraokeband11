@@ -1,0 +1,22 @@
+uuid: 590998b0-d597-4206-ac56-c58fc55a622c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content_bottom
+    - node.type.video
+  module:
+    - text
+id: node.video.field_content_bottom
+field_name: field_content_bottom
+entity_type: node
+bundle: video
+label: 'Content bottom'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

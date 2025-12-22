@@ -6,8 +6,6 @@ body,
   font-optical-sizing: auto;
 }
 
-
-
 nav.tabs ul.nav-tabs {
   justify-content: center;
   li a {
@@ -85,7 +83,7 @@ main > .container .region-content {
       font-size: clamp(1.3rem, 2vw + 0.5rem, 1.6rem);
       line-height: 1.3;
 
-      @media (max-width: 768px) {
+      @media (max-width: 767px) {
         text-align: inherit;
       }
     }
@@ -158,4 +156,85 @@ body.archive-yes {
 
 .node--unpublished {
   background-color: rgba(255,0,0,0.2);
+}
+
+
+
+/* Clients page */
+.path-clients main > .container .region-content {
+  max-width: inherit;
+
+  p.intro {
+    text-align: center;
+    font-size: clamp(1.3rem, 2vw + 0.5rem, 1.6rem);
+    line-height: 1.3;
+    margin-bottom: 30px;
+  }
+
+  .view-clients {
+    .view-content {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+    .views-row {
+      width: 150px;
+
+      @media (max-width: 767px) {
+        width: 100px;
+      }
+      @media (max-width: 399px) {
+        width: 80px;
+      }
+
+    }
+    .field--name-field-media-image {
+      margin: 0;
+    }
+    
+  }
+}
+
+
+
+/* Gallery and video pages */
+.page-node-type-gallery,
+.page-node-type-video {
+
+  main > .container .region-content {
+    margin: 30px auto 120px auto;
+    padding: 30px;
+    max-width: 950px;
+
+    .slick-wrapper,
+    .field--name-field-youtube {
+      margin-bottom: 30px;
+    }
+
+    .field--name-body > p:last-of-type {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+
+// Login screen
+.path-user {
+  main > .container .region-content {
+    margin: 30px auto 120px auto;
+    text-align: center;
+
+    form {
+      label {
+        margin-bottom: 5px;
+      }
+      input {
+        max-width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
 }

@@ -99,21 +99,21 @@ content:
       preserve_keys: false
       visible_items: null
     third_party_settings: {  }
-    weight: 3
+    weight: 1
     region: content
   field_meta_tags:
     type: metatag_empty_formatter
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 5
+    weight: 4
     region: content
   field_metatag:
     type: metatag_empty_formatter
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 4
+    weight: 3
     region: content
   title:
     type: title

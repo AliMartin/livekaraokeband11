@@ -12,13 +12,13 @@ ckeditor5-stylesheets:
 regions:
   header: Header
   upper_cta: 'Upper CTA'
-  lower_cta: 'Lower CTA'
   nav_branding: 'Navigation branding region'
   nav_main: 'Main navigation region'
   nav_additional: 'Additional navigation region (eg search form, social icons, etc)'
   video_wallpaper: 'Video wallpaper'
   home_content: 'Front page content'
   content: 'Main content'
+  lower_cta: 'Lower CTA'
   footer: Footer
   hidden_blocks: 'Hidden blocks for TB Mega Menu'
 libraries-override:

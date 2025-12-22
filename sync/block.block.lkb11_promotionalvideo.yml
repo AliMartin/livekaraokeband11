@@ -1,0 +1,25 @@
+uuid: a0961f33-b2ae-4acd-a58e-c82a2e3d40b0
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:mega_menu:362a4b03-e244-4b8b-930a-cf7fc3219e46'
+  module:
+    - block_content
+  theme:
+    - lkb11
+id: lkb11_promotionalvideo
+theme: lkb11
+region: hidden_blocks
+weight: 0
+provider: null
+plugin: 'block_content:362a4b03-e244-4b8b-930a-cf7fc3219e46'
+settings:
+  id: 'block_content:362a4b03-e244-4b8b-930a-cf7fc3219e46'
+  label: 'Promotional video'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

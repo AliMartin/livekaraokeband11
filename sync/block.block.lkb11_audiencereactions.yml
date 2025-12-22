@@ -1,0 +1,25 @@
+uuid: e43e7f62-b9e3-4bab-9e66-221fcf29aa36
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:mega_menu:25d5b312-128b-467f-a93a-b563f4555087'
+  module:
+    - block_content
+  theme:
+    - lkb11
+id: lkb11_audiencereactions
+theme: lkb11
+region: hidden_blocks
+weight: 0
+provider: null
+plugin: 'block_content:25d5b312-128b-467f-a93a-b563f4555087'
+settings:
+  id: 'block_content:25d5b312-128b-467f-a93a-b563f4555087'
+  label: 'Audience reactions'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

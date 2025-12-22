@@ -1,0 +1,25 @@
+uuid: ce173f58-66fd-4dc2-846a-8eb609bf09cd
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:mega_menu:908f72c4-7392-42ca-acdf-c79e60ed57a7'
+  module:
+    - block_content
+  theme:
+    - lkb11
+id: lkb11_promotionalphotos
+theme: lkb11
+region: hidden_blocks
+weight: 0
+provider: null
+plugin: 'block_content:908f72c4-7392-42ca-acdf-c79e60ed57a7'
+settings:
+  id: 'block_content:908f72c4-7392-42ca-acdf-c79e60ed57a7'
+  label: 'Promotional photos'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

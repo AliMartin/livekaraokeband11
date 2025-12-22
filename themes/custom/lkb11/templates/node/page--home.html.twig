@@ -103,6 +103,16 @@ set footer_classes = ' ' ~
 
 </main>
 
+
+
+{% if page.lower_cta %}
+  <div class="client-strip-wrapper">
+    <div class="client-strip container g-0">
+      {{ page.lower_cta }}
+    </div>
+  </div>
+{% endif %}
+
 {% if page.footer %}
 <footer role="contentinfo" class="mt-auto {{ footer_classes }}">
   <div class="{{ b5_top_container }}">

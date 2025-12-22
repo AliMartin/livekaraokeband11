@@ -162,4 +162,19 @@
     @media (min-width:  992px) and (max-width: 1199px) {width: 130px;}
     @media (min-width:  768px) and (max-width:  991px) {width: 130px;}
   }
+
+
+  /* Three CTA buttons under "Our show" menu */
+  .our-show-cta {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    .field--name-field-link {
+      display: flex;
+      flex-direction: row;
+      gap: 15px;
+      justify-content: center;
+    }
+  }
 }

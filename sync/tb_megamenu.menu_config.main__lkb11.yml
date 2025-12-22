@@ -18,7 +18,7 @@ block_config: |-
       "hide-mobile-menu": "1",
       "auto-arrow": "",
       "always-show-submenu": "",
-      "number-columns": 8
+      "number-columns": 12
   }
 menu_config: |-
   {
@@ -166,6 +166,23 @@ menu_config: |-
                           "showblocktitle": "1"
                       }
                   }
+              ],
+              [
+                  {
+                      "col_content": [
+                          {
+                              "block_id": "lkb11_songlist",
+                              "type": "block",
+                              "tb_item_config": []
+                          }
+                      ],
+                      "col_config": {
+                          "width": "",
+                          "class": "our-show-cta",
+                          "hidewcol": "",
+                          "showblocktitle": "0"
+                      }
+                  }
               ]
           ],
           "submenu_config": {
@@ -185,7 +202,55 @@ menu_config: |-
           }
       },
       "menu_link_content:93027567-b8e4-41bd-a2b6-5c621757a340": {
-          "rows_content": [],
+          "rows_content": [
+              [
+                  {
+                      "col_content": [
+                          {
+                              "block_id": "lkb11_promotionalvideo",
+                              "type": "block",
+                              "tb_item_config": []
+                          }
+                      ],
+                      "col_config": {
+                          "width": "4",
+                          "class": "",
+                          "hidewcol": "",
+                          "showblocktitle": "1"
+                      }
+                  },
+                  {
+                      "col_content": [
+                          {
+                              "block_id": "lkb11_audiencereactions",
+                              "type": "block",
+                              "tb_item_config": []
+                          }
+                      ],
+                      "col_config": {
+                          "width": "4",
+                          "class": "",
+                          "hidewcol": "",
+                          "showblocktitle": "1"
+                      }
+                  },
+                  {
+                      "col_content": [
+                          {
+                              "block_id": "lkb11_promotionalphotos",
+                              "type": "block",
+                              "tb_item_config": []
+                          }
+                      ],
+                      "col_config": {
+                          "width": "4",
+                          "class": "media-submenu",
+                          "hidewcol": "",
+                          "showblocktitle": "1"
+                      }
+                  }
+              ]
+          ],
           "submenu_config": {
               "width": "",
               "class": "",
