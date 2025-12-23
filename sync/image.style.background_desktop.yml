@@ -1,0 +1,15 @@
+uuid: 453a79bc-6e82-46ec-bc35-b80b31db3d8d
+langcode: en
+status: true
+dependencies: {  }
+name: background_desktop
+label: 'Background - desktop'
+effects:
+  7cbf7923-8db4-4d2a-9bb4-be6605112ab6:
+    uuid: 7cbf7923-8db4-4d2a-9bb4-be6605112ab6
+    id: image_scale
+    weight: 1
+    data:
+      width: 1280
+      height: 720
+      upscale: false

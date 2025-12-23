@@ -9,7 +9,6 @@ dependencies:
     - bg_image_formatter
     - node
     - user
-    - views_random_seed
 id: background_image
 label: 'Background image'
 module: views
@@ -127,24 +126,19 @@ display:
         options: {  }
       empty: {  }
       sorts:
-        random_seed:
-          id: random_seed
+        random:
+          id: random
           table: views
-          field: random_seed
+          field: random
           relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: views_random_seed_random
+          plugin_id: random
           order: ASC
           expose:
             label: ''
             field_identifier: ''
           exposed: false
-          user_seed_type: same_per_user
-          anonymous_session: false
-          reset_seed_int: 86400
-          reset_seed_custom: 10
-          reuse_seed: ''
       arguments: {  }
       filters:
         status:
@@ -217,7 +211,7 @@ display:
       footer: {  }
       display_extenders: {  }
     cache_metadata:
-      max-age: -1
+      max-age: 0
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
@@ -236,7 +230,7 @@ display:
           metatags: {  }
           tokenize: false
     cache_metadata:
-      max-age: -1
+      max-age: 0
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'

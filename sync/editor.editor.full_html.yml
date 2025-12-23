@@ -32,7 +32,6 @@ settings:
       - codeBlock
       - '|'
       - sourceEditing
-      - ai_balloon_menu
   plugins:
     ai_ckeditor_ai:
       dialog:

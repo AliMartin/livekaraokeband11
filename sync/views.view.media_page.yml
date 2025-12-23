@@ -11,7 +11,6 @@ dependencies:
     - node
     - text
     - user
-    - views_infinite_scroll
     - youtube
 id: media_page
 label: 'Media page'
@@ -292,7 +291,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"wrapper\">\r\n  <div class=\"image\">{{ field_media_image }}</div>\r\n  <h2>{{ title }}</h2>\r\n  <div class=\"body\">{{ body }}</div>\r\n  <div class=\"link\">{{ view_node }}</div>\r\n</div>\r\n"
+            text: "<div class=\"wrapper\">\r\n  <div class=\"image\">{{ field_media_image }}</div>\r\n  <h2>{{ title }}</h2>\r\n  <div class=\"link\">{{ view_node }}</div>\r\n</div>\r\n"
             make_link: false
             path: ''
             absolute: false
@@ -330,28 +329,9 @@ display:
           empty_zero: false
           hide_alter_empty: false
       pager:
-        type: infinite_scroll
+        type: none
         options:
           offset: 0
-          pagination_heading_level: h4
-          items_per_page: 8
-          total_pages: null
-          id: 0
-          tags:
-            next: 'Next ›'
-            previous: '‹ Previous'
-          expose:
-            items_per_page: false
-            items_per_page_label: 'Items per page'
-            items_per_page_options: '5, 10, 25, 50'
-            items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
-            offset: false
-            offset_label: Offset
-          views_infinite_scroll:
-            button_text: 'Load More'
-            automatically_load_content: true
-            initially_load_all_pages: false
       exposed_form:
         type: basic
         options:
@@ -371,17 +351,17 @@ display:
         options: {  }
       empty: {  }
       sorts:
-        promote:
-          id: promote
+        sticky:
+          id: sticky
           table: node_field_data
-          field: promote
+          field: sticky
           relationship: none
           group_type: group
           admin_label: ''
           entity_type: node
-          entity_field: promote
+          entity_field: sticky
           plugin_id: standard
-          order: ASC
+          order: DESC
           expose:
             label: ''
             field_identifier: ''
@@ -485,7 +465,6 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       tags:
@@ -804,8 +783,8 @@ display:
         type: normal
         title: Videos
         description: null
-        weight: -49
-        enabled: true
+        weight: -48
+        enabled: false
         expanded: false
         menu_name: menu-mmenu
         parent: ''
@@ -815,7 +794,6 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       tags:

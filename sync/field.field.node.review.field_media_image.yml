@@ -6,8 +6,6 @@ dependencies:
     - field.storage.node.field_media_image
     - media.type.image
     - node.type.review
-  content:
-    - 'media:image:058317c0-f5fb-45b2-966c-5e4dd0ab5f79'
 id: node.review.field_media_image
 field_name: field_media_image
 entity_type: node
@@ -16,10 +14,7 @@ label: 'Media image'
 description: ''
 required: false
 translatable: true
-default_value:
-  -
-    target_uuid: 058317c0-f5fb-45b2-966c-5e4dd0ab5f79
-    weight: 0
+default_value: {  }
 default_value_callback: ''
 settings:
   handler: 'default:media'

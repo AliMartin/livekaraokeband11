@@ -259,7 +259,7 @@ display:
         type: normal
         title: 'Previous clients'
         description: null
-        weight: -39
+        weight: -44
         enabled: true
         expanded: false
         menu_name: menu-mmenu

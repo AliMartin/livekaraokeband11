@@ -1,6 +1,13 @@
 .icarus-on {
   li.menu-item--viewsclientspage-1,
-  .client-strip-wrapper {
+  .client-strip-wrapper,
+  .view-reviews .image {
     display: none;
   }
+  .view-news .wrapper {
+    grid-template-columns: 0px 1fr !important;
+  }
 }
+
+
+

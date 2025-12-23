@@ -89,7 +89,6 @@
         "drupal/upgrade_status": "^4.3",
         "drupal/views_auto_refresh": "^2.0",
         "drupal/views_bootstrap": "^5.5@alpha",
-        "drupal/views_infinite_scroll": "^2.0",
         "drupal/views_random_seed": "^1.2",
         "drupal/webform": "^6.3@beta",
         "drupal/webform_content_creator": "^4.0",

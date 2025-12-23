@@ -11,7 +11,6 @@ dependencies:
     - node
     - text
     - user
-    - views_infinite_scroll
 id: news
 label: News
 module: views
@@ -321,11 +320,11 @@ display:
           empty_zero: false
           hide_alter_empty: false
       pager:
-        type: infinite_scroll
+        type: mini
         options:
           offset: 0
           pagination_heading_level: h4
-          items_per_page: 8
+          items_per_page: 24
           total_pages: null
           id: 0
           tags:
@@ -339,10 +338,6 @@ display:
             items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
-          views_infinite_scroll:
-            button_text: 'Load More'
-            automatically_load_content: true
-            initially_load_all_pages: false
       exposed_form:
         type: basic
         options:
@@ -780,7 +775,7 @@ display:
         type: normal
         title: News
         description: null
-        weight: -35
+        weight: -33
         enabled: false
         expanded: false
         menu_name: menu-mmenu

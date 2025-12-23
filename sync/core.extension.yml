@@ -105,7 +105,6 @@ module:
   user: 0
   views_auto_refresh: 0
   views_bootstrap: 0
-  views_infinite_scroll: 0
   views_random_seed: 0
   views_ui: 0
   webform: 0
