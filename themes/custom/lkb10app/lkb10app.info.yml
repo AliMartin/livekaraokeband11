@@ -2,7 +2,7 @@ name: 'Live Karaoke Band app subtheme'
 type: theme
 description: 'Live Karaoke Band app subtheme subtheme based on Bootstrap 5 theme.'
 core_version_requirement: '^10.1 || ^11'
-'base theme': lkb10
+'base theme': lkb11
 libraries:
   - lkb10app/global-styling
 ckeditor_stylesheets:

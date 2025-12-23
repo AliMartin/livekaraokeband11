@@ -1,11 +1,71 @@
+
+body,
+.mm-page,
+.mm-wrapper_background body {
+  background-color: inherit !important;
+  color: #f5f5f7;
+  font-optical-sizing: auto;
+}
+
+/* Background image starts */
+html, body {
+  min-height: 100%;
+}
+
 body {
-  background-color: $black;
-  color: $white;
+  margin: 0;
+  position: relative;
+}
+
+/* Put the image on a pseudo-element so it doesn't interfere with layout */
+body::before {
+  content: "";
+  position: fixed;         /* stays put while content scrolls */
+  inset: 0;
+  z-index: -1;
+
+  background-image: url("/sites/default/files/2025-11/livekaraoke-80.JPG");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+
+header {
+  padding-top: 10px !important;
+  padding-bottom: 10px;
+}
+
+#header-container-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 body main .region-content {
   text-align: center;
 }
+
+main > .container .region-content {
+  margin: 15px auto 0 auto !important;
+  padding: 15px 30px !important;
+
+  h1 {
+    margin-bottom: 10px !important;
+    font-size: 28px !important;
+    line-height: 1.2;
+  }
+
+  h2 {
+    padding: 0 !important;
+    font-size: 24px !important;
+    line-height: 1.2;
+  }
+}
+
+
+
 
 footer {
   display: none;
@@ -68,7 +128,7 @@ main .region-content {
     margin-right: auto;
 
     .views-row {
-      background-color: $gray;
+      background-color: rgba(0,0,0,0.5);
       padding: 15px;
       border-radius: 10px;
       font-size: 18px;
@@ -80,7 +140,7 @@ main .region-content {
         text-transform: uppercase;
         font-size: 14px;
         letter-spacing: 1px;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
       }
 
       // Name

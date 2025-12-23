@@ -5,12 +5,42 @@
  * Live Karaoke Band 11 theme file.
  */
 
+use Drupal\Core\Cache\Cache;
 use Drupal\node\NodeInterface;
 
 /**
  * Implements hook_preprocess_html().
  */
 function lkb11_preprocess_html(array &$variables): void {
+
+  // ------------------------------------------------------------
+  // 1) Add body class if a published "show" node exists.
+  // ------------------------------------------------------------
+  $show_nids = \Drupal::entityQuery('node')
+    ->condition('status', 1)
+    ->condition('type', 'show')
+    ->range(0, 1)
+    ->accessCheck(TRUE) // Use FALSE if you want this to ignore permissions.
+    ->execute();
+
+  if (!empty($show_nids)) {
+    $variables['attributes']['class'][] = 'show-is-live';
+  }
+
+  // Cache: invalidate when show nodes change; vary by permissions because
+  // accessCheck(TRUE) depends on the current user.
+  $variables['#cache']['tags'] = Cache::mergeTags(
+    $variables['#cache']['tags'] ?? [],
+    ['node_list:show']
+  );
+  $variables['#cache']['contexts'] = Cache::mergeContexts(
+    $variables['#cache']['contexts'] ?? [],
+    ['user.permissions']
+  );
+
+  // ------------------------------------------------------------
+  // 2) Your existing node/route logic.
+  // ------------------------------------------------------------
   $route_match = \Drupal::routeMatch();
   $node = $route_match->getParameter('node');
 
@@ -34,39 +64,22 @@ function lkb11_preprocess_html(array &$variables): void {
     }
 
     // Cache correctly per route + invalidate when node changes.
-    $variables['#cache']['contexts'][] = 'route';
-    $variables['#cache']['tags'][] = 'node:' . $node->id();
+    $variables['#cache']['contexts'] = Cache::mergeContexts(
+      $variables['#cache']['contexts'] ?? [],
+      ['route']
+    );
+    $variables['#cache']['tags'] = Cache::mergeTags(
+      $variables['#cache']['tags'] ?? [],
+      ['node:' . $node->id()]
+    );
   }
   else {
     // Still vary by route for non-node pages.
-    $variables['#cache']['contexts'][] = 'route';
+    $variables['#cache']['contexts'] = Cache::mergeContexts(
+      $variables['#cache']['contexts'] ?? [],
+      ['route']
+    );
   }
 
   $variables['attributes']['class'][] = $archive_class;
-}
-
-
-/* Change "Authored by" field label on news nodes to "First published" */
-
-/**
- * Implements hook_preprocess_field().
- */
-function lkb11_preprocess_field(array &$variables): void {
-  $element = $variables['element'];
-
-  // Target the node "created" field.
-  if (($element['#entity_type'] ?? NULL) === 'node' && ($element['#field_name'] ?? NULL) === 'created') {
-    $entity = $element['#object'] ?? NULL;
-
-    // Only for the "news" content type.
-    if ($entity instanceof NodeInterface && $entity->bundle() === 'news') {
-      $label = t('First published');
-
-      // Update the label used by field.html.twig.
-      $variables['label'] = $label;
-
-      // Also update the render array title for consistency.
-      $variables['element']['#title'] = $label;
-    }
-  }
 }

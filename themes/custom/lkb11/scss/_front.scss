@@ -14,11 +14,87 @@ video {
   object-fit: cover; /* Ensures the video covers the entire area */
 }
 
+/* Default spacing at the top of the page */
 body.path-frontpage {
   main[role="main"] {
     margin-top: 45vh;
   }
+  #block-lkb11-views-block-show-banner-on-front-page-block-1 {
+    display: none;
+  }
 }
+
+/* Reduced spacing at the top of the page when there is a show */
+body.show-is-live.path-frontpage {
+  main[role="main"] {
+    margin-top: 30px;
+  }
+  #block-lkb11-views-block-show-banner-on-front-page-block-1 {
+    display: block;
+  }
+}
+
+
+/*
+ * Front page live shows banner
+ */
+#block-lkb11-views-block-show-banner-on-front-page-block-1 {
+  max-width: 850px;
+  margin: 0 auto 60px auto;
+  text-align: center;
+  padding: 30px;
+  background-color: rgba(0,0,0,0.6);
+  border: 1px solid rgba(255,255,255,0.25);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  box-shadow: 0px 0px 15px 6px rgba(0,0,0,0.3);
+  border-radius: $border-radius;
+
+  h2 {
+    padding: 0;
+    margin-bottom: 10px;
+  }
+
+  .message {
+    font-weight: $font-weight-bold;
+    margin-bottom: 15px;
+  }
+
+  .view-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+
+    .views-row {
+      background-color: rgba(0,0,0,0.3);
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: $border-radius-img;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .views-field-field-show-date,
+    .views-field-field-show-location {
+      text-transform: uppercase;
+      font-weight: $font-weight-bold;
+      letter-spacing: 1px;
+      font-size: small;
+      margin-bottom: 5px;
+    }
+
+    .views-field-title {
+      margin-top: 10px;
+      margin-bottom: 15px;
+    }
+  }
+
+}
+
+
+
 
 #block-lkb11-homepagecontent {
   max-width: 850px;
