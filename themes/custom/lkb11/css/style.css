@@ -16111,6 +16111,22 @@ html.ios-fixed-bg body::before {
   z-index: -1;
 }
 
+/* mmenu overrides (if you added them) */
+html.ios-fixed-bg .mm-page,
+html.ios-fixed-bg .mm-wrapper,
+html.ios-fixed-bg .mm-wrapper_background,
+html.ios-fixed-bg .mm-wrapper_background body {
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+/* ensure wrappers reach the iOS viewport height */
+html.ios-fixed-bg,
+html.ios-fixed-bg body,
+html.ios-fixed-bg .mm-page {
+  min-height: 100svh;
+}
+
 .form-control {
   border: 2px solid #f2b510;
 }

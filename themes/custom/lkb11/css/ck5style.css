@@ -173,6 +173,8 @@
   /* Gallery and video pages */
   /* Only enable when JS adds this class */
   /* Faux fixed background layer */
+  /* mmenu overrides (if you added them) */
+  /* ensure wrappers reach the iOS viewport height */
   /* Default spacing at the top of the page */
   /* Reduced spacing at the top of the page when there is a show */
   /*
@@ -14661,6 +14663,18 @@ a > .ck-content code {
   background-size: var(--ios-bg-size, cover);
   pointer-events: none;
   z-index: -1;
+}
+.ck-content html.ios-fixed-bg .mm-page,
+.ck-content html.ios-fixed-bg .mm-wrapper,
+.ck-content html.ios-fixed-bg .mm-wrapper_background,
+.ck-content html.ios-fixed-bg .mm-wrapper_background body {
+  background-color: transparent !important;
+  background-image: none !important;
+}
+.ck-content html.ios-fixed-bg,
+.ck-content html.ios-fixed-bg body,
+.ck-content html.ios-fixed-bg .mm-page {
+  min-height: 100svh;
 }
 .ck-content .form-control {
   border: 2px solid #f2b510;
