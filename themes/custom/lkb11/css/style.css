@@ -16083,25 +16083,49 @@ body.archive-yes main > .container .region-content .field--name-field-media-imag
   margin-right: auto;
 }
 
-/* Only enable when JS adds this class */
-html.ios-fixed-bg body {
-  position: relative;
-  z-index: 0;
-  /* Stop iOS trying (and failing) to do fixed */
-  background-attachment: scroll !important;
-  /* Prevent “double background” (module bg + our faux layer) */
+/* ios-fixed-bg.css
+ *
+ * Purpose:
+ * - iOS Safari doesn't reliably support background-attachment: fixed on <body>.
+ * - We fake a fixed background using html::before and copy the computed body
+ *   background-image into CSS variables via JS.
+ *
+ * Notes:
+ * - This file assumes your JS adds: html.ios-fixed-bg
+ * - And sets CSS vars on <html>:
+ *   --ios-bg-image, --ios-bg-color, --ios-bg-repeat, --ios-bg-position, --ios-bg-size
+ */
+/* 1) Stop iOS/mmenu wrappers from painting a white background */
+html.ios-fixed-bg,
+html.ios-fixed-bg body,
+html.ios-fixed-bg .mm-page,
+html.ios-fixed-bg .mm-wrapper,
+html.ios-fixed-bg .mm-wrapper_background,
+html.ios-fixed-bg .mm-wrapper_background body {
+  background-color: transparent !important;
   background-image: none !important;
 }
 
-/* Faux fixed background layer */
-html.ios-fixed-bg body::before {
+/* 2) Keep normal text colour, etc. (optional)
+ * If you have other global body rules, you can remove this.
+ */
+html.ios-fixed-bg body {
+  color: #f5f5f7;
+}
+
+/* 3) Faux fixed background layer lives on <html>, not <body> */
+html.ios-fixed-bg {
+  position: relative;
+}
+
+html.ios-fixed-bg::before {
   content: "";
   position: fixed;
-  /* Oversize slightly to avoid iOS rubber-band gaps */
+  /* Oversize to cover iOS rubber-band + dynamic toolbars + safe area */
   top: -20vh;
-  right: 0;
-  bottom: -20vh;
   left: 0;
+  right: 0;
+  bottom: calc(-20vh - env(safe-area-inset-bottom));
   background-color: var(--ios-bg-color, #fff);
   background-image: var(--ios-bg-image, none);
   background-repeat: var(--ios-bg-repeat, no-repeat);
@@ -16111,28 +16135,21 @@ html.ios-fixed-bg body::before {
   z-index: -1;
 }
 
-/* mmenu overrides (if you added them) */
-html.ios-fixed-bg .mm-page,
-html.ios-fixed-bg .mm-wrapper,
-html.ios-fixed-bg .mm-wrapper_background,
-html.ios-fixed-bg .mm-wrapper_background body {
-  background-color: transparent !important;
-  background-image: none !important;
-}
-
-/* ensure wrappers reach the iOS viewport height */
+/* 4) Ensure key wrappers reach (at least) the viewport height */
 html.ios-fixed-bg,
 html.ios-fixed-bg body,
 html.ios-fixed-bg .mm-page {
+  min-height: 100vh;
   min-height: 100svh;
 }
 
+/* 5) If any element creates a new stacking context above the root,
+ * this helps keep the page content above the background layer.
+ */
+html.ios-fixed-bg body,
 html.ios-fixed-bg .mm-page {
-  outline: 4px solid red;
-}
-
-html.ios-fixed-bg body::before {
-  outline: 4px solid lime;
+  position: relative;
+  z-index: 0;
 }
 
 .form-control {
