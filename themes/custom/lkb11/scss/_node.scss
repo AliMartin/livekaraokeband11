@@ -6,13 +6,6 @@ body,
   font-optical-sizing: auto;
 }
 
-/* iOS Safari / iPadOS - fix for background images */
-@supports (-webkit-touch-callout: none) {
-  body {
-    background-attachment: scroll !important;
-  }
-}
-
 nav.tabs ul.nav-tabs {
   justify-content: center;
   li a {

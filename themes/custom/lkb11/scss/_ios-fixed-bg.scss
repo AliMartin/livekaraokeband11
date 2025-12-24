@@ -1,0 +1,32 @@
+/* Only enable when JS adds this class */
+html.ios-fixed-bg body {
+  position: relative;
+  z-index: 0;
+
+  /* Stop iOS trying (and failing) to do fixed */
+  background-attachment: scroll !important;
+
+  /* Prevent “double background” (module bg + our faux layer) */
+  background-image: none !important;
+}
+
+/* Faux fixed background layer */
+html.ios-fixed-bg body::before {
+  content: "";
+  position: fixed;
+
+  /* Oversize slightly to avoid iOS rubber-band gaps */
+  top: -20vh;
+  right: 0;
+  bottom: -20vh;
+  left: 0;
+
+  background-color: var(--ios-bg-color, #fff);
+  background-image: var(--ios-bg-image, none);
+  background-repeat: var(--ios-bg-repeat, no-repeat);
+  background-position: var(--ios-bg-position, center top);
+  background-size: var(--ios-bg-size, cover);
+
+  pointer-events: none;
+  z-index: -1;
+}

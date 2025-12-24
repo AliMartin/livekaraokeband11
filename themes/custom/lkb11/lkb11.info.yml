@@ -5,6 +5,7 @@ core_version_requirement: '^10.1 || ^11.0'
 'base theme': bootstrap5
 libraries:
   - lkb11/global-styling
+  - lkb11/ios_fixed_bg
 ckeditor_stylesheets:
   - css/style.css
 ckeditor5-stylesheets:
@@ -23,5 +24,4 @@ regions:
   hidden_blocks: 'Hidden blocks for TB Mega Menu'
 libraries-override:
   bootstrap5/global-styling: false
-
 
