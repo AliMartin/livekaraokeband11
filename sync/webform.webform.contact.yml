@@ -89,6 +89,13 @@ elements: |-
       '#title_display': invisible
       '#placeholder': 'Finally, if you can, please tell us a bit about your event. For example, the date and location.'
       '#format_items': comma
+  the_live_karaoke_band_brochure:
+    '#type': webform_attachment_url
+    '#title': 'The Live Karaoke Band brochure'
+    '#access': false
+    '#filename': lkb-brochure.pdf
+    '#link_title': 'The Live Karaoke Band brochure'
+    '#url': 'https://livekaraokeband.co.uk/sites/default/files/attachments/lkb-brochure.pdf'
   actions:
     '#type': webform_actions
     '#title': 'Submit button(s)'
@@ -288,7 +295,7 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: '[current-user:mail]'
+      to_mail: '[webform_submission:values:email:raw]'
       to_options: {  }
       bcc_mail: ''
       bcc_options: {  }
@@ -307,9 +314,9 @@ handlers:
       ignore_access: false
       exclude_empty: true
       exclude_empty_checkbox: false
-      exclude_attachments: false
+      exclude_attachments: true
       html: true
-      attachments: false
+      attachments: true
       twig: false
       theme_name: ''
       langcode: ''

@@ -1,0 +1,18 @@
+uuid: 6060112d-4e08-4ded-8a28-98b08a9b7481
+langcode: en
+status: true
+dependencies: {  }
+id: smtp
+label: SMTP
+plugin: smtp
+configuration:
+  user: info@livekaraokeband.co.uk
+  pass: 'nE4MR#F4'
+  host: mail.livekaraokeband.co.uk
+  port: 465
+  query:
+    verify_peer: true
+    local_domain: ''
+    restart_threshold: null
+    restart_threshold_sleep: null
+    ping_threshold: null
