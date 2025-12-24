@@ -161,6 +161,7 @@
    * Add the correct display in IE 10.
    */
   /* Client strip */
+  /* iOS Safari / iPadOS - fix for background images */
   /* Scaleable fonts for headings */
   /* Adjust paddings on headings */
   /* Pager */
@@ -14231,6 +14232,11 @@ a > .ck-content code {
   background-color: inherit;
   color: #f5f5f7;
   font-optical-sizing: auto;
+}
+@supports (-webkit-touch-callout: none) {
+  .ck-content body {
+    background-attachment: scroll !important;
+  }
 }
 .ck-content nav.tabs ul.nav-tabs, .ck-content nav.tabs .media-library-view--widget ul.view-header, .ck-content .media-library-view--widget nav.tabs ul.view-header {
   justify-content: center;

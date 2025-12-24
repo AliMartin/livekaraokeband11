@@ -15646,6 +15646,12 @@ body,
   font-optical-sizing: auto;
 }
 
+/* iOS Safari / iPadOS - fix for background images */
+@supports (-webkit-touch-callout: none) {
+  body {
+    background-attachment: scroll !important;
+  }
+}
 nav.tabs ul.nav-tabs, nav.tabs .media-library-view--widget ul.view-header, .media-library-view--widget nav.tabs ul.view-header {
   justify-content: center;
 }
