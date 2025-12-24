@@ -15,7 +15,7 @@ features:
   favicon: 1
 logo:
   use_default: 0
-  path: themes/custom/lkb10app/logo.png
+  path: themes/custom/lkb11/logo.png
 favicon:
   use_default: 1
 subtheme_folder: themes/custom

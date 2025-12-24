@@ -1,0 +1,29 @@
+uuid: 54fc3205-c88c-4177-bcaf-61ecef63f79c
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.show_banner_on_front_page
+  module:
+    - system
+    - views
+  theme:
+    - lkb11
+id: lkb11_views_block__show_banner_on_front_page_block_1
+theme: lkb11
+region: home_content
+weight: -17
+provider: null
+plugin: 'views_block:show_banner_on_front_page-block_1'
+settings:
+  id: 'views_block:show_banner_on_front_page-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: null
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

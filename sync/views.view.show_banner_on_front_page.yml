@@ -360,7 +360,7 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: "<h2>Send your song straight to the stage</h2>\r\n<div>We're now taking online requests to join us on stage</div>"
+            value: "<h2>Send your song straight to the stage!</h2>\r\n<div class=\"message\">We're now taking online requests to join us on stage</div>"
             format: code
           tokenize: false
       footer: {  }
