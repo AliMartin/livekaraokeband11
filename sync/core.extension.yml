@@ -91,6 +91,7 @@ module:
   shortcut: 0
   slick: 0
   slick_ui: 0
+  smtp: 0
   stage_file_proxy: 0
   symfony_mailer: 0
   syslog: 0

@@ -95,7 +95,7 @@ elements: |-
     '#access': false
     '#filename': lkb-brochure.pdf
     '#link_title': 'The Live Karaoke Band brochure'
-    '#url': 'https://livekaraokeband.co.uk/sites/default/files/attachments/lkb-brochure.pdf'
+    '#url': 'https://livekaraokeband.co.uk/emails/lkb-brochure.pdf'
   actions:
     '#type': webform_actions
     '#title': 'Submit button(s)'
