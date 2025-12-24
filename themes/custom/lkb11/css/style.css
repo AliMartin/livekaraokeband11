@@ -16152,6 +16152,10 @@ html.ios-fixed-bg .mm-page {
   z-index: 0;
 }
 
+html.ios-fixed-bg {
+  background: hotpink !important;
+}
+
 .form-control {
   border: 2px solid #f2b510;
 }
