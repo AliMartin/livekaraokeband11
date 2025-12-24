@@ -46,3 +46,7 @@ html.ios-fixed-bg body,
 html.ios-fixed-bg .mm-page {
   min-height: 100svh;
 }
+
+
+html.ios-fixed-bg .mm-page { outline: 4px solid red; }
+html.ios-fixed-bg body::before { outline: 4px solid lime; }

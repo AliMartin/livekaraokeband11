@@ -14676,6 +14676,12 @@ a > .ck-content code {
 .ck-content html.ios-fixed-bg .mm-page {
   min-height: 100svh;
 }
+.ck-content html.ios-fixed-bg .mm-page {
+  outline: 4px solid red;
+}
+.ck-content html.ios-fixed-bg body::before {
+  outline: 4px solid lime;
+}
 .ck-content .form-control {
   border: 2px solid #f2b510;
 }
