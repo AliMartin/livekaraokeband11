@@ -12,27 +12,9 @@
       {
           "type": "composer",
           "url": "https://packages.drupal.org/8"
-      },
-      {
-          "type": "composer",
-          "url": "https://asset-packagist.org"
-      },
-      {
-          "type": "package",
-          "package": {
-              "name": "jackmoore/colorbox",
-              "version": "1.6.4",
-              "type": "drupal-library",
-              "dist": {
-                  "url": "https://github.com/jackmoore/colorbox/archive/1.6.4.zip",
-                  "type": "zip"
-              }
-          }
       }
     ],
     "require": {
-        "bower-asset/fitvids": "^1.0",
-        "bower-asset/mmenu": "^8.0",
         "composer/installers": "^2.0",
         "cweagans/composer-patches": "^1.7",
         "drupal/admin_toolbar": "^3.6",
@@ -45,12 +27,11 @@
         "drupal/blockgroup": "^2.0",
         "drupal/bootstrap5": "^4.0@beta",
         "drupal/captcha": "^2.0",
-        "drupal/colorbox": "^2.0",
         "drupal/context": "^5.0@RC",
         "drupal/core-composer-scaffold": "^11",
         "drupal/core-project-message": "^11",
         "drupal/core-recommended": "^11",
-        "drupal/core-vendor-hardening": "11",
+        "drupal/core-vendor-hardening": "^11",
         "drupal/crop": "^2.1",
         "drupal/ctools": "^4.0",
         "drupal/dynamic_entity_reference": "^4.0@alpha",
@@ -100,12 +81,12 @@
         "drupal/yoast_seo": "^2.2",
         "drupal/youtube": "^3.0@beta",
         "drush/drush": "^13.7",
-        "jackmoore/colorbox": "^1.6",
-        "npm-asset/blazy": "^1.8",
-        "npm-asset/cropper": "^4.1",
-        "npm-asset/slick-carousel": "^1.8",
-        "npm-asset/superfish": "^1.7",
         "oomphinc/composer-installers-extender": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Drupal\\comment\\": "core/modules/comment/src/"
+        }
     },
     "conflict": {
         "drupal/drupal": "*"
