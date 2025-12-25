@@ -15,7 +15,7 @@ horizontal_superfish_delay: 300
 horizontal_superfish_speed: 100
 horizontal_superfish_speed_out: 100
 horizontal_superfish_hoverintent: true
-drag: true
+drag: false
 breakpoint_css_filepath: 'public://css'
 use_breakpoint: false
 allow_admin: false
@@ -23,4 +23,4 @@ wrapper_admin: true
 wrapper_theme: true
 use_polyfills: false
 modify_viewport: true
-use_bootstrap: true
+use_bootstrap: false

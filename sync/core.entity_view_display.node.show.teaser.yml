@@ -26,14 +26,7 @@ dependencies:
     - field.field.node.show.field_town
     - node.type.show
   module:
-    - field_layout
-    - layout_discovery
     - manage_display
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings:
-      label: ''
 id: node.show.teaser
 targetEntityType: node
 bundle: show

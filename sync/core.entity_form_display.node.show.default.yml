@@ -27,17 +27,11 @@ dependencies:
   module:
     - datetime
     - field_group
-    - field_layout
-    - layout_discovery
     - metatag
     - path
     - scheduler
     - webform
 third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings:
-      label: ''
   field_group:
     group_enquiry:
       children:

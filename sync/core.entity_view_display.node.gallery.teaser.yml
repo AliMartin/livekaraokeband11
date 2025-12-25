@@ -11,16 +11,9 @@ dependencies:
     - image.style.medium
     - node.type.gallery
   module:
-    - field_layout
-    - layout_discovery
     - manage_display
     - media
     - text
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings:
-      label: ''
 id: node.gallery.teaser
 targetEntityType: node
 bundle: gallery

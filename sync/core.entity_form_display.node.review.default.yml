@@ -9,17 +9,10 @@ dependencies:
     - field.field.node.review.field_metatag
     - node.type.review
   module:
-    - field_layout
-    - layout_discovery
     - media_library
     - metatag
     - path
     - text
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings:
-      label: ''
 id: node.review.default
 targetEntityType: node
 bundle: review

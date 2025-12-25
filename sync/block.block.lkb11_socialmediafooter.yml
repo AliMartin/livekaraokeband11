@@ -19,7 +19,5 @@ settings:
   label: 'Follow us on social media'
   label_display: visible
   provider: block_content
-  status: true
-  info: ''
   view_mode: full
 visibility: {  }

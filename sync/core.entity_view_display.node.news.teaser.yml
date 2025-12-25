@@ -15,15 +15,8 @@ dependencies:
     - field.field.node.news.field_yoast_seo
     - node.type.news
   module:
-    - field_layout
-    - layout_discovery
     - manage_display
     - text
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings:
-      label: ''
 id: node.news.teaser
 targetEntityType: node
 bundle: news

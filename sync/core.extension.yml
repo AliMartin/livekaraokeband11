@@ -21,7 +21,6 @@ module:
   captcha: 0
   ckeditor5: 0
   cloak: 0
-  colorbox: 0
   config: 0
   contact: 0
   context: 0
@@ -38,9 +37,7 @@ module:
   editor: 0
   field: 0
   field_group: 0
-  field_layout: 0
   field_ui: 0
-  field_widget_actions: 0
   file: 0
   filter: 0
   fitvids: 0

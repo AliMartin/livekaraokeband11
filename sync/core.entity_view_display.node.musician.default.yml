@@ -7,15 +7,8 @@ dependencies:
     - field.field.node.musician.field_skill
     - node.type.musician
   module:
-    - field_layout
-    - layout_discovery
     - manage_display
     - metatag
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings:
-      label: ''
 id: node.musician.default
 targetEntityType: node
 bundle: musician

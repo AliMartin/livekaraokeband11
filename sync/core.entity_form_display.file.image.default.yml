@@ -3,14 +3,7 @@ langcode: en
 status: true
 dependencies:
   module:
-    - field_layout
     - file
-    - layout_discovery
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings:
-      label: ''
 id: file.image.default
 targetEntityType: file
 bundle: image

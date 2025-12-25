@@ -8,15 +8,8 @@ dependencies:
     - field.field.node.client.field_metatag
     - node.type.client
   module:
-    - field_layout
-    - layout_discovery
     - manage_display
     - metatag
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings:
-      label: ''
 id: node.client.default
 targetEntityType: node
 bundle: client

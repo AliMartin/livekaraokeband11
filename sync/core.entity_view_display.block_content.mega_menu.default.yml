@@ -8,15 +8,8 @@ dependencies:
     - field.field.block_content.mega_menu.field_image
     - field.field.block_content.mega_menu.field_link
   module:
-    - field_layout
-    - layout_discovery
     - link
     - text
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings:
-      label: ''
 id: block_content.mega_menu.default
 targetEntityType: block_content
 bundle: mega_menu

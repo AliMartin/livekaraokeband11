@@ -15,18 +15,11 @@ dependencies:
     - node.type.news
   module:
     - block_field
-    - field_layout
     - file
-    - layout_discovery
     - manage_display
     - metatag
     - text
     - yoast_seo
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings:
-      label: ''
 id: node.news.default
 targetEntityType: node
 bundle: news
