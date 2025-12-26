@@ -15984,6 +15984,11 @@ body.archive-yes main > .container .region-content .field--name-field-media-imag
   }
 }
 
+.page-node-type-front-page-review main > .container .region-content,
+.page-node-type-review main > .container .region-content {
+  text-align: center;
+}
+
 /* Reviews page */
 .path-reviews main > .container .region-content {
   max-width: inherit;
@@ -16300,6 +16305,20 @@ body.show-is-live.path-frontpage #block-lkb11-views-block-show-banner-on-front-p
   font-size: clamp(1.2rem, 1.2vw + 1rem, 2.5rem);
   margin: 0 auto 10px auto;
 }
+/* Home page reviews */
+#block-lkb11-views-block-front-page-reviews-block-1 {
+  max-width: 750px;
+  margin: 0 auto 60px auto;
+  text-align: center;
+}
+#block-lkb11-views-block-front-page-reviews-block-1 .views-field-body {
+  font-size: clamp(1.2rem, 1.2vw + 1rem, 2.5rem);
+  line-height: 1.1;
+}
+#block-lkb11-views-block-front-page-reviews-block-1 .views-field-title {
+  font-weight: 700;
+}
+
 #block-lkb11-soundcloud {
   max-width: 750px;
   margin: 0 auto 60px auto;
@@ -16336,6 +16355,10 @@ body.show-is-live.path-frontpage #block-lkb11-views-block-show-banner-on-front-p
   border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 20px;
   z-index: -1;
+}
+#block-lkb11-whatsnewfor2026 p,
+#block-lkb11-homepagefaq p {
+  line-height: 1.3;
 }
 #block-lkb11-whatsnewfor2026 p a,
 #block-lkb11-homepagefaq p a {

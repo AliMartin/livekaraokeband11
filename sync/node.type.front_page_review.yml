@@ -1,0 +1,31 @@
+uuid: 10a393b0-fa2f-44a0-b6ef-2a045825ea50
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - scheduler
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+  scheduler:
+    expand_fieldset: when_required
+    fields_display_mode: vertical_tab
+    publish_enable: false
+    publish_past_date: error
+    publish_past_date_created: false
+    publish_required: false
+    publish_revision: false
+    publish_touch: false
+    show_message_after_update: true
+    unpublish_enable: false
+    unpublish_required: false
+    unpublish_revision: false
+name: 'Front page review'
+type: front_page_review
+description: 'A simple text based content type for showing selected, edited reviews on a front page scroller.'
+help: null
+new_revision: false
+preview_mode: 0
+display_submitted: true

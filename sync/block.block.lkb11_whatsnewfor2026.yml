@@ -12,7 +12,7 @@ dependencies:
 id: lkb11_whatsnewfor2026
 theme: lkb11
 region: home_content
-weight: -16
+weight: -15
 provider: null
 plugin: 'block_content:7988aa49-63e7-4c49-ae50-70bba98bf2eb'
 settings:

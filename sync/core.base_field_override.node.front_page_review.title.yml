@@ -1,0 +1,18 @@
+uuid: 430de9d5-b4fd-4a4e-8e27-0edeee30b797
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.front_page_review
+id: node.front_page_review.title
+field_name: title
+entity_type: node
+bundle: front_page_review
+label: Who
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

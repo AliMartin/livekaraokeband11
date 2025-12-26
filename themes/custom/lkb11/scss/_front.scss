@@ -136,6 +136,23 @@ body.show-is-live.path-frontpage {
 }
 
 
+/* Home page reviews */
+#block-lkb11-views-block-front-page-reviews-block-1 {
+  max-width: 750px;
+  margin: 0 auto 60px auto;
+  text-align: center;
+
+  .views-field-body {
+    font-size: clamp(1.2rem, 1.2vw + 1rem, 2.5rem);
+    line-height: 1.1;
+  }
+  .views-field-title {
+    font-weight: $font-weight-bold;
+  }
+}
+
+
+
 #block-lkb11-soundcloud {
   max-width: 750px;
   margin: 0 auto 60px auto;
@@ -178,6 +195,10 @@ body.show-is-live.path-frontpage {
     z-index: -1;
   }
   
+  p {
+    line-height: 1.3;
+  }
+
   p a {
     font-weight: $font-weight-bold;
   }

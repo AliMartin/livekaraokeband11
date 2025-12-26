@@ -35,7 +35,6 @@ h4 {padding-top: 5px;}
   }
 }
 
-
 main > .container .region-content {
   font-size: 1.2rem;
   max-width: 850px;
@@ -245,9 +244,6 @@ body.archive-yes {
 }
 
 
-
-
-
 /* News page */
 .path-news main > .container .region-content {
   margin-top: 60px;
@@ -366,11 +362,12 @@ body.archive-yes {
   }
 }
 
-
-
-
-
-
+.page-node-type-front-page-review,
+.page-node-type-review {
+  main > .container .region-content {
+    text-align: center;
+  }
+}
 
 /* Reviews page */
 .path-reviews main > .container .region-content {

@@ -182,6 +182,7 @@
   /*
    * Front page live shows banner
    */
+  /* Home page reviews */
   /* What's new for 2026 */
   /* Home page FAQ */
 }
@@ -14550,6 +14551,10 @@ a > .ck-content code {
     margin: 0 0 15px 0;
   }
 }
+.ck-content .page-node-type-front-page-review main > .container .region-content,
+.ck-content .page-node-type-review main > .container .region-content {
+  text-align: center;
+}
 .ck-content .path-reviews main > .container .region-content {
   max-width: inherit;
   margin-top: 60px;
@@ -14837,6 +14842,18 @@ a > .ck-content code {
   font-size: clamp(1.2rem, 1.2vw + 1rem, 2.5rem);
   margin: 0 auto 10px auto;
 }
+.ck-content #block-lkb11-views-block-front-page-reviews-block-1 {
+  max-width: 750px;
+  margin: 0 auto 60px auto;
+  text-align: center;
+}
+.ck-content #block-lkb11-views-block-front-page-reviews-block-1 .views-field-body {
+  font-size: clamp(1.2rem, 1.2vw + 1rem, 2.5rem);
+  line-height: 1.1;
+}
+.ck-content #block-lkb11-views-block-front-page-reviews-block-1 .views-field-title {
+  font-weight: 700;
+}
 .ck-content #block-lkb11-soundcloud {
   max-width: 750px;
   margin: 0 auto 60px auto;
@@ -14870,6 +14887,10 @@ a > .ck-content code {
   border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 20px;
   z-index: -1;
+}
+.ck-content #block-lkb11-whatsnewfor2026 p,
+.ck-content #block-lkb11-homepagefaq p {
+  line-height: 1.3;
 }
 .ck-content #block-lkb11-whatsnewfor2026 p a,
 .ck-content #block-lkb11-homepagefaq p a {
