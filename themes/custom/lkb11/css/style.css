@@ -16302,7 +16302,7 @@ body.show-is-live.path-frontpage #block-lkb11-views-block-show-banner-on-front-p
   font-size: clamp(1.7rem, 2vw + 1rem, 5rem);
 }
 #block-lkb11-homepagecontent h1, #block-lkb11-homepagecontent .h1 {
-  font-size: clamp(1.2rem, 1.2vw + 1rem, 2.5rem);
+  font-size: clamp(1.2rem, 1.2vw + 1rem, 2.3rem);
   margin: 0 auto 10px auto;
 }
 /* Home page reviews */
