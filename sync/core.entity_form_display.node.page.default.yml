@@ -10,11 +10,18 @@ dependencies:
     - field.field.node.page.field_metatag
     - node.type.page
   module:
+    - field_layout
     - file
+    - layout_discovery
     - media_library
     - metatag
     - path
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 _core:
   default_config_hash: AD_lefuYmjsKeH3OQApsyP_nLj6ZnGaALznLQSQ0Z_o
 id: node.page.default

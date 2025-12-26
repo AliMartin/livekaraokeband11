@@ -16,9 +16,11 @@ matchers:
     settings:
       metadata: 'by [node:author] | [node:content-type]'
       bundles:
+        gallery: gallery
         landing: landing
         news: news
         review: review
+        video: video
         webform: webform
       group_by_bundle: false
       substitution_type: canonical

@@ -9,10 +9,17 @@ dependencies:
     - field.field.node.gallery.field_metatag
     - node.type.gallery
   module:
+    - field_layout
+    - layout_discovery
     - media_library
     - metatag
     - path
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.gallery.default
 targetEntityType: node
 bundle: gallery

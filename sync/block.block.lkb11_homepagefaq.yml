@@ -1,23 +1,23 @@
-uuid: 0cb145a0-aea2-4537-9eeb-3b42fc405807
+uuid: 82403f69-7037-4e54-b193-f8efb85c6664
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:63b6fbed-d5e0-4f74-8da0-4aa98d2f95a2'
+    - 'block_content:basic:fc857e9b-d61e-43da-b0a5-c8ddbad66a89'
   module:
     - block_content
     - system
   theme:
     - lkb11
-id: lkb11_curatorfeed
+id: lkb11_homepagefaq
 theme: lkb11
 region: home_content
-weight: -13
+weight: -15
 provider: null
-plugin: 'block_content:63b6fbed-d5e0-4f74-8da0-4aa98d2f95a2'
+plugin: 'block_content:fc857e9b-d61e-43da-b0a5-c8ddbad66a89'
 settings:
-  id: 'block_content:63b6fbed-d5e0-4f74-8da0-4aa98d2f95a2'
-  label: 'Follow us @livekaraokeband'
+  id: 'block_content:fc857e9b-d61e-43da-b0a5-c8ddbad66a89'
+  label: 'Step up. Sing out. Steal the show.'
   label_display: visible
   provider: block_content
   view_mode: full

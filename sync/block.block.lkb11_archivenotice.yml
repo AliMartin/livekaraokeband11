@@ -11,7 +11,7 @@ dependencies:
 id: lkb11_archivenotice
 theme: lkb11
 region: content
-weight: -12
+weight: -13
 provider: null
 plugin: 'block_content:bf8b0281-d6e2-47da-98bc-105130f1f0ad'
 settings:

@@ -9,9 +9,16 @@ dependencies:
     - field.field.block_content.basic.field_youtube
     - image.style.max_650x650
   module:
+    - field_layout
     - image
+    - layout_discovery
     - text
     - youtube
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 _core:
   default_config_hash: orJpHUlAc_wiQLMUjIgEJXGeiqylGHMPcmNRjGtct-M
 id: block_content.basic.default

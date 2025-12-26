@@ -182,6 +182,8 @@
   /*
    * Front page live shows banner
    */
+  /* What's new for 2026 */
+  /* Home page FAQ */
 }
 .ck-content .text-yellow {
   color: #f2b510 !important;
@@ -14745,7 +14747,7 @@ a > .ck-content code {
   object-fit: cover; /* Ensures the video covers the entire area */
 }
 .ck-content body.path-frontpage main[role=main] {
-  margin-top: 45vh;
+  margin-top: 63vh;
 }
 .ck-content body.path-frontpage #block-lkb11-views-block-show-banner-on-front-page-block-1 {
   display: none;
@@ -14804,7 +14806,7 @@ a > .ck-content code {
   margin-bottom: 15px;
 }
 .ck-content #block-lkb11-homepagecontent {
-  max-width: 850px;
+  max-width: 1060px;
   margin: 0 auto 60px auto;
   text-align: center;
   padding: 30px;
@@ -14814,8 +14816,6 @@ a > .ck-content code {
   backdrop-filter: blur(5px);
   box-shadow: 0px 0px 15px 6px rgba(0, 0, 0, 0.3);
   border-radius: 20px;
-  position: relative;
-  z-index: -1;
 }
 .ck-content #block-lkb11-homepagecontent p {
   margin-bottom: 0;
@@ -14824,18 +14824,65 @@ a > .ck-content code {
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
-  font-size: small;
+  font-size: x-small;
 }
 .ck-content #block-lkb11-homepagecontent p.tagline {
-  font-size: clamp(1rem, 1vw + 1rem, 1.5rem);
+  font-size: clamp(1rem, 0.6vw + 1rem, 1.5rem);
   color: #f2b510;
 }
 .ck-content #block-lkb11-homepagecontent p.title {
-  font-size: clamp(2.2rem, 2vw + 1rem, 5rem);
+  font-size: clamp(1.7rem, 2vw + 1rem, 5rem);
 }
 .ck-content #block-lkb11-homepagecontent h1, .ck-content #block-lkb11-homepagecontent .h1 {
-  font-size: clamp(1.2rem, 2vw + 1rem, 2.5rem);
+  font-size: clamp(1.2rem, 1.2vw + 1rem, 2.5rem);
   margin: 0 auto 10px auto;
+}
+.ck-content #block-lkb11-soundcloud {
+  max-width: 750px;
+  margin: 0 auto 60px auto;
+  text-align: center;
+}
+.ck-content #block-lkb11-soundcloud h2, .ck-content #block-lkb11-soundcloud .h2 {
+  margin-bottom: 15px;
+}
+.ck-content #block-lkb11-soundcloud iframe {
+  border-radius: 20px;
+}
+.ck-content #block-lkb11-whatsnewfor2026,
+.ck-content #block-lkb11-homepagefaq {
+  font-weight: 400;
+  max-width: 750px;
+  margin: 0 auto 60px auto;
+  text-align: center;
+  padding: 30px;
+  box-shadow: 0px 0px 15px 6px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+.ck-content #block-lkb11-whatsnewfor2026::before,
+.ck-content #block-lkb11-homepagefaq::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  filter: brightness(0.7) contrast(1.05);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  z-index: -1;
+}
+.ck-content #block-lkb11-whatsnewfor2026 p a,
+.ck-content #block-lkb11-homepagefaq p a {
+  font-weight: 700;
+}
+.ck-content #block-lkb11-whatsnewfor2026::before {
+  background: url("/themes/custom/lkb11/images/2026-background-02.jpg") center top/cover no-repeat;
+}
+.ck-content #block-lkb11-homepagefaq h3, .ck-content #block-lkb11-homepagefaq .h3 {
+  color: #f2b510;
+}
+.ck-content #block-lkb11-homepagefaq::before {
+  background: url("/themes/custom/lkb11/images/2026-background-03.jpg") center top/cover no-repeat;
 }
 .ck-content .node-864.page-node-type-landing main .region-content {
   max-width: inherit;
@@ -14914,6 +14961,7 @@ a > .ck-content code {
   margin-top: 30px;
 }
 .ck-content #block-lkb11-curatorfeed {
+  margin-bottom: 120px;
   /*
   .crt-load-more-container .crt-load-more {
     color: inherit;
@@ -14928,6 +14976,10 @@ a > .ck-content code {
     }
   }
   */
+}
+.ck-content #block-lkb11-curatorfeed h2, .ck-content #block-lkb11-curatorfeed .h2 {
+  text-align: center;
+  margin-bottom: 15px;
 }
 .ck-content #block-lkb11-curatorfeed article {
   background-color: rgba(0, 0, 0, 0.6);

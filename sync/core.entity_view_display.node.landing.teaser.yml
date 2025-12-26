@@ -14,9 +14,16 @@ dependencies:
     - image.style.medium
     - node.type.landing
   module:
+    - field_layout
+    - layout_discovery
     - manage_display
     - media
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.landing.teaser
 targetEntityType: node
 bundle: landing

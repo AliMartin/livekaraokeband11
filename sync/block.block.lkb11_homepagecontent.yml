@@ -12,7 +12,7 @@ dependencies:
 id: lkb11_homepagecontent
 theme: lkb11
 region: home_content
-weight: -16
+weight: -17
 provider: null
 plugin: 'block_content:b64480b8-49ba-46ea-8fb7-8a8cc393006b'
 settings:

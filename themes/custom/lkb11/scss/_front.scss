@@ -17,8 +17,9 @@ video {
 /* Default spacing at the top of the page */
 body.path-frontpage {
   main[role="main"] {
-    margin-top: 45vh;
+    margin-top: 63vh;
   }
+  // Hide the live shows block
   #block-lkb11-views-block-show-banner-on-front-page-block-1 {
     display: none;
   }
@@ -29,6 +30,7 @@ body.show-is-live.path-frontpage {
   main[role="main"] {
     margin-top: 30px;
   }
+  // Show the live shows block
   #block-lkb11-views-block-show-banner-on-front-page-block-1 {
     display: block;
   }
@@ -94,10 +96,8 @@ body.show-is-live.path-frontpage {
 }
 
 
-
-
 #block-lkb11-homepagecontent {
-  max-width: 850px;
+  max-width: 1060px;
   margin: 0 auto 60px auto;
   text-align: center;
   padding: 30px;
@@ -107,8 +107,6 @@ body.show-is-live.path-frontpage {
   backdrop-filter: blur(5px);
   box-shadow: 0px 0px 15px 6px rgba(0,0,0,0.3);
   border-radius: $border-radius;
-  position: relative;
-  z-index: -1;
 
 
   p {
@@ -119,17 +117,17 @@ body.show-is-live.path-frontpage {
     font-weight: $font-weight-bold;
     letter-spacing: 2px;
     text-transform: uppercase;
-    font-size: small;
+    font-size: x-small;
   }
   p.tagline {
-    font-size: clamp(1.0rem, 1vw + 1rem, 1.5rem);
+    font-size: clamp(1.0rem, 0.6vw + 1rem, 1.5rem);
     color: $yellow;
   }
   p.title {
-    font-size: clamp(2.2rem, 2vw + 1rem, 5rem);
+    font-size: clamp(1.7rem, 2vw + 1rem, 5rem);
   }
   h1 {
-    font-size: clamp(1.2rem, 2vw + 1rem, 2.5rem);
+    font-size: clamp(1.2rem, 1.2vw + 1rem, 2.5rem);
     margin: 0 auto 10px auto;
   }
   p.description {
@@ -137,3 +135,65 @@ body.show-is-live.path-frontpage {
   }
 }
 
+
+#block-lkb11-soundcloud {
+  max-width: 750px;
+  margin: 0 auto 60px auto;
+  text-align: center;
+
+  h2 {
+    margin-bottom: 15px;
+  }
+
+  iframe {
+    border-radius: $border-radius;
+  }
+}
+
+
+/* What's new for 2026 */
+/* Home page FAQ */
+#block-lkb11-whatsnewfor2026,
+#block-lkb11-homepagefaq  {
+  font-weight: 400;
+
+  max-width: 750px;
+  margin: 0 auto 60px auto;
+  text-align: center;
+  padding: 30px;
+  box-shadow: 0px 0px 15px 6px rgba(0,0,0,0.3);
+  border-radius: $border-radius;
+
+  position: relative;   // key: contains the absolutely-positioned ::before
+  overflow: hidden;     // key: stops it spilling outside the block
+  z-index: 0;           // avoids weird stacking contexts
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    filter: brightness(0.7) contrast(1.05);
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: $border-radius;
+    z-index: -1;
+  }
+  
+  p a {
+    font-weight: $font-weight-bold;
+  }
+}
+
+#block-lkb11-whatsnewfor2026 {
+  &::before {
+    background: url('/themes/custom/lkb11/images/2026-background-02.jpg') center top / cover no-repeat;
+  }
+}
+
+#block-lkb11-homepagefaq {
+  h3 {
+    color: $yellow;
+  }
+  &::before {
+    background: url('/themes/custom/lkb11/images/2026-background-03.jpg') center top / cover no-repeat;
+  }
+}

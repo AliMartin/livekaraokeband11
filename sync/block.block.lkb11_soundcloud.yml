@@ -12,7 +12,7 @@ dependencies:
 id: lkb11_soundcloud
 theme: lkb11
 region: home_content
-weight: -15
+weight: -14
 provider: null
 plugin: 'block_content:b5a503d7-da7d-4554-814b-4415d9142dcf'
 settings:

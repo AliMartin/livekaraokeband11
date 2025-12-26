@@ -10,10 +10,17 @@ dependencies:
     - field.field.node.video.field_youtube
     - node.type.video
   module:
+    - field_layout
+    - layout_discovery
     - metatag
     - path
     - text
     - youtube
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.video.default
 targetEntityType: node
 bundle: video

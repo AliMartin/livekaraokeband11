@@ -12,7 +12,7 @@ dependencies:
 id: lkb11_views_block__show_banner_on_front_page_block_1
 theme: lkb11
 region: home_content
-weight: -17
+weight: -18
 provider: null
 plugin: 'views_block:show_banner_on_front_page-block_1'
 settings:

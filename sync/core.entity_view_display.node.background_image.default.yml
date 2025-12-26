@@ -9,9 +9,16 @@ dependencies:
     - field.field.node.background_image.field_metatag
     - node.type.background_image
   module:
+    - field_layout
+    - layout_discovery
     - manage_display
     - metatag
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.background_image.default
 targetEntityType: node
 bundle: background_image

@@ -1,23 +1,23 @@
-uuid: 0cb145a0-aea2-4537-9eeb-3b42fc405807
+uuid: f3eb4731-b585-4545-b566-254839379038
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:63b6fbed-d5e0-4f74-8da0-4aa98d2f95a2'
+    - 'block_content:basic:7988aa49-63e7-4c49-ae50-70bba98bf2eb'
   module:
     - block_content
     - system
   theme:
     - lkb11
-id: lkb11_curatorfeed
+id: lkb11_whatsnewfor2026
 theme: lkb11
 region: home_content
-weight: -13
+weight: -16
 provider: null
-plugin: 'block_content:63b6fbed-d5e0-4f74-8da0-4aa98d2f95a2'
+plugin: 'block_content:7988aa49-63e7-4c49-ae50-70bba98bf2eb'
 settings:
-  id: 'block_content:63b6fbed-d5e0-4f74-8da0-4aa98d2f95a2'
-  label: 'Follow us @livekaraokeband'
+  id: 'block_content:7988aa49-63e7-4c49-ae50-70bba98bf2eb'
+  label: "What's new for 2026!"
   label_display: visible
   provider: block_content
   view_mode: full
