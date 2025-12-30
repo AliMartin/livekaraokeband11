@@ -1,0 +1,87 @@
+{#
+/**
+ * @file
+ * Theme override to display a single Drupal page while offline.
+ *
+ * All available variables are mirrored in page.html.twig.
+ * Some may be blank but they are provided for consistency.
+ *
+ * @see template_preprocess_maintenance_page()
+ */
+#}
+<div class="layout-container d-flex flex-column justify-content-center">
+
+  <div class="logo">
+    <a class="text-center d-block" href="{{ front_page }}" title="{{ 'Home'|t }}" rel="home">
+      <img src="{{ logo }}" alt="{{ 'Home'|t }}"/>
+    </a>
+  </div>
+
+  <main role="main">
+    <h1 class="site-name">
+      {{ site_name }}
+    </h1>
+
+    {% if title|render|striptags|trim %}
+      <h3 class="text-center">{{ title }}</h3>
+    {% endif %}
+
+    {{ page.highlighted }}
+
+    {{ page.content }}
+
+  </main>
+
+</div>{# /.layout-container #}
+
+<footer>
+  <div class="container">
+    <div class="region region-footer">
+
+      <div id="block-lkb11-socialmediafooter">
+        <h2>Follow us on social media</h2>
+        <div id="footer-links">
+          <div>
+            <a href="https://www.instagram.com/livekaraokeband" target="_blank" class="footer-link-instagram">
+            <i class="fa-brands fa-instagram"></i>
+            <span>Instagram</span></a>
+          </div>
+          <div>
+            <a href="https://www.facebook.com/livekaraokeband" target="_blank" target="_blank" class="footer-link-facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+            <span>Facebook</span></a>
+          </div>
+          <div>
+            <a href="https://www.youtube.com/user/livekaraokeband" target="_blank" class="footer-link-youtube">
+            <i class="fa-brands fa-youtube"></i>
+            <span>YouTube</span></a>
+          </div>
+          <div>
+            <a href="https://twitter.com/livekaraokeband" target="_blank" target="_blank" class="footer-link-twitter">
+            <i class="fa-brands fa-x-twitter"></i>
+            <span>Twitter</span></a>
+          </div>
+        </div>
+
+        <div id="social-media-username">@livekaraokeband</div>
+      </div>
+
+      <div id="block-lkb11-footertext">
+        <div class="footer-text">
+          <div class="field--name-body">
+            <div>Established in 2008, The Live Karaoke Band is the country’s leading rockaoke and bandeoke experience, delivering one of the most exciting and interactive live shows on the circuit. With a choice of fully customisable packages to suit every budget, this highly experienced band has been inviting audiences to take the stage and sing at festivals, corporate events, weddings and private parties across the UK.</div>
+            <div>Copyright © 2026 The Live Karaoke Band Limited, company number 16678543.</div>
+            <div>The Live Karaoke Band logo is a registered trademark of Hyperluminal Limited, company number 07914585.</div>
+          </div>
+        </div>
+      </div>
+
+      <div id="block-lkb11-companylogos">
+        <div class="logo-wrapper" 
+          <div class="hyperluminal"><img src="/themes/custom/lkb11/images/hyperluminal.png"></div>
+        </div>
+      </div>
+
+    </row>
+  </container>
+</footer>

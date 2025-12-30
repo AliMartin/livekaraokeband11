@@ -1,0 +1,46 @@
+body.maintenance-page.path-frontpage {
+  background-color: $black;
+
+  .logo {
+    margin-top: 60px;
+  }
+
+  main[role="main"] {
+    font-size: 1.2rem;
+    max-width: 950px;
+    margin: 60px auto 120px auto;
+    padding: 30px 30px 60px 30px;
+    background-color: rgba(0,0,0,0.6);
+    border: 1px solid rgba(255,255,255,0.25);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 0px 15px 6px rgba(0,0,0,0.3);
+    border-radius: $border-radius;
+    text-align: center;
+
+    h1 {
+      margin: 0 auto 15px auto;
+    }
+
+    h3 {
+      padding: 0;
+      color: $yellow;
+      // font-weight: 500;
+    }
+  }
+}
+
+/* Faux fixed layer */
+body.maintenance-page.path-frontpage::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+
+  background-image: url("/themes/custom/lkb11/images/2026-background-01.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+
+  pointer-events: none;
+  z-index: -1;
+}

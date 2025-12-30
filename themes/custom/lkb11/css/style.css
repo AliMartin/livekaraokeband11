@@ -16804,6 +16804,46 @@ body.mm-wrapper_opening #block-lkb10-responsivemenumobileicon .responsive-menu-t
   background: #f98105;
 }
 
+body.maintenance-page.path-frontpage {
+  background-color: #000000;
+}
+body.maintenance-page.path-frontpage .logo {
+  margin-top: 60px;
+}
+body.maintenance-page.path-frontpage main[role=main] {
+  font-size: 1.2rem;
+  max-width: 950px;
+  margin: 60px auto 120px auto;
+  padding: 30px 30px 60px 30px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  box-shadow: 0px 0px 15px 6px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  text-align: center;
+}
+body.maintenance-page.path-frontpage main[role=main] h1, body.maintenance-page.path-frontpage main[role=main] .h1 {
+  margin: 0 auto 15px auto;
+}
+body.maintenance-page.path-frontpage main[role=main] h3, body.maintenance-page.path-frontpage main[role=main] .h3 {
+  padding: 0;
+  color: #f2b510;
+}
+
+/* Faux fixed layer */
+body.maintenance-page.path-frontpage::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("/themes/custom/lkb11/images/2026-background-01.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  pointer-events: none;
+  z-index: -1;
+}
+
 #klaro #klaro-cookie-notice,
 #klaro .cm-modal {
   border: 5px solid #f98105;
