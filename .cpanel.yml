@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/hyperlum/new.livekaraokeband.co.uk
+    - export DEPLOYPATH=/home/hyperlum/livekaraokeband.co.uk
     - /bin/cp -r * $DEPLOYPATH
