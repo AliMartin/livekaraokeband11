@@ -7,8 +7,8 @@ _core:
 id: node
 label: Content
 tags:
-  canonical_url: '[node:url]'
-  description: '[node:field_teaser]'
   keywords: 'live band karaoke, rockaoke, bandeoke, party band, wedding, corporate entertainment'
-  rights: 'The Live Karaoke Band Limited'
   title: '[node:title] | [site:name]'
+  canonical_url: '[node:url]'
+  rights: 'Hyperluminal Ltd'
+  description: '[node:field_teaser]'

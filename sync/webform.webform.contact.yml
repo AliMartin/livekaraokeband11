@@ -374,7 +374,7 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: info@alimartin.com
+      to_mail: 'info@alimartin.com,markprest1@yahoo.com,wrightyisaleg@hotmail.co.uk'
       to_options: {  }
       bcc_mail: ''
       bcc_options: {  }
@@ -415,7 +415,7 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: info@alimartin.com
+      to_mail: 'info@alimartin.com,markprest1@yahoo.com,wrightyisaleg@hotmail.co.uk'
       to_options: {  }
       bcc_mail: ''
       bcc_options: {  }

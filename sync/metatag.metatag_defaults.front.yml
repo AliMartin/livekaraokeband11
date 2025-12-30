@@ -9,7 +9,7 @@ label: 'Front page'
 tags:
   canonical_url: '[site:url]'
   description: 'Celebrating over a decade of entertainment, The Live Band Karaoke is the most popular rockaoke and bandeoke act in the UK where you are the star!'
-  generator: 'Drupal 11 (http://drupal.org)'
+  generator: 'Drupal 9 (http://drupal.org)'
   keywords: 'live band karaoke, rockaoke, bandeoke, party band, wedding, corporate entertainment'
   rights: 'The Live Karaoke Band Limited'
   shortlink: '[site:url]'
