@@ -39,9 +39,9 @@ body.mm-wrapper_opening {
 
 
 .mm-menu_theme-dark {
-  background-color: $white;
-  --mm-color-background: $white;
-  color: $black;
+  background-color: $gray;
+  --mm-color-background: $gray;
+  color: $white;
 
   .mm-panels {
     .mm-navbar:before {
@@ -74,8 +74,8 @@ body.mm-wrapper_opening {
       line-height: 1;
       // text-transform: uppercase;
       font-weight: $font-weight-bold;
-      color: $black;
-      --mm-color-text: $black;
+      color: $white;
+      --mm-color-text: $white;
       text-align: center;
     }
     li.mm-listitem::after {
