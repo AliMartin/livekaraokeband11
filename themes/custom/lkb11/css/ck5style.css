@@ -177,6 +177,7 @@
   /* Faux fixed background lives on <html> */
   /* Lift your actual page content above the faux background */
   /* Make sure wrappers reach viewport height */
+  /* Marketing consent */
   /* Default spacing at the top of the page */
   /* Reduced spacing at the top of the page when there is a show */
   /*
@@ -13291,6 +13292,9 @@ a > .ck-content code {
 .ck-content .form-select {
   min-width: 5rem;
 }
+.ck-content input.form-text {
+  margin-top: 0;
+}
 .ck-content input[type=search] {
   box-sizing: border-box;
 }
@@ -13447,7 +13451,13 @@ a > .ck-content code {
 }
 .ck-content footer .region-footer {
   display: flex;
-  flex-direction: column;
+  gap: 40px;
+}
+@media screen and (max-width: 767px) {
+  .ck-content footer .region-footer {
+    flex-direction: column;
+    gap: 30px;
+  }
 }
 .ck-content .region-sidebar-first,
 .ck-content .region-sidebar-second,
@@ -13464,6 +13474,11 @@ a > .ck-content code {
 .ck-content .region-nav-branding,
 .ck-content .region-nav-additional {
   flex-shrink: 0;
+}
+@media (min-width: 992px) {
+  .ck-content .region-nav-additional {
+    display: flex;
+  }
 }
 .ck-content .tabs-primary {
   margin: 1rem 0;
@@ -13528,6 +13543,13 @@ a > .ck-content code {
 }
 .ck-content table {
   caption-side: unset;
+}
+.ck-content .admin-dblog .table .icon {
+  background-color: var(--bs-table-bg-state, var(--bs-table-bg-type, var(--bs-table-accent-bg, var(--bs-table-bg))));
+}
+.ck-content .admin-dblog .table > :not(caption) > * > * {
+  box-shadow: unset;
+  background-color: var(--bs-table-bg-state, var(--bs-table-bg-type, var(--bs-table-accent-bg, var(--bs-table-bg))));
 }
 .ck-content .progress {
   display: block;
@@ -14737,6 +14759,13 @@ a > .ck-content code {
 .ck-content form.webform-submission-contact-form .form-item-package .description {
   line-height: 1.2;
   margin-bottom: 15px;
+}
+.ck-content form.webform-submission-contact-form .form-item-marketing-consent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  align-items: flex-start;
 }
 .ck-content .video-wrapper {
   position: fixed;

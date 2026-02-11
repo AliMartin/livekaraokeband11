@@ -14472,6 +14472,9 @@ a[class=button] {
   min-width: 5rem;
 }
 
+input.form-text {
+  margin-top: 0;
+}
 input[type=search] {
   box-sizing: border-box;
 }
@@ -14647,7 +14650,13 @@ footer.footer-dark a:hover {
 }
 footer .region-footer {
   display: flex;
-  flex-direction: column;
+  gap: 40px;
+}
+@media screen and (max-width: 767px) {
+  footer .region-footer {
+    flex-direction: column;
+    gap: 30px;
+  }
 }
 
 .region-sidebar-first,
@@ -14669,6 +14678,11 @@ footer .region-footer {
   flex-shrink: 0;
 }
 
+@media (min-width: 992px) {
+  .region-nav-additional {
+    display: flex;
+  }
+}
 .tabs-primary {
   margin: 1rem 0;
 }
@@ -14735,6 +14749,14 @@ a.tabledrag-handle .handle {
 
 table {
   caption-side: unset;
+}
+
+.admin-dblog .table .icon {
+  background-color: var(--bs-table-bg-state, var(--bs-table-bg-type, var(--bs-table-accent-bg, var(--bs-table-bg))));
+}
+.admin-dblog .table > :not(caption) > * > * {
+  box-shadow: unset;
+  background-color: var(--bs-table-bg-state, var(--bs-table-bg-type, var(--bs-table-accent-bg, var(--bs-table-bg))));
 }
 
 .progress {
@@ -16188,6 +16210,15 @@ form.webform-submission-contact-form .form-item-package select {
 form.webform-submission-contact-form .form-item-package .description {
   line-height: 1.2;
   margin-bottom: 15px;
+}
+
+/* Marketing consent */
+form.webform-submission-contact-form .form-item-marketing-consent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  align-items: flex-start;
 }
 
 .video-wrapper {
