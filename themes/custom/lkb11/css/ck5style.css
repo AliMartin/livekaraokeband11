@@ -14876,6 +14876,10 @@ a > .ck-content code {
   max-width: 750px;
   margin: 0 auto 60px auto;
   text-align: center;
+  /* Module update suddently displaying this unused element as a grey box */
+}
+.ck-content #block-lkb11-views-block-front-page-reviews-block-1 .slide__media {
+  display: none;
 }
 .ck-content #block-lkb11-views-block-front-page-reviews-block-1 .views-field-body {
   font-size: clamp(1.2rem, 1.2vw + 1rem, 2.5rem);

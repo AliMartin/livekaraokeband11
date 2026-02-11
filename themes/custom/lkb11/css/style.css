@@ -16341,6 +16341,10 @@ body.show-is-live.path-frontpage #block-lkb11-views-block-show-banner-on-front-p
   max-width: 750px;
   margin: 0 auto 60px auto;
   text-align: center;
+  /* Module update suddently displaying this unused element as a grey box */
+}
+#block-lkb11-views-block-front-page-reviews-block-1 .slide__media {
+  display: none;
 }
 #block-lkb11-views-block-front-page-reviews-block-1 .views-field-body {
   font-size: clamp(1.2rem, 1.2vw + 1rem, 2.5rem);

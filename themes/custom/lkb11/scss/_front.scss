@@ -142,6 +142,11 @@ body.show-is-live.path-frontpage {
   margin: 0 auto 60px auto;
   text-align: center;
 
+  /* Module update suddently displaying this unused element as a grey box */
+  .slide__media {
+    display: none;
+  }
+
   .views-field-body {
     font-size: clamp(1.2rem, 1.2vw + 1rem, 2.5rem);
     line-height: 1.1;
