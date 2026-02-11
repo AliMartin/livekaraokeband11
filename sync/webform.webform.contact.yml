@@ -298,7 +298,7 @@ handlers:
     notes: ''
     status: true
     conditions: {  }
-    weight: 1
+    weight: -50
     settings:
       states:
         - completed
@@ -336,7 +336,7 @@ handlers:
     notes: ''
     status: false
     conditions: {  }
-    weight: 2
+    weight: -48
     settings:
       states:
         - completed
@@ -372,12 +372,12 @@ handlers:
     handler_id: email_notification_corporate
     label: 'Email notification - corporate'
     notes: ''
-    status: true
+    status: false
     conditions:
       enabled:
         ':input[name="type_of_enquiry"]':
           value: corporate
-    weight: 2
+    weight: -47
     settings:
       states:
         - completed
@@ -413,12 +413,12 @@ handlers:
     handler_id: email_notification_private
     label: 'Email notification - private'
     notes: ''
-    status: true
+    status: false
     conditions:
       enabled:
         ':input[name="type_of_enquiry"]':
           value: private
-    weight: 3
+    weight: -46
     settings:
       states:
         - completed
@@ -456,7 +456,7 @@ handlers:
     notes: ''
     status: false
     conditions: {  }
-    weight: 4
+    weight: -45
     settings:
       states:
         - completed
@@ -476,6 +476,45 @@ handlers:
       subject: '* Live Karaoke Band Enquiry *'
       body: _default
       excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      langcode: ''
+      parameters: {  }
+      debug: false
+  email_notification_to_team:
+    id: email
+    handler_id: email_notification_to_team
+    label: 'Email notification to team'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: -49
+    settings:
+      states:
+        - completed
+      to_mail: 'info@alimartin.com,markprest1@yahoo.com,wrightyisaleg@hotmail.co.uk'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: noreply@livekaraokeband.co.uk
+      from_options: {  }
+      from_name: '* Live Karaoke Band *'
+      reply_to: noreply@livekaraokeband.co.uk
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: '* Live Karaoke Band Enquiry *'
+      body: _default
+      excluded_elements:
+        the_live_karaoke_band_brochure: the_live_karaoke_band_brochure
       ignore_access: false
       exclude_empty: true
       exclude_empty_checkbox: false
