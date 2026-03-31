@@ -46,9 +46,6 @@ elements: |-
       '#required': true
       '#default_value': '[current-user:mail]'
       '#format_items': comma
-    marketing_consent:
-      '#type': checkbox
-      '#title': 'Can we email you again about future promotions?'
   step_3:
     '#type': webform_wizard_page
     '#title': 'Step 3'
@@ -498,7 +495,7 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: 'info@alimartin.com,markprest1@yahoo.com,wrightyisaleg@hotmail.co.uk'
+      to_mail: 'info@alimartin.com,markprest1@yahoo.com,wrightyisaleg@hotmail.co.uk,hello@livekaraokeband.co.uk'
       to_options: {  }
       bcc_mail: ''
       bcc_options: {  }

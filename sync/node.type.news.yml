@@ -22,9 +22,9 @@ third_party_settings:
     unpublish_enable: false
     unpublish_required: false
     unpublish_revision: false
-name: News
+name: Blog
 type: news
-description: 'Add some <em>news</em> to the website.'
+description: 'Add some <em>blog</em> to the website.'
 help: null
 new_revision: false
 preview_mode: 0

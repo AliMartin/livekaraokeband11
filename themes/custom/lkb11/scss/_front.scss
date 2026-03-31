@@ -136,6 +136,59 @@ body.show-is-live.path-frontpage {
 }
 
 
+
+/*
+ * Front page highlighted blogs
+ */
+#block-lkb11-views-block-home-page-news-block-1 {
+  max-width: 1060px;
+  margin: 0 auto 60px auto;
+  text-align: center;
+  padding: 30px;
+  background-color: rgba(0,0,0,0.6);
+  border: 1px solid rgba(255,255,255,0.25);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  box-shadow: 0px 0px 15px 6px rgba(0,0,0,0.3);
+  border-radius: $border-radius;
+
+  h2 {
+    margin: 0 0 30px 0;
+    padding: 0;
+  }
+  
+  .view-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 30px;
+
+    @media (max-width: 767px) {
+      flex-direction: column;
+    }
+  }
+
+  .views-row {
+    width: 33.3%;
+
+    @media (max-width: 767px) {
+      width: inherit;
+    }
+  }
+
+  img {
+    border-radius: $border-radius-img;
+    margin-bottom: 10px;
+  }
+
+  a.btn {
+    margin: 30px 0 0 0;
+  }
+}
+
+
+
+
 /* Home page reviews */
 #block-lkb11-views-block-front-page-reviews-block-1 {
   max-width: 750px;

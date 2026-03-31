@@ -1,0 +1,42 @@
+.path-gallery main > .container .region-content {
+  max-width: inherit;
+  margin: 120px auto 120px auto;
+
+  .view-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    text-align: center;
+
+    @media (max-width: 767px) {
+      flex-direction: column;
+    }
+  }
+
+  .views-row {
+    width: 30%;
+
+    @media (min-width: 768px) and (max-width: 991px) {
+      width: 45%;
+    }
+
+    @media (max-width: 767px) {
+      width: inherit;
+    }
+  }
+
+  h2 {
+    @media (min-width: 992px) and (max-width: 1199px) {
+      font-size: 32px;
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+      font-size: 28px;
+    }
+  }
+
+  .field--name-field-media-image {
+    margin: 0;
+  }
+}

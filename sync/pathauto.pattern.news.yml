@@ -5,19 +5,18 @@ dependencies:
   module:
     - node
 id: news
-label: News
+label: Blog
 type: 'canonical_entities:node'
-pattern: 'news/[node:title]'
+pattern: 'blog/[node:title]'
 selection_criteria:
-  928ba756-87ca-42c9-b166-beb63fd57eb8:
+  6e3e4fac-db5a-4c93-ae0d-f4f82d326100:
     id: 'entity_bundle:node'
     negate: false
-    uuid: 928ba756-87ca-42c9-b166-beb63fd57eb8
+    uuid: 6e3e4fac-db5a-4c93-ae0d-f4f82d326100
     context_mapping:
       node: node
     bundles:
       news: news
-      old_news: old_news
 selection_logic: and
 weight: -5
 relationships: {  }

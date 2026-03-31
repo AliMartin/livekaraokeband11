@@ -1,14 +1,16 @@
 uuid: 8ffb9249-527a-4708-822d-b0cdb7fd3f2e
 langcode: en
-status: false
+status: true
 dependencies:
   config:
+    - field.storage.node.body
+    - field.storage.node.field_media_image
     - node.type.gallery
     - system.menu.menu-mmenu
   module:
     - node
+    - text
     - user
-    - views_bootstrap
 id: gallery
 label: Gallery
 module: views
@@ -25,6 +27,69 @@ display:
     display_options:
       title: 'See why The Live Karaoke Band is the best live rockaoke and bandeoke entertainment for hire'
       fields:
+        field_media_image:
+          id: field_media_image
+          table: node__field_media_image
+          field: field_media_image
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_entity_view
+          settings:
+            view_mode: news
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 1
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
         title:
           id: title
           table: node_field_data
@@ -90,6 +155,69 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+        body:
+          id: body
+          table: node__body
+          field: body
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: text_summary_or_trimmed
+          settings:
+            trim_length: 200
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
         view_node:
           id: view_node
           table: node
@@ -103,7 +231,7 @@ display:
           exclude: true
           alter:
             alter_text: true
-            text: '<a class="colorbox-node" href="{{ view_node }}">Read</a>'
+            text: '<a class="btn btn-primary" href="{{ view_node }}">View</a>'
             make_link: false
             path: ''
             absolute: false
@@ -155,7 +283,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"inner-wrapper\">\r\n  <div class=\"top-wrapper\">\r\n    <div class=\"image\">{{ field_image }}</div>\r\n  </div>\r\n  <div class=\"bottom-wrapper\">\r\n    <div class=\"title\">{{ title }}</div>\r\n    <div class=\"body\">{{ field_teaser }}</div>\r\n    <div class=\"link\">{{ view_node }}</div>\r\n  </div>\r\n</div>\r\n"
+            text: "<div class=\"inner-wrapper\">\r\n  <div class=\"top-wrapper\">\r\n    <div class=\"image\">{{ field_media_image }}</div>\r\n  </div>\r\n  <div class=\"bottom-wrapper\">\r\n    <h2 class=\"title\">{{ title }}</h2>\r\n    <div class=\"body\">{{ body }}</div>\r\n    <div class=\"link\">{{ view_node }}</div>\r\n  </div>\r\n</div>\r\n"
             make_link: false
             path: ''
             absolute: false
@@ -290,16 +418,11 @@ display:
             default_group_multiple: {  }
             group_items: {  }
       style:
-        type: views_bootstrap_grid
+        type: default
         options:
           grouping: {  }
           row_class: ''
           default_row_class: true
-          col_xs: col-2
-          col_sm: col-sm-3
-          col_md: col-md-4
-          col_lg: col-lg-2
-          col_xl: col-xl-2
       row:
         type: fields
       query:
@@ -321,7 +444,9 @@ display:
         - 'languages:language_interface'
         - 'user.node_grants:view'
         - user.permissions
-      tags: {  }
+      tags:
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_media_image'
   page_1:
     id: page_1
     display_title: Page
@@ -343,13 +468,15 @@ display:
           content: '<h1>See why The Live Karaoke Band is the best live rockaoke and bandeoke entertainment for hire</h1>'
           tokenize: false
       display_extenders:
-        metatag_display_extender: {  }
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
       path: gallery
       menu:
         type: normal
         title: Gallery
         description: ''
-        weight: -45
+        weight: -46
         expanded: false
         menu_name: menu-mmenu
         parent: ''
@@ -361,4 +488,6 @@ display:
         - 'languages:language_interface'
         - 'user.node_grants:view'
         - user.permissions
-      tags: {  }
+      tags:
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_media_image'
