@@ -41,6 +41,7 @@ content:
       caption:
         alt: '0'
         title: '0'
+        field_show_in_media_browser: '0'
       optionset: gallery
       class: ''
       image: ''
@@ -88,7 +89,7 @@ content:
         randomize: '0'
         variableWidth: '0'
       thumbnail: ''
-      optionset_thumbnail: thumbnail
+      optionset_thumbnail: ''
       skin_thumbnail: ''
       thumbnail_caption: ''
       thumbnail_effect: ''

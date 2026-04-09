@@ -33,12 +33,12 @@ image_style_mappings:
     multiplier: 2x
   -
     image_mapping_type: image_style
-    image_mapping: 400x300
+    image_mapping: 800x600
     breakpoint_id: lkb10.screen.sm-max
     multiplier: 1x
   -
     image_mapping_type: image_style
-    image_mapping: 400x300
+    image_mapping: 800x600
     breakpoint_id: lkb10.screen.sm-max
     multiplier: 2x
 breakpoint_group: lkb10.screen
