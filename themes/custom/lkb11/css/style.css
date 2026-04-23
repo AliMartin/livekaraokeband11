@@ -15776,6 +15776,18 @@ main > .container .region-content .field--name-field-call-to-action {
   text-align: center;
 }
 
+blockquote {
+  border-left: 10px solid #f2b510;
+  margin: 2rem 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 1rem;
+  border-radius: 0 20px 20px 0;
+}
+blockquote cite {
+  font-style: normal;
+  font-weight: 700;
+}
+
 /* Prices page */
 .node-864.page-node-type-landing main > .container .region-content {
   max-width: inherit;

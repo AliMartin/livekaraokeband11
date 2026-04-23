@@ -14431,6 +14431,17 @@ a > .ck-content code {
 .ck-content main > .container .region-content .field--name-field-call-to-action {
   text-align: center;
 }
+.ck-content blockquote {
+  border-left: 10px solid #f2b510;
+  margin: 2rem 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 1rem;
+  border-radius: 0 20px 20px 0;
+}
+.ck-content blockquote cite {
+  font-style: normal;
+  font-weight: 700;
+}
 .ck-content {
   /* Prices page */
 }

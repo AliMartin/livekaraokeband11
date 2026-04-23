@@ -21,7 +21,7 @@ settings:
   handler: 'default:file'
   handler_settings: {  }
   file_directory: attachments
-  file_extensions: 'txt doc docx pdf xls xlsx mp3 wav zip'
+  file_extensions: 'txt doc docx pdf xls xlsx mp3 mp4 wav zip'
   max_filesize: ''
   description_field: true
 field_type: file
