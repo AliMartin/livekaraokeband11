@@ -16395,6 +16395,35 @@ body.show-is-live.path-frontpage #block-lkb11-views-block-show-banner-on-front-p
   margin: 0 auto 10px auto;
 }
 /*
+ * Front page what is bandeoke block
+ */
+#block-lkb11-whatisbandeoke {
+  font-weight: 400;
+  max-width: 750px;
+  margin: 0 auto 60px auto;
+  text-align: center;
+  padding: 120px 30px 30px 30px;
+  box-shadow: 0px 0px 15px 6px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+#block-lkb11-whatisbandeoke::before {
+  content: "";
+  background: url("/themes/custom/lkb11/images/rylan-background.jpg") center center/cover no-repeat;
+  position: absolute;
+  inset: 0;
+  filter: brightness(0.7) contrast(1);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  z-index: -1;
+}
+#block-lkb11-whatisbandeoke p a {
+  font-weight: 700;
+}
+
+/*
  * Front page highlighted blogs
  */
 #block-lkb11-views-block-home-page-news-block-1 {
