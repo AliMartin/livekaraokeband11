@@ -1,0 +1,24 @@
+uuid: b86dfe66-625c-495e-850a-412aeccf4608
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - lkb11
+id: lkb11_mainpagecontent
+theme: lkb11
+region: home_content
+weight: -18
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

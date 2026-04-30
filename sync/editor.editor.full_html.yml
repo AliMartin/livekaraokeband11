@@ -58,18 +58,18 @@ settings:
           enabled: true
           provider: ''
         ai_ckeditor_tone:
-          autocreate: false
-          provider: ''
-          tone_vocabulary: event_type
-          use_description: 0
           enabled: true
-        ai_ckeditor_translate:
-          autocreate: false
           provider: ''
+          autocreate: false
+          tone_vocabulary: event_type
+          use_description: false
+        ai_ckeditor_translate:
+          enabled: false
+          provider: ''
+          language_source: tax
+          autocreate: false
           translate_vocabulary: event_type
           use_description: false
-          language_source: tax
-          enabled: false
     ckeditor5_alignment:
       enabled_alignments:
         - center

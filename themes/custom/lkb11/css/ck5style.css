@@ -15019,6 +15019,7 @@ a > .ck-content code {
   margin-top: 10px;
   margin-bottom: 15px;
 }
+.ck-content .node__content .layout__region--content,
 .ck-content #block-lkb11-homepagecontent {
   max-width: 1060px;
   margin: 0 auto 60px auto;
@@ -15031,23 +15032,29 @@ a > .ck-content code {
   box-shadow: 0px 0px 15px 6px rgba(0, 0, 0, 0.3);
   border-radius: 20px;
 }
+.ck-content .node__content .layout__region--content p,
 .ck-content #block-lkb11-homepagecontent p {
   margin-bottom: 0;
 }
+.ck-content .node__content .layout__region--content p.slogan,
 .ck-content #block-lkb11-homepagecontent p.slogan {
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
   font-size: x-small;
 }
+.ck-content .node__content .layout__region--content p.tagline,
 .ck-content #block-lkb11-homepagecontent p.tagline {
   font-size: clamp(1rem, 0.6vw + 1rem, 1.5rem);
   color: #f2b510;
 }
+.ck-content .node__content .layout__region--content p.title,
 .ck-content #block-lkb11-homepagecontent p.title {
   font-size: clamp(1.7rem, 2vw + 1rem, 5rem);
 }
-.ck-content #block-lkb11-homepagecontent h1, .ck-content #block-lkb11-homepagecontent .h1 {
+.ck-content .node__content .layout__region--content h1, .ck-content .node__content .layout__region--content .h1,
+.ck-content #block-lkb11-homepagecontent h1,
+.ck-content #block-lkb11-homepagecontent .h1 {
   font-size: clamp(1.2rem, 1.2vw + 1rem, 2.3rem);
   margin: 0 auto 10px auto;
 }

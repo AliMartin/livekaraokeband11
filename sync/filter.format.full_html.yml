@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.media.full
     - core.entity_view_mode.media.news
   module:
     - blazy
@@ -117,7 +118,10 @@ filters:
     weight: -45
     settings:
       default_view_mode: news
-      allowed_view_modes: {  }
+      allowed_view_modes:
+        default: default
+        full: full
+        news: news
       allowed_media_types: {  }
   slick_filter:
     id: slick_filter
@@ -130,7 +134,7 @@ filters:
         title: '0'
       optionset: default
       layout: ''
-      admin_uri: '/admin/config/content/formats/manage/full_html?destination=/admin/config/content/formats&ajax_form=1&_wrapper_format=drupal_ajax'
+      admin_uri: '/admin/config/content/formats/manage/full_html?destination=/admin/config/content/formats'
       background: false
       box_caption: ''
       box_caption_custom: ''

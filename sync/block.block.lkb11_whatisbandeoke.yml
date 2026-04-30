@@ -1,23 +1,23 @@
-uuid: 93ae923e-cd0a-47fc-8627-17ebe9e77303
+uuid: 645ce09a-2117-496f-8b49-c854118eee25
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:b5a503d7-da7d-4554-814b-4415d9142dcf'
+    - 'block_content:basic:51917c25-8390-41c8-9c9d-70853d88b0f2'
   module:
     - block_content
     - system
   theme:
     - lkb11
-id: lkb11_soundcloud
+id: lkb11_whatisbandeoke
 theme: lkb11
 region: home_content
-weight: -12
+weight: -16
 provider: null
-plugin: 'block_content:b5a503d7-da7d-4554-814b-4415d9142dcf'
+plugin: 'block_content:51917c25-8390-41c8-9c9d-70853d88b0f2'
 settings:
-  id: 'block_content:b5a503d7-da7d-4554-814b-4415d9142dcf'
-  label: 'Listen to The Live Karaoke Band'
+  id: 'block_content:51917c25-8390-41c8-9c9d-70853d88b0f2'
+  label: 'What is bandeoke?'
   label_display: visible
   provider: block_content
   view_mode: full
