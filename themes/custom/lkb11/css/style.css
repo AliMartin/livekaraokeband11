@@ -16362,7 +16362,7 @@ body.show-is-live.path-frontpage #block-lkb11-views-block-show-banner-on-front-p
   margin-bottom: 15px;
 }
 
-.node__content .layout__region--content,
+body.path-frontpage .node__content .layout__region--content,
 #block-lkb11-homepagecontent {
   max-width: 1060px;
   margin: 0 auto 60px auto;
@@ -16375,27 +16375,27 @@ body.show-is-live.path-frontpage #block-lkb11-views-block-show-banner-on-front-p
   box-shadow: 0px 0px 15px 6px rgba(0, 0, 0, 0.3);
   border-radius: 20px;
 }
-.node__content .layout__region--content p,
+body.path-frontpage .node__content .layout__region--content p,
 #block-lkb11-homepagecontent p {
   margin-bottom: 0;
 }
-.node__content .layout__region--content p.slogan,
+body.path-frontpage .node__content .layout__region--content p.slogan,
 #block-lkb11-homepagecontent p.slogan {
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
   font-size: x-small;
 }
-.node__content .layout__region--content p.tagline,
+body.path-frontpage .node__content .layout__region--content p.tagline,
 #block-lkb11-homepagecontent p.tagline {
   font-size: clamp(1rem, 0.6vw + 1rem, 1.5rem);
   color: #f2b510;
 }
-.node__content .layout__region--content p.title,
+body.path-frontpage .node__content .layout__region--content p.title,
 #block-lkb11-homepagecontent p.title {
   font-size: clamp(1.7rem, 2vw + 1rem, 5rem);
 }
-.node__content .layout__region--content h1, .node__content .layout__region--content .h1,
+body.path-frontpage .node__content .layout__region--content h1, body.path-frontpage .node__content .layout__region--content .h1,
 #block-lkb11-homepagecontent h1,
 #block-lkb11-homepagecontent .h1 {
   font-size: clamp(1.2rem, 1.2vw + 1rem, 2.3rem);
