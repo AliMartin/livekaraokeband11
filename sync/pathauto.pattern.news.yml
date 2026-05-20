@@ -2,17 +2,18 @@ uuid: 9f8e885e-85a8-4239-83d5-5e3d10868aeb
 langcode: en
 status: true
 dependencies:
+  config:
+    - node.type.news
   module:
     - node
 id: news
 label: Blog
 type: 'canonical_entities:node'
-pattern: 'blog/[node:title]'
+pattern: '/blog/[node:title]'
 selection_criteria:
   6e3e4fac-db5a-4c93-ae0d-f4f82d326100:
     id: 'entity_bundle:node'
     negate: false
-    uuid: 6e3e4fac-db5a-4c93-ae0d-f4f82d326100
     context_mapping:
       node: node
     bundles:

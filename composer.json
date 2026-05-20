@@ -57,7 +57,7 @@
         "drupal/navigation": "^1.0@beta",
         "drupal/pathauto": "^1.8",
         "drupal/recaptcha": "^3.0",
-        "drupal/redirect": "^1.6",
+        "drupal/redirect": "^1.13",
         "drupal/responsive_favicons": "^4.0",
         "drupal/responsive_menu": "4.4.x-dev@dev",
         "drupal/scheduler": "^2.0@alpha",

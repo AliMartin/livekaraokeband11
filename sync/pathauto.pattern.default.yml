@@ -2,17 +2,21 @@ uuid: 5030d905-df1d-437c-9e89-e7bf3ad61aab
 langcode: en
 status: true
 dependencies:
+  config:
+    - node.type.article
+    - node.type.landing
+    - node.type.page
+    - node.type.webform
   module:
     - node
 id: default
 label: Default
 type: 'canonical_entities:node'
-pattern: '[node:title]'
+pattern: '/[node:title]'
 selection_criteria:
   2587fa8c-9e8c-49b9-968f-daa244c3baa3:
     id: 'entity_bundle:node'
     negate: false
-    uuid: 2587fa8c-9e8c-49b9-968f-daa244c3baa3
     context_mapping:
       node: node
     bundles:
