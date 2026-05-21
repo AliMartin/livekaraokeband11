@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d2047e1a5b2cf7bb027d7eda7ca40ca4",
+    "content-hash": "bbda4b3282773c0737748bff80e0d95c",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -5385,66 +5385,6 @@
             "homepage": "https://www.drupal.org/project/views_random_seed",
             "support": {
                 "source": "https://git.drupalcode.org/project/views_random_seed"
-            }
-        },
-        {
-            "name": "drupal/vwo",
-            "version": "2.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/vwo.git",
-                "reference": "8.x-2.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/vwo-8.x-2.0.zip",
-                "reference": "8.x-2.0",
-                "shasum": "84ca17932b3e2e5cbc73e89f0337062ea02d0a8f"
-            },
-            "require": {
-                "drupal/core": "^8.9 || ^9 || ^10 || ^11"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-2.0",
-                    "datestamp": "1759992471",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "anilkapoor_vwo",
-                    "homepage": "https://www.drupal.org/user/3737562"
-                },
-                {
-                    "name": "mandclu",
-                    "homepage": "https://www.drupal.org/user/52136"
-                },
-                {
-                    "name": "prathamesh-vwo",
-                    "homepage": "https://www.drupal.org/user/3737210"
-                },
-                {
-                    "name": "rohityagi",
-                    "homepage": "https://www.drupal.org/user/3825992"
-                },
-                {
-                    "name": "vwo",
-                    "homepage": "https://www.drupal.org/user/3733746"
-                }
-            ],
-            "description": "Adds VWO javascript Smart Code to all or some of your site's pages.",
-            "homepage": "https://www.drupal.org/project/vwo",
-            "support": {
-                "source": "https://git.drupalcode.org/project/vwo"
             }
         },
         {
