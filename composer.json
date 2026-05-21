@@ -74,6 +74,7 @@
         "drupal/views_auto_refresh": "^2.0",
         "drupal/views_bootstrap": "^5.5@alpha",
         "drupal/views_random_seed": "^1.2",
+        "drupal/vwo": "^2.0",
         "drupal/webform": "^6.3@beta",
         "drupal/webform_content_creator": "^4.0",
         "drupal/webform_remote_handlers": "^3.0",
