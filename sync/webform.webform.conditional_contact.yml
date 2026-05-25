@@ -667,7 +667,10 @@ handlers:
     label: 'Internal notification - normal enquiry'
     notes: ''
     status: true
-    conditions: {  }
+    conditions:
+      enabled:
+        ':input[name="lead_quality"]':
+          value: normal
     weight: 0
     settings:
       states:
@@ -705,7 +708,10 @@ handlers:
     label: 'Internal notification - low budget enquiry'
     notes: ''
     status: true
-    conditions: {  }
+    conditions:
+      enabled:
+        ':input[name="lead_quality"]':
+          value: low
     weight: 0
     settings:
       states:
@@ -743,7 +749,10 @@ handlers:
     label: 'Internal notification - high value enquiry'
     notes: ''
     status: true
-    conditions: {  }
+    conditions:
+      enabled:
+        ':input[name="lead_quality"]':
+          value: high
     weight: 0
     settings:
       states:
