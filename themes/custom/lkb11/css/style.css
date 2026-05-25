@@ -16223,12 +16223,71 @@ html.ios-fixed-bg .mm-page {
   margin: 0;
 }
 
+/* Tighten up top margin */
+.path-webform main > .container .region-content {
+  margin: 15vh auto 120px auto;
+}
+
+/* Format input fields */
 .form-control {
   border: 2px solid #f2b510;
 }
 .form-control:focus {
   border: 2px solid #f98105;
   box-shadow: inherit;
+}
+
+/* Format placeholder text */
+input::placeholder,
+textarea::placeholder {
+  font-size: 0.85em;
+  color: #888888;
+  opacity: 1; /* Ensures consistent color rendering across browsers */
+}
+
+form.webform-submission-conditional-contact-form .webform-type-processed-text,
+form.webform-submission-conditional-contact-form .space-below {
+  margin-bottom: 2rem;
+}
+form.webform-submission-conditional-contact-form fieldset {
+  padding: 0.35em 0 0.625em;
+}
+form.webform-submission-conditional-contact-form .webform-type-textfield label,
+form.webform-submission-conditional-contact-form .webform-type-textarea label,
+form.webform-submission-conditional-contact-form .webform-type-email label,
+form.webform-submission-conditional-contact-form .webform-type-tel label,
+form.webform-submission-conditional-contact-form .webform-type-date label,
+form.webform-submission-conditional-contact-form fieldset.webform-radios-other legend,
+form.webform-submission-conditional-contact-form fieldset.webform-type-radios legend,
+form.webform-submission-conditional-contact-form .webform-type-webform-markup.form-item-markup-25 {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+form.webform-submission-conditional-contact-form input,
+form.webform-submission-conditional-contact-form textarea {
+  margin-bottom: 10px;
+}
+form.webform-submission-conditional-contact-form .narrow-input input {
+  max-width: 300px;
+}
+form.webform-submission-conditional-contact-form .form-actions {
+  margin-top: 2em;
+}
+form.webform-submission-conditional-contact-form .help-message {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid #f2b510;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  padding: 15px;
+  /* p {
+    font-weight: $font-weight-bold;
+  } */
+}
+form.webform-submission-conditional-contact-form .help-message p:last-of-type {
+  margin: 0;
+}
+form.webform-submission-conditional-contact-form .webform-confirmation__message h2, form.webform-submission-conditional-contact-form .webform-confirmation__message .h2 {
+  margin-bottom: 1.5rem;
 }
 
 form.webform-submission-contact-form {

@@ -1,3 +1,10 @@
+/* Tighten up top margin */
+.path-webform main > .container .region-content {
+  margin: 15vh auto 120px auto;
+}
+
+
+/* Format input fields */
 .form-control {
   border: 2px solid $yellow;
 
@@ -7,7 +14,80 @@
   }
 }
 
-// Contact form specific styling
+
+/* Format placeholder text */
+input::placeholder,
+textarea::placeholder {
+  font-size: 0.85em;
+  color: #888888;
+  opacity: 1; /* Ensures consistent color rendering across browsers */
+}
+
+
+// Format new conditional based contact form
+form.webform-submission-conditional-contact-form {
+
+  .webform-type-processed-text,
+  .space-below {
+    margin-bottom: 2rem;
+  }
+
+  fieldset {
+    padding: 0.35em 0 0.625em;
+  }
+
+  .webform-type-textfield label,
+  .webform-type-textarea label,
+  .webform-type-email label,
+  .webform-type-tel label,
+  .webform-type-date label,
+  fieldset.webform-radios-other legend,
+  fieldset.webform-type-radios legend,
+  .webform-type-webform-markup.form-item-markup-25 {
+    font-weight: $font-weight-bold;
+    margin-bottom: 10px;
+  }
+
+  input,
+  textarea {
+    margin-bottom: 10px;
+  }
+
+  // Smaller input fields
+  .narrow-input input {
+    max-width: 300px;
+  }
+
+  .form-actions {
+    margin-top: 2em;
+  }
+
+  .help-message {
+    background-color: rgba(0,0,0,0.5);
+    // border: 1px solid rgba(255,255,255,0.25);
+    border: 1px solid $yellow;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 15px;
+
+    /* p {
+      font-weight: $font-weight-bold;
+    } */
+
+    p:last-of-type {
+      margin: 0;
+    }
+  }
+
+  .webform-confirmation__message h2 {
+    margin-bottom: 1.5rem;
+  }
+}
+
+
+
+
+// Contact form specific styling - original contact form
 form.webform-submission-contact-form {
   text-align: center;
 
@@ -55,6 +135,9 @@ form.webform-submission-contact-form {
     }
   }
 }
+
+
+
 
 
 /* Marketing consent */

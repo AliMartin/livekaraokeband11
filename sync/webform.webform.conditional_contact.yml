@@ -1,0 +1,778 @@
+uuid: c592c76a-c79a-470c-b77c-876317b718df
+langcode: en
+status: open
+dependencies:
+  module:
+    - honeypot
+third_party_settings:
+  honeypot:
+    honeypot: true
+weight: 0
+open: null
+close: null
+uid: 1
+template: false
+archive: false
+id: conditional_contact
+title: 'Conditional contact'
+description: '<p>Conditional webform to identify high and low quality leads and intents.</p>'
+categories: {  }
+elements: |-
+  page_name:
+    '#type': webform_wizard_page
+    '#title': Name
+    markup_02:
+      '#type': webform_markup
+      '#markup': '<h2>Let’s start with your details</h2>'
+    processed_text_04:
+      '#type': processed_text
+      '#text': '<p>Thanks for your interest in booking The Live Karaoke Band.</p><p>We’ll ask a few quick questions about your event so we can recommend the most suitable package and provide a helpful, realistic quote.</p>'
+      '#format': full_html
+    first_name:
+      '#type': textfield
+      '#title': 'First name'
+      '#placeholder': 'First name'
+      '#required': true
+      '#wrapper_attributes':
+        class:
+          - narrow-input
+    last_name:
+      '#type': textfield
+      '#title': 'Last name'
+      '#placeholder': 'Last name'
+      '#required': true
+      '#wrapper_attributes':
+        class:
+          - narrow-input
+    email:
+      '#type': email
+      '#title': 'Email address'
+      '#placeholder': you@example.com
+      '#required': true
+      '#wrapper_attributes':
+        class:
+          - narrow-input
+    phone:
+      '#type': tel
+      '#title': 'Phone number'
+      '#description': '<p>Optional, but useful if we need to clarify anything quickly.</p>'
+      '#placeholder': 'Your phone number'
+      '#wrapper_attributes':
+        class:
+          - narrow-input
+  page_greeting:
+    '#type': webform_wizard_page
+    '#title': Greeting
+    markup:
+      '#type': webform_markup
+      '#markup': '<h2>Tell us about your event</h2>'
+    processed_text:
+      '#type': processed_text
+      '#text': '<p>Hello [webform_submission:values:first_name]! Thank you for your interest in booking The Live Karaoke Band.</p><p>To help us point you towards the most suitable package and give you an accurate reply, could you tell us what type of event you are planning?</p>'
+      '#format': full_html
+    event_type:
+      '#type': webform_radios_other
+      '#title': ' What type of event are you planning?'
+      '#description': '<p>This helps us tailor our reply, as different events can need slightly different timings, production and planning advice.</p>'
+      '#options':
+        corporate: Corporate
+        wedding: Wedding
+        private_party: 'Private party'
+        festival: 'Festival or public event'
+      '#required': true
+  page_date:
+    '#type': webform_wizard_page
+    '#title': Date
+    markup_01:
+      '#type': webform_markup
+      '#markup': '<h2>When is your event?</h2>'
+    processed_text_01:
+      '#type': processed_text
+      '#text': '<p>Great, thank you.</p><p>Next, could you tell us when your event is taking place? This helps us check availability and give you the most accurate guidance. If your date is not confirmed yet, that is fine — just choose the option that best fits where you are in the planning process.</p>'
+      '#format': full_html
+    date_confirmed:
+      '#type': radios
+      '#title': 'Do you have a confirmed event date?'
+      '#options':
+        confirmed: 'Yes, I have a confirmed date'
+        shortlist: 'I have a shortlist of possible dates'
+        flexible: 'I am flexible on the date'
+        researching: 'I am still researching and do not have a date yet'
+      '#required': true
+    event_date:
+      '#type': date
+      '#title': 'Event date'
+      '#description': '<p>Please enter the confirmed date of your event.</p>'
+      '#states':
+        visible:
+          ':input[name="date_confirmed"]':
+            value: confirmed
+      '#wrapper_attributes':
+        class:
+          - narrow-input
+      '#required': true
+    possible_event_dates:
+      '#type': textfield
+      '#title': 'Possible event dates'
+      '#placeholder': 'For example: Saturday 12 July 2026, Friday 18 July 2026, or any Saturday in September.'
+      '#states':
+        visible:
+          ':input[name="date_confirmed"]':
+            value: shortlist
+      '#required': true
+  page_venue:
+    '#type': webform_wizard_page
+    '#title': Venue
+    markup_03:
+      '#type': webform_markup
+      '#markup': '<h2>Where is your event?</h2>'
+    processed_text_02:
+      '#type': processed_text
+      '#text': '<p>Next, could you tell us where your event is taking place?</p><p>A confirmed venue is ideal, but an approximate location is still helpful if you are still planning. Location affects travel, production requirements and the most accurate quote we can provide.</p>'
+      '#format': full_html
+    venue_confirmed:
+      '#type': radios
+      '#title': 'Do you have a confirmed venue?'
+      '#options':
+        confirmed: 'Yes, I have a confirmed venue'
+        approximate: 'I have an approximate location'
+        unknown: 'I have not chosen a venue yet'
+      '#required': true
+    venue_name_and_address:
+      '#type': textfield
+      '#title': 'Venue name and address'
+      '#description': '<p>Please include the venue name and town/city. A full address or postcode is even better if you have it.</p>'
+      '#placeholder': 'For example: Old Sessions House, Clerkenwell, London EC1R 0NA'
+      '#states':
+        visible:
+          ':input[name="venue_confirmed"]':
+            value: confirmed
+      '#required': true
+    approximate_event_location:
+      '#type': textfield
+      '#title': 'Approximate event location'
+      '#description': '<p>Please tell us the town, city, county or general area where the event is likely to take place.</p>'
+      '#placeholder': 'For example: central London, near Guildford, Bristol, Hampshire, Manchester city centre'
+      '#states':
+        visible:
+          ':input[name="venue_confirmed"]':
+            value: approximate
+      '#required': true
+    markup_04:
+      '#type': webform_markup
+      '#states':
+        visible:
+          ':input[name="venue_confirmed"]':
+            value: unknown
+      '#wrapper_attributes':
+        class:
+          - help-message
+      '#markup': '<p>No problem. We can still give you general guidance, but a venue or approximate location will help us provide a more accurate quote.</p>'
+    approximate_area_if_known:
+      '#type': textfield
+      '#title': 'Approximate area, if known'
+      '#placeholder': 'For example: London, Surrey, Hampshire, South East, Midlands, not sure yet'
+      '#states':
+        visible:
+          ':input[name="venue_confirmed"]':
+            value: unknown
+      '#required': true
+  page_audience:
+    '#type': webform_wizard_page
+    '#title': Audience
+    markup_05:
+      '#type': webform_markup
+      '#markup': '<h2>How many guests are you expecting?</h2>'
+    processed_text_03:
+      '#type': processed_text
+      '#text': '<p>Thanks, that’s helpful.</p><p>Next, could you give us an idea of the number of guests or audience members you are expecting? This helps us recommend the most suitable package and understand the level of production your event may need.</p>'
+      '#format': full_html
+    number_of_guests:
+      '#type': radios
+      '#title': 'Estimated number of guests'
+      '#options':
+        under_50: 'Under 50'
+        '50_100': 50-100
+        '100_200': 100-200
+        '200_500': 200-500
+        over_500: 500+
+        unsure: "I'm not sure yet"
+      '#required': true
+    markup_06:
+      '#type': webform_markup
+      '#states':
+        visible:
+          ':input[name="number_of_guests"]':
+            value: under_50
+      '#wrapper_attributes':
+        class:
+          - help-message
+      '#markup': '<p>For smaller events, we may need to check that the full live band format is the right fit for the room and atmosphere, but we are happy to advise.</p>'
+    markup_07:
+      '#type': webform_markup
+      '#states':
+        visible:
+          ':input[name="number_of_guests"]':
+            value: '50_100'
+      '#wrapper_attributes':
+        class:
+          - help-message
+      '#markup': '<p>That is a good size for a private party, wedding or smaller corporate event, and our standard live band packages are often suitable.</p>'
+    markup_08:
+      '#type': webform_markup
+      '#states':
+        visible:
+          ':input[name="number_of_guests"]':
+            value: '100_200'
+      '#wrapper_attributes':
+        class:
+          - help-message
+      '#markup': '<p>This is a very typical size for The Live Karaoke Band, and our 5-piece show usually works particularly well for events of this scale.</p>'
+    markup_09:
+      '#type': webform_markup
+      '#states':
+        visible:
+          ':input[name="number_of_guests"]':
+            value: '200_500'
+      '#wrapper_attributes':
+        class:
+          - help-message
+      '#markup': '<p>For larger events, we may recommend an upgraded production package so the show works properly for the room and audience size.</p>'
+    markup_10:
+      '#type': webform_markup
+      '#states':
+        visible:
+          ':input[name="number_of_guests"]':
+            value: over_500
+      '#wrapper_attributes':
+        class:
+          - help-message
+      '#markup': '<p>For larger audiences, production details become especially important. We may need to understand the stage, PA, lighting and technical setup before confirming the best option.</p>'
+    markup_11:
+      '#type': webform_markup
+      '#states':
+        visible:
+          ':input[name="number_of_guests"]':
+            value: unsure
+      '#wrapper_attributes':
+        class:
+          - help-message
+      '#markup': '<p>No problem. A rough estimate is enough for now, and we can refine the details later if needed.</p>'
+  page_package:
+    '#type': webform_wizard_page
+    '#title': Package
+    markup_12:
+      '#type': webform_markup
+      '#markup': '<h2>Which package are you interested in?</h2>'
+    processed_text_05:
+      '#type': processed_text
+      '#text': '<p>Thanks, that gives us a useful idea of the event size.</p><p>The Live Karaoke Band offers several packages depending on the size of the event, the production required and the overall format you are looking for.</p><p>If you are not sure which option is right, that is completely fine — choose “Please advise” and we will recommend the most suitable package when we reply.</p>'
+      '#format': full_html
+    package_interest:
+      '#type': radios
+      '#title': 'Which option are you most interested in?'
+      '#description': '<p>This is only a guide. We will confirm the most suitable option once we have reviewed your date, location, guest numbers and event details.</p>'
+      '#options':
+        samurai: 'Samurai – our most popular 5-piece live band package'
+        shogun: 'Shogun – 5-piece band with upgraded production'
+        emperor: 'Emperor – premium 5-piece package with larger production'
+        unsure: 'Please advise – I am not sure which package is right'
+      '#required': true
+    markup_13:
+      '#type': webform_markup
+      '#states':
+        visible:
+          ':input[name="package_interest"]':
+            value: samurai
+      '#wrapper_attributes':
+        class:
+          - help-message
+      '#markup': '<p>Samurai is usually the best starting point for most weddings, private parties and many corporate events.</p>'
+    markup_14:
+      '#type': webform_markup
+      '#states':
+        visible:
+          ':input[name="package_interest"]':
+            value: shogun
+      '#wrapper_attributes':
+        class:
+          - help-message
+      '#markup': '<p>Shogun is often suitable where the event needs a more substantial production setup or a little more impact.</p>'
+    markup_15:
+      '#type': webform_markup
+      '#states':
+        visible:
+          ':input[name="package_interest"]':
+            value: emperor
+      '#wrapper_attributes':
+        class:
+          - help-message
+      '#markup': '<p>Emperor is usually best suited to larger events, premium corporate settings or events where production quality is especially important.</p>'
+    markup_16:
+      '#type': webform_markup
+      '#states':
+        visible:
+          ':input[name="package_interest"]':
+            value: unsure
+      '#wrapper_attributes':
+        class:
+          - help-message
+      '#markup': '<p>No problem. We can recommend the most suitable package once we have reviewed your event details.</p>'
+  page_budget:
+    '#type': webform_wizard_page
+    '#title': Budget
+    markup_17:
+      '#type': webform_markup
+      '#markup': '<h2>Is this within your budget?</h2>'
+    processed_text_06:
+      '#type': processed_text
+      '#text': '<p>Thanks, that helps us understand which package may be most suitable.</p><p>Before you submit your enquiry, we want to make sure our pricing is broadly in line with what you are looking for. The Live Karaoke Band is a professional 5-piece live band show, not a standard karaoke service, and our most popular package starts from £2,095.</p><p>Final quotes depend on the date, location, timings, production requirements and any extras, but this gives a realistic starting point before you enquire.</p>'
+      '#format': full_html
+    within_budget:
+      '#type': radios
+      '#title': 'Is this broadly within the budget you are considering?'
+      '#description': '<p>This helps us give you a realistic reply. If your event is midweek, off-season, local, or flexible, you can mention that later in the form.</p>'
+      '#options':
+        'yes': 'Yes, this is within budget'
+        possibly: 'Possibly, depending on the final quote'
+        unsure: 'I am not sure yet'
+        'no': 'No, I was looking for something cheaper'
+      '#required': true
+    markup_18:
+      '#type': webform_markup
+      '#states':
+        visible:
+          ':input[name="within_budget"]':
+            value: 'yes'
+      '#wrapper_attributes':
+        class:
+          - help-message
+      '#markup': '<p>Great, thank you. We will review your event details and recommend the most suitable package when we reply.</p>'
+    markup_19:
+      '#type': webform_markup
+      '#states':
+        visible:
+          ':input[name="within_budget"]':
+            value: possibly
+      '#wrapper_attributes':
+        class:
+          - help-message
+      '#markup': '<p>No problem. Final quotes can vary depending on the date, location, timings and production requirements, so we will review the details carefully before replying.</p>'
+    markup_20:
+      '#type': webform_markup
+      '#states':
+        visible:
+          ':input[name="within_budget"]':
+            value: unsure
+      '#wrapper_attributes':
+        class:
+          - help-message
+      '#markup': '<p>That is fine. We will give you clear guidance when we reply so you can decide whether The Live Karaoke Band is the right fit for your event.</p>'
+    markup_21:
+      '#type': webform_markup
+      '#states':
+        visible:
+          ':input[name="within_budget"]':
+            value: 'no'
+      '#wrapper_attributes':
+        class:
+          - help-message
+      '#markup': '<p>Thanks for letting us know. The Live Karaoke Band is a full professional live band show, so we are unlikely to be the right fit for budgets significantly below our starting prices.</p><p>You are still welcome to send an enquiry, especially if your event is midweek, off-season, local to us, or flexible, but we may not be able to offer a suitable quote.</p>'
+  page_additional_details:
+    '#type': webform_wizard_page
+    '#title': 'Additional details'
+    markup_22:
+      '#type': webform_markup
+      '#markup': '<h2>Tell us a little more</h2>'
+    processed_text_07:
+      '#type': processed_text
+      '#text': '<p>Nearly there.</p><p>A few extra details can help us give you a more accurate and useful reply, especially if you already know your timings, plans for the evening or any special requirements.</p>'
+      '#format': full_html
+    timings_status:
+      '#type': radios
+      '#title': 'Do you know the approximate timings for your event?'
+      '#options':
+        known: 'Yes, I know the approximate timings'
+        rough_idea: 'I have a rough idea'
+        unsure: 'Not yet'
+      '#required': true
+    approximate_event_timings:
+      '#type': textfield
+      '#title': 'Approximate event timings'
+      '#description': '<p>Please include any timings you already know, such as guest arrival, band arrival, performance time, finish time or curfew.</p>'
+      '#placeholder': 'For example: guests arrive at 7pm, band to perform from 9pm–11pm, event finishes at midnight.'
+      '#required': true
+      '#states':
+        visible:
+          ':input[name="timings_status"]':
+            value: known
+      '#wrapper_attributes':
+        class:
+          - space-below
+    rough_timings:
+      '#type': textfield
+      '#title': 'Rough timings'
+      '#description': '<p>A rough idea is fine. We can confirm the details later.</p>'
+      '#placeholder': 'For example: evening event, probably 7pm to midnight, band sometime after dinner.'
+      '#required': true
+      '#states':
+        visible:
+          ':input[name="timings_status"]':
+            value: rough_idea
+      '#wrapper_attributes':
+        class:
+          - space-below
+    markup_23:
+      '#type': webform_markup
+      '#states':
+        visible:
+          ':input[name="timings_status"]':
+            value: unsure
+      '#wrapper_attributes':
+        class:
+          - space-below
+          - help-message
+      '#markup': '<p>No problem. We can still provide guidance, and timings can be confirmed later.</p>'
+    useful_context:
+      '#type': textarea
+      '#title': 'Anything else?'
+      '#description': '<p>You can use this space to tell us about the style of event, venue details, audience, schedule, special requests or anything you think may affect the booking.</p>'
+      '#rows': 3
+      '#placeholder': 'For example: it is a surprise party, we would like DJ service as well, the venue has a sound limiter, there is a stage already, or we are hoping for a high-energy corporate party.'
+  page_final_check:
+    '#type': webform_wizard_page
+    '#title': 'Final check'
+    markup_24:
+      '#type': webform_markup
+      '#markup': '<h2>Ready to send your enquiry?</h2>'
+    processed_text_08:
+      '#type': processed_text
+      '#text': '<p>Thanks, [webform_submission:values:first_name].</p><p>That gives us the key details we need to review your enquiry properly. Once you submit the form, we will look at your event type, date, location, guest numbers, package interest, budget expectation and any extra details you have provided.</p><p>As a reminder, our most popular 5-piece live karaoke band package starts from £2,095. Final quotes depend on the date, location, timings, production requirements and any extras.</p><p><strong>What happens next?</strong></p><p>We will reply with either a recommended package and quote, or a few quick questions if we need anything else before advising properly.</p>'
+      '#format': full_html
+    final_notes:
+      '#type': textarea
+      '#title': 'Any final notes before you send?'
+      '#description': '<p>Optional. Use this if there is anything else you would like us to know before we reply.</p>'
+      '#rows': 3
+      '#placeholder': 'For example: preferred contact method, best time to call, invoice requirements, accessibility needs, venue restrictions or anything else that may help.'
+      '#wrapper_attributes':
+        class:
+          - space-below
+    markup_25:
+      '#type': webform_markup
+      '#markup': '<div><strong>Privacy</strong></div>'
+    privacy_confirmation:
+      '#type': checkbox
+      '#title': 'I agree that The Live Karaoke Band may use my details to respond to this enquiry.'
+      '#description': '<p>We will only use your details to respond to your enquiry and manage any related booking.</p>'
+      '#required': true
+      '#required_error': 'Please accept the privacy policy.'
+      '#wrapper_attributes':
+        class:
+          - space-below
+    lead_quality:
+      '#type': webform_computed_twig
+      '#title': lead_quality
+      '#display_on': view
+      '#template': "{% if data.within_budget == 'no' %}low{% elseif data.within_budget == 'yes' and data.date_confirmed == 'confirmed' and data.venue_confirmed == 'confirmed' %}high{% else %}normal{% endif %}"
+      '#ajax': true
+css: ''
+javascript: ''
+settings:
+  ajax: true
+  ajax_scroll_top: form
+  ajax_progress_type: ''
+  ajax_effect: fade
+  ajax_speed: 500
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  page_theme_name: ''
+  form_title: source_entity_webform
+  form_submit_once: false
+  form_open_message: ''
+  form_close_message: ''
+  form_exception_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_disable_remote_addr: false
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_disable_inline_errors: false
+  form_required: false
+  form_autofocus: false
+  form_details_toggle: false
+  form_reset: false
+  form_access_denied: default
+  form_access_denied_title: ''
+  form_access_denied_message: ''
+  form_access_denied_attributes: {  }
+  form_file_limit: ''
+  form_file_limit_message: ''
+  form_attributes: {  }
+  form_method: ''
+  form_action: ''
+  share: false
+  share_node: false
+  share_theme_name: ''
+  share_title: true
+  share_page_body_attributes: {  }
+  submission_label: ''
+  submission_exception_message: ''
+  submission_locked_message: ''
+  submission_log: false
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
+  submission_views: {  }
+  submission_views_replace: {  }
+  submission_user_columns: {  }
+  submission_user_duplicate: false
+  submission_access_denied: default
+  submission_access_denied_title: ''
+  submission_access_denied_message: ''
+  submission_access_denied_attributes: {  }
+  previous_submission_message: ''
+  previous_submissions_message: ''
+  autofill: false
+  autofill_message: ''
+  autofill_excluded_elements: {  }
+  wizard_progress_bar: false
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_progress_link: false
+  wizard_progress_states: false
+  wizard_start_label: ''
+  wizard_preview_link: false
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
+  wizard_track: ''
+  wizard_prev_button_label: ''
+  wizard_next_button_label: ''
+  wizard_toggle: false
+  wizard_toggle_show_label: ''
+  wizard_toggle_hide_label: ''
+  wizard_page_type: container
+  wizard_page_title_tag: h2
+  preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  preview_exclude_empty_checkbox: false
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  draft_pending_single_message: ''
+  draft_pending_multiple_message: ''
+  confirmation_type: inline
+  confirmation_url: ''
+  confirmation_title: ''
+  confirmation_message: '<h2>Thank you for your enquiry</h2><p>Thank you, [webform_submission:values:first_name].</p><p>Your enquiry has been sent successfully.</p><p>We will review your event details and reply with either a recommended package and quote, or a few quick questions if we need anything else before advising properly.</p><p>As a reminder, our most popular 5-piece live karaoke band package starts from £2,095. Final quotes depend on the date, location, timings, production requirements and any extras.</p>'
+  confirmation_attributes: {  }
+  confirmation_back: false
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  confirmation_exclude_query: false
+  confirmation_exclude_token: false
+  confirmation_update: false
+  limit_total: null
+  limit_total_interval: null
+  limit_total_message: ''
+  limit_total_unique: false
+  limit_user: null
+  limit_user_interval: null
+  limit_user_message: ''
+  limit_user_unique: false
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: none
+  purge_days: null
+  results_disabled: false
+  results_disabled_ignore: false
+  results_customize: false
+  token_view: false
+  token_update: false
+  token_delete: false
+  serial_disabled: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  administer:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  test:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  configuration:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+handlers:
+  email:
+    id: email
+    handler_id: email
+    label: 'Internal notification - normal enquiry'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: 'info@alimartin.com, markprest1@yahoo.com, wrightyisaleg@hotmail.co.uk, hello@livekaraokeband.co.uk'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: noreply@livekaraokeband.co.uk
+      from_options: {  }
+      from_name: '* Live Karaoke Band *'
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'NORMAL VALUE LKB enquiry: [webform_submission:values:first_name] [webform_submission:values:last_name] - [webform_submission:values:event_type]'
+      body: '<h2>Normal value Live Karaoke Band enquiry</h2><p><strong>Lead flag:</strong> Normal enquiry</p><h3>Contact details</h3><p><strong>Name:</strong> [webform_submission:values:first_name] [webform_submission:values:last_name]<br><strong>Email:</strong> [webform_submission:values:email]<br><strong>Phone:</strong> [webform_submission:values:phone]</p><h3>Event details</h3><p><strong>Event type:</strong> [webform_submission:values:event_type]<br><strong>Date status:</strong> [webform_submission:values:date_confirmed]<br><strong>Confirmed date:</strong> [webform_submission:values:event_date]<br><strong>Possible dates:</strong> [webform_submission:values:possible_event_dates]</p><h3>Venue / location</h3><p><strong>Venue status:</strong> [webform_submission:values:venue_confirmed]<br><strong>Venue name and address:</strong> [webform_submission:values:venue_name_and_address]<br><strong>Approximate event location:</strong> [webform_submission:values:approximate_event_location]<br><strong>Approximate area:</strong> [webform_submission:values:approximate_area_if_known]</p><h3>Audience and package</h3><p><strong>Estimated guests:</strong> [webform_submission:values:number_of_guests]<br><strong>Package interest:</strong> [webform_submission:values:package_interest]<br><strong>Budget expectation:</strong> [webform_submission:values:within_budget]</p><h3>Timings and notes</h3><p><strong>Timings status:</strong> [webform_submission:values:timings_status]<br><strong>Approximate timings:</strong> [webform_submission:values:approximate_event_timings]<br><strong>Rough timings:</strong> [webform_submission:values:rough_timings]</p><p><strong>Useful context:</strong><br>[webform_submission:values:useful_context]</p><p><strong>Final notes:</strong><br>[webform_submission:values:final_notes]</p><p><strong>Submission URL:</strong><br>[webform_submission:url]</p>'
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      theme_name: ''
+      langcode: ''
+      parameters: {  }
+      debug: false
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Internal notification - low budget enquiry'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: 'info@alimartin.com, markprest1@yahoo.com, wrightyisaleg@hotmail.co.uk, hello@livekaraokeband.co.uk'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: noreply@livekaraokeband.co.uk
+      from_options: {  }
+      from_name: '* Live Karaoke Band *'
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'LOW VALUE LKB enquiry: [webform_submission:values:first_name] [webform_submission:values:last_name]'
+      body: '<h2>Low value Live Karaoke Band enquiry</h2><p><strong>Lead flag:</strong> Low-budget enquiry</p><p>This enquiry has been flagged because the user selected:</p><p><strong>Budget expectation:</strong> [webform_submission:values:within_budget]</p><h3>Contact details</h3><p><strong>Name:</strong> [webform_submission:values:first_name] [webform_submission:values:last_name]<br><strong>Email:</strong> [webform_submission:values:email]<br><strong>Phone:</strong> [webform_submission:values:phone]</p><h3>Event details</h3><p><strong>Event type:</strong> [webform_submission:values:event_type]<br><strong>Date status:</strong> [webform_submission:values:date_confirmed]<br><strong>Confirmed date:</strong> [webform_submission:values:event_date]<br><strong>Possible dates:</strong> [webform_submission:values:possible_event_dates]</p><h3>Venue / location</h3><p><strong>Venue status:</strong> [webform_submission:values:venue_confirmed]<br><strong>Venue name and address:</strong> [webform_submission:values:venue_name_and_address]<br><strong>Approximate event location:</strong> [webform_submission:values:approximate_event_location]<br><strong>Approximate area:</strong> [webform_submission:values:approximate_area_if_known]</p><h3>Audience and package</h3><p><strong>Estimated guests:</strong> [webform_submission:values:number_of_guests]<br><strong>Package interest:</strong> [webform_submission:values:package_interest]<br><strong>Budget expectation:</strong> [webform_submission:values:within_budget]</p><h3>Timings and notes</h3><p><strong>Timings status:</strong> [webform_submission:values:timings_status]<br><strong>Approximate timings:</strong> [webform_submission:values:approximate_event_timings]<br><strong>Rough timings:</strong> [webform_submission:values:rough_timings]</p><p><strong>Useful context:</strong><br>[webform_submission:values:useful_context]</p><p><strong>Final notes:</strong><br>[webform_submission:values:final_notes]</p><p><strong>Suggested response approach:</strong><br>Send a shorter price-led reply unless the date, location or context suggests the enquiry may still be worth exploring.</p><p><strong>Submission URL:</strong><br>[webform_submission:url]</p>'
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      theme_name: ''
+      langcode: ''
+      parameters: {  }
+      debug: false
+  email_2:
+    id: email
+    handler_id: email_2
+    label: 'Internal notification - high value enquiry'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: 'info@alimartin.com, markprest1@yahoo.com, wrightyisaleg@hotmail.co.uk, hello@livekaraokeband.co.uk'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: noreply@livekaraokeband.co.uk
+      from_options: {  }
+      from_name: '* Live Karaoke Band *'
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'HIGH VALUE LKB enquiry: [webform_submission:values:first_name] [webform_submission:values:last_name] - [webform_submission:values:event_type]'
+      body: '<h2>High value Live Karaoke Band enquiry</h2><p><strong>Lead flag:</strong> High value / high intent enquiry</p><p>This enquiry has been flagged as high value because the user has indicated that the starting price is within budget, and they appear to have both a confirmed date and a confirmed venue.</p><h3>Recommended action</h3><p><strong>Reply quickly and personally.</strong> This looks like a stronger enquiry and may be worth prioritising over general or speculative enquiries.</p><h3>Contact details</h3><p><strong>Name:</strong> [webform_submission:values:first_name] [webform_submission:values:last_name]<br><strong>Email:</strong> [webform_submission:values:email]<br><strong>Phone:</strong> [webform_submission:values:phone]</p><h3>Event details</h3><p><strong>Event type:</strong> [webform_submission:values:event_type]<br><strong>Date status:</strong> [webform_submission:values:date_confirmed]<br><strong>Confirmed date:</strong> [webform_submission:values:event_date]<br><strong>Possible dates:</strong> [webform_submission:values:possible_event_dates]</p><h3>Venue / location</h3><p><strong>Venue status:</strong> [webform_submission:values:venue_confirmed]<br><strong>Venue name and address:</strong> [webform_submission:values:venue_name_and_address]<br><strong>Approximate event location:</strong> [webform_submission:values:approximate_event_location]<br><strong>Approximate area:</strong> [webform_submission:values:approximate_area_if_known]</p><h3>Audience and package</h3><p><strong>Estimated guests:</strong> [webform_submission:values:number_of_guests]<br><strong>Package interest:</strong> [webform_submission:values:package_interest]<br><strong>Budget expectation:</strong> [webform_submission:values:within_budget]</p><h3>Timings and notes</h3><p><strong>Timings status:</strong> [webform_submission:values:timings_status]<br><strong>Approximate timings:</strong> [webform_submission:values:approximate_event_timings]<br><strong>Rough timings:</strong> [webform_submission:values:rough_timings]</p><p><strong>Useful context:</strong><br>[webform_submission:values:useful_context]</p><p><strong>Final notes:</strong><br>[webform_submission:values:final_notes]</p><p><strong>Suggested response approach:</strong><br>Send a tailored personal reply with a recommended package, clear quote, availability confirmation and next-step booking guidance.</p><p><strong>Submission URL:</strong><br>[webform_submission:url]</p>'
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      theme_name: ''
+      langcode: ''
+      parameters: {  }
+      debug: false
+variants: {  }

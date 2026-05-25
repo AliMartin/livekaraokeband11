@@ -2,10 +2,8 @@ global-styling:
   css:
     theme:
       css/style.css: {}
+
 ios_fixed_bg:
-  css:
-    theme:
-      css/ios-fixed-bg.css: {}
   js:
     js/ios-fixed-bg.js: {}
   dependencies:
