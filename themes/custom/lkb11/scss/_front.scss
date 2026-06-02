@@ -312,3 +312,70 @@ body.path-frontpage .node__content .layout__region--content,
     background: url('/themes/custom/lkb11/images/2026-background-03.jpg') center top / cover no-repeat;
   }
 }
+
+
+
+/*
+ * Live Jukebox Band advert
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Cream+Soda&display=swap');
+
+#block-lkb11-introducingthelivejukeboxband {
+  position: relative;
+  overflow: hidden;
+  max-width: 1060px;
+  margin: 0 auto 60px auto;
+  text-align: center;
+  padding: 30px;
+  background-color: rgba(0,0,0,0.6);
+  border: 1px solid rgba(255,255,255,0.25);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  box-shadow: 0px 0px 15px 6px rgba(0,0,0,0.3);
+  border-radius: $border-radius;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url('/themes/custom/lkb11/images/livejukeboxband.jpg') center top / cover no-repeat;
+    z-index: -1;
+    filter: brightness(0.7) contrast(1.05);
+  }
+
+  h2 {
+    font-family: "Cherry Cream Soda", sans-serif;
+    font-weight: 400;
+    // color: #6ac5f4;
+    color: #fc510b;
+    margin: 0 0 15px 0;
+    padding: 0;
+  }
+
+  h3 {
+    font-weight: $font-weight-bold;
+    padding: 0;
+    margin: 0 0 15px 0;
+  }
+
+  a {
+    color: #fc510b;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  a.button {
+    margin-top: 15px;
+    background-color: #fc510b;
+    color: $white;
+    text-decoration: none;
+
+    &:hover {
+      background-color: #6ac5f4;
+    }
+  }
+}
