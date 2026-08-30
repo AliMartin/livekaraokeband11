@@ -63,3 +63,4 @@
 !/.cpanel.yml
 !/sync/*
 !/sites/default/settings.local.php
+/autoload_runtime.php

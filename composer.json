@@ -97,14 +97,15 @@
     "config": {
         "allow-plugins": {
             "composer/installers": true,
+            "cweagans/composer-patches": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
             "drupal/core-composer-scaffold": true,
             "drupal/core-project-message": true,
             "drupal/core-vendor-hardening": true,
-            "phpstan/extension-installer": true,
-            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "oomphinc/composer-installers-extender": true,
             "php-http/discovery": true,
-            "cweagans/composer-patches": true,
-            "oomphinc/composer-installers-extender": true
+            "phpstan/extension-installer": true,
+            "symfony/runtime": true
         },
         "sort-packages": true
     },
@@ -120,7 +121,7 @@
         },
         "patches": {
             "drupal/bg_image_formatter": {
-                "Drupal 11 fix": "https://www.drupal.org/files/issues/2025-06-13/3525581-bg_image_formatter-addcsscommand-array.patch"
+                "Drupal 11.4 ImageFormatter constructor fix": "https://www.drupal.org/files/issues/2026-07-03/bg_image_formatter-imageformatter-d11.4-fix.patch"
             }
         },
         "installer-paths": {
