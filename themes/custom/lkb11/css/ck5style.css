@@ -15121,6 +15121,189 @@ a > .ck-content code {
   margin: 0 auto 10px auto;
 }
 .ck-content {
+  /* Discount promotion block */
+}
+.ck-content #block-lkb11-discount {
+  max-width: 1060px;
+  margin: 0 auto 60px auto;
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 15px 6px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  color: #fff;
+}
+.ck-content #block-lkb11-discount .outer-wrapper {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.4fr);
+  gap: 50px;
+  align-items: start;
+}
+.ck-content #block-lkb11-discount .left-wrapper {
+  min-width: 0;
+  text-align: left;
+}
+.ck-content #block-lkb11-discount .left-wrapper .title {
+  margin: 0;
+  font-size: clamp(2.75rem, 5vw, 4.5rem);
+  font-weight: 800;
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+}
+.ck-content #block-lkb11-discount .left-wrapper .title span {
+  color: var(--bs-primary);
+}
+.ck-content #block-lkb11-discount .left-wrapper .subtitle {
+  margin-top: 8px;
+  font-size: clamp(1.15rem, 1.4vw, 1.45rem);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+.ck-content #block-lkb11-discount .left-wrapper .text {
+  max-width: 430px;
+  margin-top: 24px;
+  font-size: 1.1rem;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.9);
+}
+.ck-content #block-lkb11-discount .left-wrapper .cta {
+  margin-top: 26px;
+}
+.ck-content #block-lkb11-discount .right-wrapper {
+  min-width: 0;
+}
+.ck-content #block-lkb11-discount .packages {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+.ck-content #block-lkb11-discount .package {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+  min-height: 180px;
+  padding: 20px 14px;
+  text-align: center;
+  color: #111;
+  background: rgba(255, 255, 255, 0.96);
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+}
+.ck-content #block-lkb11-discount .package-name {
+  font-size: 1.35rem;
+  font-weight: 800;
+  line-height: 1.1;
+}
+.ck-content #block-lkb11-discount .package-description {
+  margin-top: 10px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+.ck-content #block-lkb11-discount .package-old-price {
+  position: relative;
+  display: inline-block;
+  width: fit-content;
+  margin: 12px auto 2px;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #777;
+}
+.ck-content #block-lkb11-discount .package-old-price::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -3px;
+  right: -3px;
+  height: 2px;
+  background: currentColor;
+  transform: rotate(-5deg);
+}
+.ck-content #block-lkb11-discount .package-new-price {
+  margin-top: 2px;
+  font-size: clamp(1.75rem, 2.5vw, 2.25rem);
+  font-weight: 800;
+  line-height: 1;
+  color: var(--bs-primary);
+}
+.ck-content #block-lkb11-discount .terms {
+  max-width: 680px;
+  margin: 20px auto 0;
+  font-size: 0.8rem;
+  line-height: 1.45;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+}
+.ck-content #block-lkb11-discount {
+  /* Tablet */
+}
+@media (max-width: 991.98px) {
+  .ck-content #block-lkb11-discount {
+    padding: 32px;
+  }
+  .ck-content #block-lkb11-discount .outer-wrapper {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .ck-content #block-lkb11-discount .left-wrapper {
+    text-align: center;
+  }
+  .ck-content #block-lkb11-discount .left-wrapper .text {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .ck-content #block-lkb11-discount .subtitle {
+    font-size: clamp(1.4rem, 3vw, 1.9rem);
+  }
+}
+.ck-content #block-lkb11-discount {
+  /* Mobile */
+}
+@media (max-width: 767.98px) {
+  .ck-content #block-lkb11-discount {
+    margin-bottom: 40px;
+    padding: 25px 20px;
+  }
+  .ck-content #block-lkb11-discount .packages {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .ck-content #block-lkb11-discount .package {
+    min-height: auto;
+    padding: 20px;
+  }
+  .ck-content #block-lkb11-discount .package-old-price {
+    margin-top: 12px;
+  }
+  .ck-content #block-lkb11-discount .terms {
+    margin-top: 18px;
+  }
+}
+.ck-content #block-lkb11-discount {
+  /* Small mobile */
+}
+@media (max-width: 575.98px) {
+  .ck-content #block-lkb11-discount .left-wrapper .title {
+    font-size: 2.6rem;
+  }
+  .ck-content #block-lkb11-discount .left-wrapper .subtitle {
+    font-size: 1.35rem;
+    line-height: 1.1;
+  }
+  .ck-content #block-lkb11-discount .left-wrapper .text {
+    font-size: 1rem;
+  }
+  .ck-content #block-lkb11-discount .package-new-price {
+    font-size: 2rem;
+  }
+}
+.ck-content {
   /*
    * Front page what is bandeoke block
    */
