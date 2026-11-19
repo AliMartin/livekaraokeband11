@@ -1,0 +1,8 @@
+name: LKB Show Editor
+type: module
+description: Places standalone scheduling fields below the Show song list.
+package: LKB
+core_version_requirement: ^11.4
+dependencies:
+  - drupal:node
+  - scheduler:scheduler

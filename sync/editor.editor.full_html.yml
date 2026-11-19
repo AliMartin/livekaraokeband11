@@ -11,7 +11,6 @@ editor: ckeditor5
 settings:
   toolbar:
     items:
-      - aickeditor
       - '|'
       - bold
       - italic
@@ -33,43 +32,6 @@ settings:
       - '|'
       - sourceEditing
   plugins:
-    ai_ckeditor_ai:
-      dialog:
-        autoresize: 'min-width: 600px'
-        height: '750'
-        width: '900'
-        dialog_class: ai-ckeditor-modal
-      plugins:
-        ai_ckeditor_completion:
-          enabled: true
-          provider: ''
-        ai_ckeditor_help:
-          enabled: false
-        ai_ckeditor_modify_prompt:
-          enabled: false
-          provider: ''
-        ai_ckeditor_reformat_html:
-          enabled: false
-          provider: ''
-        ai_ckeditor_spellfix:
-          enabled: true
-          provider: ''
-        ai_ckeditor_summarize:
-          enabled: true
-          provider: ''
-        ai_ckeditor_tone:
-          enabled: true
-          provider: ''
-          autocreate: false
-          tone_vocabulary: event_type
-          use_description: false
-        ai_ckeditor_translate:
-          enabled: false
-          provider: ''
-          language_source: tax
-          autocreate: false
-          translate_vocabulary: event_type
-          use_description: false
     ckeditor5_alignment:
       enabled_alignments:
         - center

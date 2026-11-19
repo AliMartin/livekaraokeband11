@@ -3,11 +3,6 @@ _core:
 module:
   admin_toolbar: 0
   admin_toolbar_tools: 0
-  ai: 0
-  ai_ckeditor: 0
-  ai_content_suggestions: 0
-  ai_logging: 0
-  ai_provider_openai: 0
   automated_cron: 0
   backup_migrate: 0
   better_exposed_filters: 0
@@ -54,11 +49,12 @@ module:
   jquery_ui_datepicker: 0
   jquery_ui_slider: 0
   jquery_ui_touch_punch: 0
-  key: 0
   klaro: 0
   layout_discovery: 0
   link: 0
   linkit: 0
+  lkb_show_editor: 0
+  lkb_song_archive: 0
   login_destination: 0
   mailer_transport: 0
   manage_display: 0
@@ -110,7 +106,6 @@ module:
   webform: 0
   webform_access: 0
   webform_attachment: 0
-  webform_content_creator: 0
   webform_node: 0
   webform_ui: 0
   webform_views: 0

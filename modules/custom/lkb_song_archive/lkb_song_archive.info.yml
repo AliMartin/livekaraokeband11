@@ -1,0 +1,7 @@
+name: LKB Song Request Archive
+type: module
+description: Keeps anonymous song request counts independently of audience submissions.
+package: LKB
+core_version_requirement: ^11
+dependencies:
+  - webform:webform

@@ -1,0 +1,5 @@
+view song request archive:
+  title: 'View and download the song request archive'
+clear song request archive:
+  title: 'Permanently clear the song request archive'
+  restrict access: true

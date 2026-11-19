@@ -1,0 +1,78 @@
+<?php
+
+/**
+ * @file
+ * Capture songs and expose per-Webform archive settings.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\webform\WebformSubmissionInterface;
+
+/**
+ * Implements hook_webform_submission_insert().
+ */
+function lkb_song_archive_webform_submission_insert(WebformSubmissionInterface $submission): void {
+  \Drupal::service('lkb_song_archive.archive')->capture($submission);
+}
+
+/**
+ * Implements hook_webform_submission_update().
+ */
+function lkb_song_archive_webform_submission_update(WebformSubmissionInterface $submission): void {
+  \Drupal::service('lkb_song_archive.archive')->capture($submission);
+}
+
+/**
+ * Implements hook_webform_submission_delete().
+ */
+function lkb_song_archive_webform_submission_delete(WebformSubmissionInterface $submission): void {
+  // Remove only the deduplication marker. Anonymous archive entries survive.
+  \Drupal::database()->delete('lkb_song_archive_receipt')->condition('sid', $submission->id())->execute();
+}
+
+/**
+ * Implements hook_webform_third_party_settings_form_alter().
+ */
+function lkb_song_archive_webform_third_party_settings_form_alter(array &$form, FormStateInterface $form_state): void {
+  $webform = $form_state->getFormObject()->getEntity();
+  $options = [];
+  foreach ($webform->getElementsDecodedAndFlattened() as $key => $element) {
+    if (($element['#type'] ?? '') === 'select' && empty($element['#multiple'])) {
+      $options[$key] = ($element['#title'] ?? $key) . ' (' . $key . ')';
+    }
+  }
+  $form['third_party_settings']['lkb_song_archive'] = [
+    '#type' => 'details',
+    '#title' => t('Song request archive'),
+    '#open' => TRUE,
+    'enabled' => [
+      '#type' => 'checkbox',
+      '#title' => t('Archive song requests'),
+      '#default_value' => $webform->getThirdPartySetting('lkb_song_archive', 'enabled', FALSE),
+      '#description' => t('Keep one anonymous song-only record per completed submission, even after the original request is deleted. Enable this for each new song request form.'),
+    ],
+    'song_field' => [
+      '#type' => 'select',
+      '#title' => t('Song choice field'),
+      '#options' => $options,
+      '#empty_option' => t('- Select -'),
+      '#default_value' => $webform->getThirdPartySetting('lkb_song_archive', 'song_field', ''),
+      '#description' => t('A single-choice select field. The visible song label is archived, including the artist if present.'),
+      '#states' => ['required' => [':input[name="third_party_settings[lkb_song_archive][enabled]"]' => ['checked' => TRUE]]],
+    ],
+  ];
+  $form['#validate'][] = 'lkb_song_archive_settings_validate';
+}
+
+/**
+ * Validate on the server as well as using browser states.
+ */
+function lkb_song_archive_settings_validate(array &$form, FormStateInterface $form_state): void {
+  $settings = $form_state->getValue(['third_party_settings', 'lkb_song_archive'], []);
+  if (!empty($settings['enabled'])) {
+    $element = $form_state->getFormObject()->getEntity()->getElementDecoded($settings['song_field'] ?? '');
+    if (($element['#type'] ?? '') !== 'select' || !empty($element['#multiple'])) {
+      $form_state->setErrorByName('third_party_settings][lkb_song_archive][song_field', t('Choose a single-choice song select field before enabling the archive.'));
+    }
+  }
+}

@@ -1,0 +1,21 @@
+lkb_song_archive.report:
+  path: '/admin/reports/song-requests'
+  defaults:
+    _controller: '\Drupal\lkb_song_archive\Controller\ArchiveController::report'
+    _title: 'Song request archive'
+  requirements:
+    _permission: 'view song request archive'
+lkb_song_archive.csv:
+  path: '/admin/reports/song-requests/export/{mode}'
+  defaults:
+    _controller: '\Drupal\lkb_song_archive\Controller\ArchiveController::csv'
+  requirements:
+    _permission: 'view song request archive'
+    mode: 'summary|entries'
+lkb_song_archive.clear:
+  path: '/admin/reports/song-requests/clear'
+  defaults:
+    _form: '\Drupal\lkb_song_archive\Form\ClearArchiveForm'
+    _title: 'Clear song request archive'
+  requirements:
+    _permission: 'clear song request archive'

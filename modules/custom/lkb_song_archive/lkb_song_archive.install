@@ -1,0 +1,28 @@
+<?php
+
+/**
+ * @file
+ * Database schema for the anonymous song archive.
+ */
+
+/**
+ * Implements hook_schema().
+ */
+function lkb_song_archive_schema(): array {
+  return [
+    'lkb_song_archive' => [
+      'description' => 'Song-only entries. Deliberately contains no source, user or time metadata.',
+      'fields' => [
+        'id' => ['type' => 'serial', 'not null' => TRUE],
+        'song' => ['type' => 'varchar', 'length' => 512, 'not null' => TRUE],
+      ],
+      'primary key' => ['id'],
+      'indexes' => ['song' => ['song']],
+    ],
+    'lkb_song_archive_receipt' => [
+      'description' => 'Capture markers for live submissions; never linked to archive rows.',
+      'fields' => ['sid' => ['type' => 'int', 'unsigned' => TRUE, 'not null' => TRUE]],
+      'primary key' => ['sid'],
+    ],
+  ];
+}

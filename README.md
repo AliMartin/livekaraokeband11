@@ -1,3 +1,8 @@
+# Live Karaoke Band (LKB)
+
+Project maintenance notes, baseline findings and the ongoing work log are in
+[docs/maintenance.md](docs/maintenance.md). Start there when continuing work.
+
 <img alt="Drupal Logo" src="https://www.drupal.org/files/Wordmark_blue_RGB.png" height="60px">
 
 Drupal is an open source content management platform supporting a variety of

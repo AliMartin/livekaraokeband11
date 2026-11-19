@@ -1,0 +1,4 @@
+services:
+  lkb_song_archive.archive:
+    class: Drupal\lkb_song_archive\SongArchive
+    arguments: ['@database']

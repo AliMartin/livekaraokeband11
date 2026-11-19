@@ -1,7 +1,9 @@
 uuid: 8977e036-3c03-461d-a9e1-d2d3f0e0b9fb
 langcode: en
 status: open
-dependencies: {  }
+dependencies:
+  module:
+    - lkb_song_archive
 weight: 0
 open: null
 close: null
@@ -380,3 +382,7 @@ access:
     permissions: {  }
 handlers: {  }
 variants: {  }
+third_party_settings:
+  lkb_song_archive:
+    enabled: true
+    song_field: your_song_choice

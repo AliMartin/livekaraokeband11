@@ -1,0 +1,5 @@
+lkb_song_archive.report:
+  title: 'Song request archive'
+  description: 'Song popularity and CSV downloads.'
+  route_name: lkb_song_archive.report
+  parent: system.admin_reports

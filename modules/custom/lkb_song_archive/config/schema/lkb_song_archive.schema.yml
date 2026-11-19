@@ -1,0 +1,10 @@
+webform.webform.*.third_party.lkb_song_archive:
+  type: mapping
+  label: 'Song request archive'
+  mapping:
+    enabled:
+      type: boolean
+      label: 'Archive song requests'
+    song_field:
+      type: string
+      label: 'Song choice element'
