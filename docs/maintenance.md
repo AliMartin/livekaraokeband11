@@ -609,3 +609,79 @@ rebuild and `git diff --check` passed. No production changes.
 
 Deploy the updated custom module code and rebuild caches. Undo this isolated
 change by removing the option-filter code; no database restoration is needed.
+
+### 19 November 2026 — Production missing-module deployment recovery prepared
+
+Owner deployed code and ran Composer install before production module uninstalls.
+Reported `updb`/`cim` blocked by missing AI, Key and Content Creator module code
+still recorded in production `core.extension`. No production recovery commands
+have been run by this session. Do not continue past the requirements warning.
+
+Prepared `docs/deployment-recovery.md` with private production backup steps,
+verified pre-removal local package versions, temporary Composer restoration,
+normal module uninstalls, restoration of deployed manifests and next update/
+configuration steps. Checked Drupal's official troubleshooting guidance. Local
+pre-removal lockfile provides exact package versions; actual production
+compatibility still must pass Composer. Retain normal uninstall hooks rather
+than bypassing them by editing module entries. Production import drift and field
+purging remain separate deployment considerations.
+
+### Production recovery follow-up — legacy archive blocks config import
+
+Owner reports restoration/uninstall/Composer/database-update steps succeeded.
+`cim` now fails validation because production still has submissions in the
+obsolete Song analysis Webform. Provided a fresh-backup and targeted Webform
+entity deletion step in `docs/deployment-recovery.md`, followed by retrying
+configuration import. This deletion was previously authorised locally and for
+the deployed change; original request forms/new archive are outside its scope.
+No production follow-up execution was performed or confirmed by this session.
+
+### Production recovery status — configuration import succeeded
+
+Owner confirmed `drush cim` succeeded after the legacy Song analysis deletion
+instructions. This confirms the reported import blocker is resolved; no server
+commands were executed by this session. Next: rebuild production caches, run the
+new module's idempotent backfill for enabled current request forms, and verify
+Show editing/scheduling, live banner, song requests, report and CSVs. Production
+backfill totals and functional checks are not yet confirmed. Removal of field
+configuration does not itself prove that queued deleted field data has finished
+purging; that remains a separate production check.
+
+### Production follow-up — sync drift and closed choices reported
+
+Owner reports a successful configuration import but remaining differences on
+production's configuration page, and closed forms still offered on new Shows.
+Browser inspection was attempted but the browser access host is unavailable;
+no authenticated production page was viewed. No production state changed here.
+
+Rechecked the local open-only dropdown integration test: open forms offered,
+closed/archived/future-scheduled forms excluded, existing closed references
+preserved. It passed. Local `config:status` still shows substantial previously
+preserved active/exported drift; this is not a production diagnosis or evidence
+that production has the same differences. Requested production status names,
+Show editor enabled-state and deployed filter-code presence after cache rebuild.
+Do not export production configuration wholesale merely to hide the difference
+list; individual differences must be understood first. No root cause for the
+reported production dropdown behaviour has yet been established.
+
+### Production sync status received — targeted diagnostics prepared
+
+Owner provided production `config:status`: only Different entries, covering
+backup schedule, Show form display, Klaro apps, Entries view and the two current
+non-Christmas song forms. No entries reported Only in DB/Only in sync directory.
+Exact production property differences still unknown.
+
+Inspected those same items locally. Klaro differences are three empty callback
+properties added by module defaults. Backup adds encryption defaults. Entries
+adds a false option and normalises refresh interval from string to integer.
+Show form content and the two Webforms differ only in mapping key order locally.
+These observations are not substitutes for inspecting production values.
+
+Added read-only `scripts/maintenance/config-drift.php` to compare only these
+configurations, summarise long values, redact credential properties, and omit
+nonempty callback bodies. It reports enabled state/filter-code presence and
+builds an unsaved new Show as admin to detect closed choices. Local run reports
+Show editor enabled, filter present and no closed choices. No nodes are saved,
+no submissions made, no configuration imported/exported by the diagnostic.
+Requested deploying this script and running it on production for exact evidence
+before changing exported defaults or diagnosing the reported dropdown behaviour.

@@ -62,3 +62,16 @@ checking widget presence in the form array does not establish visibility.
 With `lkb_show_editor` enabled, the same scheduler rendering check expects
 standalone date/time fields directly below Song list, without a collapsible
 wrapper. It also verifies that Scheduler permission restrictions are preserved.
+
+Read-only targeted drift and Show dropdown diagnosis:
+
+```sh
+vendor/bin/drush php:script scripts/maintenance/config-drift.php
+```
+
+Compares the reported backup/Show/Klaro/Entries/song-form configurations by
+property, including mapping order. Credential properties are redacted, long
+values summarised and nonempty callback bodies omitted. Also reports whether
+Show editor/filter code is available and whether a new unsaved Show offers
+closed forms. It temporarily switches the CLI account to admin to build that
+form, restores the account afterwards, and saves no content/configuration.
