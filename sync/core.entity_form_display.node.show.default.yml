@@ -84,13 +84,13 @@ content:
     settings:
       display_label: true
     third_party_settings: {  }
-  scheduler_settings:
+  publish_on:
+    type: datetime_timestamp_no_default
     weight: -15
     region: content
     settings: {  }
     third_party_settings: {  }
-  publish_on:
-    type: datetime_timestamp_no_default
+  scheduler_settings:
     weight: -15
     region: content
     settings: {  }

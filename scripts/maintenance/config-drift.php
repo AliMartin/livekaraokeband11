@@ -72,16 +72,26 @@ if (\Drupal::moduleHandler()->moduleExists('lkb_show_editor')) {
     $form = \Drupal::service('entity.form_builder')->getForm($node, 'default');
     $options = \Drupal\Core\Form\OptGroup::flattenOptions($form['field_song_list']['widget'][0]['target_id']['#options'] ?? []);
     $closed = [];
+    $untracked = [];
+    $choices = [];
     foreach (array_keys($options) as $id) {
       if (!$id) {
         continue;
       }
       $webform = \Drupal::entityTypeManager()->getStorage('webform')->load($id);
+      if ($webform) {
+        $choices[] = $id;
+        if (!$webform->getThirdPartySetting('lkb_song_archive', 'enabled', FALSE)) {
+          $untracked[] = $id;
+        }
+      }
       if ($webform && !$webform->isOpen()) {
         $closed[] = $id;
       }
     }
     echo 'Closed choices on unsaved new Show: ' . ($closed ? implode(', ', $closed) : 'none') . PHP_EOL;
+    echo 'Choices without song archiving: ' . ($untracked ? implode(', ', $untracked) : 'none') . PHP_EOL;
+    echo 'Available song form IDs: ' . implode(', ', $choices) . PHP_EOL;
   }
   finally {
     $switcher->switchBack();

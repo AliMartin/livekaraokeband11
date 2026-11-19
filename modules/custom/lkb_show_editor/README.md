@@ -30,18 +30,25 @@ to restore Scheduler's standard details presentation; no content is deleted.
 ## Open Webform choices
 
 Show's `field_song_list` select widget offers only forms currently accepting
-submissions, using Webform's `isOpen()` check (including scheduled opening/closing
-windows and archive status). Categories, widget configuration, access filtering,
+submissions **and** with Song request archive enabled in their General settings.
+It uses Webform's `isOpen()` check (including scheduled opening/closing windows
+and archive status). The Show editor depends on the Song Request Archive module. Categories, widget configuration, access filtering,
 empty selection and normal select validation are preserved. Other Webform
 references are unaffected.
 
-Exception for existing content: a currently selected closed/archived form stays
-available on that Show only, labelled “current selection — closed”. This avoids
-silently losing historical references on unrelated edits. Other closed forms
-cannot be selected. No existing references or Webform statuses are modified.
+Exception for existing content: a currently selected closed, archived or non-archive-enabled form stays
+available on that Show only, labelled “current selection — unavailable for new Shows”. This avoids
+silently losing historical references on unrelated edits. Other ineligible forms
+cannot be selected. If no eligible forms exist, the list stays empty instead of
+being repopulated by the underlying entity-select element. No existing references or Webform statuses are modified.
 
 Local transactional check:
 
 ```sh
 ddev exec drush php:script scripts/maintenance/verify-show-webforms.php
 ```
+
+Future song forms must be opened and have **Archive song requests** enabled in
+Webform **Settings > General > Third party settings > Song request archive**.
+No name/year allow-list is hardcoded. Existing Webform open/closed states and
+existing Show references are not changed by the filter.

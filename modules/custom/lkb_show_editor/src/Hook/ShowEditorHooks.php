@@ -29,7 +29,13 @@ final class ShowEditorHooks {
         continue;
       }
       $current = (string) ($entity->get('field_song_list')->get($delta)?->target_id ?? '');
-      $form['field_song_list']['widget'][$delta]['target_id']['#options'] = $this->openOptions($widget['target_id']['#options'], $webforms, $current);
+      $choices = $this->openOptions($widget['target_id']['#options'], $webforms, $current);
+      $form['field_song_list']['widget'][$delta]['target_id']['#options'] = $choices;
+      if (!$choices) {
+        // WebformEntitySelect otherwise repopulates empty options from its
+        // entity selection handler, reintroducing every available Webform.
+        $form['field_song_list']['widget'][$delta]['target_id']['#target_type'] = NULL;
+      }
     }
     foreach (array_keys($form) as $key) {
       if (!preg_match('/^scheduler_settings(?:_\d+)?$/', $key)) {
@@ -49,7 +55,7 @@ final class ShowEditorHooks {
   }
 
   /**
-   * Keep open forms and, for safe editing, an already-referenced closed form.
+   * Keep open, archive-enabled forms, plus the existing reference for safe edits.
    */
   private function openOptions(array $options, array $webforms, string $current): array {
     $filtered = [];
@@ -60,11 +66,11 @@ final class ShowEditorHooks {
           $filtered[$id] = $children;
         }
       }
-      elseif (isset($webforms[$id]) && $webforms[$id]->isOpen()) {
+      elseif (isset($webforms[$id]) && $webforms[$id]->isOpen() && $webforms[$id]->getThirdPartySetting('lkb_song_archive', 'enabled', FALSE)) {
         $filtered[$id] = $label;
       }
       elseif ((string) $id === $current && isset($webforms[$id])) {
-        $filtered[$id] = \Drupal::translation()->translate('@label (current selection — closed)', ['@label' => $label]);
+        $filtered[$id] = \Drupal::translation()->translate('@label (current selection — unavailable for new Shows)', ['@label' => $label]);
       }
     }
     return $filtered;

@@ -4,6 +4,10 @@ status: open
 dependencies:
   module:
     - lkb_song_archive
+third_party_settings:
+  lkb_song_archive:
+    enabled: true
+    song_field: your_song_choice
 weight: 0
 open: null
 close: null
@@ -354,7 +358,3 @@ access:
     permissions: {  }
 handlers: {  }
 variants: {  }
-third_party_settings:
-  lkb_song_archive:
-    enabled: true
-    song_field: your_song_choice

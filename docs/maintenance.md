@@ -711,3 +711,60 @@ and rejected changed consent status, nonempty callbacks/credentials, removed
 settings and reordered lists. No normalization apply was run locally or on
 production by this session. Owner must deploy the script and run dry/apply on
 production, then retain those reviewed normalized YAML files in source control.
+
+### 19 November 2026 — Production-copy diagnosis and archive-enabled choices
+
+Owner refreshed local DDEV from production without CIM, then approved restricting
+new Show choices to **open, archive-enabled song forms**. All work in this entry
+was local; production was not accessed or changed, and no CIM was run.
+
+Root cause of unexpected choices: the imported database globally marks both
+2022 song forms, contact forms and musician application as open. The prior
+open-only filter and rendered HTML correctly excluded Contact old (closed), but
+still offered these eight globally open forms. This was not evidence of an
+opcode-cache failure. Per-Show closed references and global Webform status are
+separate. The owner clarified that only archived song-request forms belong here.
+
+Updated `lkb_show_editor` to require both `isOpen()` and its existing Webform
+`lkb_song_archive.enabled` flag. Added the archive module dependency. Current
+local rendered choices are exactly:
+
+- Song request - 4 piece 2026
+- Song request - 5 piece 2026
+- Song request - 5 piece 2026 Xmas
+
+Preserves category/access/widget restrictions. Existing closed or non-archive-
+enabled references remain available only on their own Show, labelled current
+selection/unavailable for new Shows. No existing Show reference, Webform status,
+archive setting, submission or archive record was changed by the filter.
+
+Prevented an empty-choice fallback: the underlying Webform entity-select can
+repopulate empty options from its entity handler. When no eligible forms remain,
+clear that element's target type so it stays empty through final rendering.
+
+Validation: expanded transactional dropdown suite passed for eligibility,
+unavailable/untracked forms, closed and legacy reference preservation, and the
+zero-eligible render case. Fixtures rolled back. Real imported form HTML shows
+only the three eligible request forms. Gin add/edit scheduling layout and
+permission checks also pass. The read-only drift diagnostic now reports both
+closed and non-archive-enabled choices plus available form IDs.
+
+Local email isolation: imported system.mail uses SMTPMailSystem, which was not
+covered by DDEV's generated Symfony Mailer overrides. Added local-only SMTP
+host/port/protocol/credential overrides to ignored `settings.ddev.php`, routing
+SMTP to 127.0.0.1:1025 (Mailpit). Confirmed effective routing; no mail sent. These
+ignored local settings must not be deployed and should be rechecked if DDEV
+regenerates its settings file or after future production refreshes.
+
+Applied the guarded config normalization locally: only 29 audited sync exports
+updated (ordering/defaults/type normalization); database untouched. Backup export
+files are in DDEV container `/tmp/lkb-config-normalize-e2a1f4f10a43` (temporary).
+`drush config:status` now reports no differences. The updated YAML belongs in
+source control so the drift does not recur on later deployments. No blanket
+export/import or unrelated configuration changes.
+
+Deploy only after the owner's live-show window: reviewed custom module changes
+and normalized exports, then cache rebuild. New dropdown code alone needs no
+updb/CIM; the archive module is already enabled. Rollback the isolated selector
+change by restoring previous Show editor code; no data restore required. Restore
+previous sync files from backup to undo only export normalization.
