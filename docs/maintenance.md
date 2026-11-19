@@ -685,3 +685,29 @@ Show editor enabled, filter present and no closed choices. No nodes are saved,
 no submissions made, no configuration imported/exported by the diagnostic.
 Requested deploying this script and running it on production for exact evidence
 before changing exported defaults or diagnosing the reported dropdown behaviour.
+
+### Production diagnostics confirmed — normalization prepared
+
+Owner ran `config-drift.php` on production. Output confirms Show editor enabled,
+open-filter method present and zero closed choices on an unsaved new Show built
+by production's CLI. Browser discrepancy is not reproduced in that check;
+fresh page behaviour/exact closed examples or web-PHP cache state remain to be
+checked. Do not treat CLI code loading as proof of PHP-FPM opcode cache state.
+
+Production differences: mapping order in Show form/song forms/Entries option
+maps, Entries refresh interval string versus integer, missing empty Klaro
+callbacks and missing backup encryption defaults (production encrypt is null;
+local is false). The encryption password remains redacted/unknown.
+
+Prepared `normalize-config.php`: dry-run by default; validates the full diff of
+only the reported 29 objects, allows only audited defaults, equivalent integer
+casting and mapping order, and rejects functional changes. Refuses a nonempty
+encryption password. On explicit apply, privately backs up previous exports,
+writes active normalized representations into those sync files, and checks exact
+matches. It never imports/saves database configuration or changes field data.
+
+Local dry run passes for 29 files; test assertions accepted known defaults/order
+and rejected changed consent status, nonempty callbacks/credentials, removed
+settings and reordered lists. No normalization apply was run locally or on
+production by this session. Owner must deploy the script and run dry/apply on
+production, then retain those reviewed normalized YAML files in source control.

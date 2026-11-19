@@ -75,3 +75,31 @@ values summarised and nonempty callback bodies omitted. Also reports whether
 Show editor/filter code is available and whether a new unsaved Show offers
 closed forms. It temporarily switches the CLI account to admin to build that
 form, restores the account afterwards, and saves no content/configuration.
+
+To reconcile only the audited post-import defaults and mapping order differences:
+
+```sh
+vendor/bin/drush php:script scripts/maintenance/normalize-config.php
+```
+
+This defaults to dry run. It rejects unexpected changes before writing anything,
+including altered consent status/callbacks, field removals and list reordering.
+It refuses to export a nonempty backup encryption password. Both null and false
+inactive encryption defaults are accepted without changing the active value.
+
+After a successful dry run, apply on the environment whose active configuration
+has been reviewed:
+
+```sh
+env LKB_NORMALIZE_CONFIG_APPLY=1 vendor/bin/drush php:script scripts/maintenance/normalize-config.php
+vendor/bin/drush config:status
+```
+
+Only the 29 whitelisted exported configurations can change. Their previous
+exports are backed up in a private temporary directory, whose path is printed.
+The database and site behaviour are not changed. Retain the generated YAML in
+source control by bringing these reviewed files back to the working repository;
+otherwise the next deployment can reintroduce the old exports. Do not commit
+configuration credentials. Restore the printed backup files to undo the export
+normalization; no database restore is needed. Do not follow this by reimporting
+older copies of the same exports.
